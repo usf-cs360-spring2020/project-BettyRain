@@ -1,0 +1,207 @@
+.txtNew {
+  word-wrap: break-word;
+  text-align: start;
+}
+
+.txtNew_override-left * {
+  text-align: left !important;
+}
+
+.txtNew_override-right * {
+  text-align: right !important;
+}
+
+.txtNew_override-center * {
+  text-align: center !important;
+}
+
+.txtNew_override-justify * {
+  text-align: justify !important;
+}
+
+.txtNew>* {
+  pointer-events: auto;
+}
+
+.txtNew li {
+  font-style: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  letter-spacing: normal;
+}
+
+.txtNew ol,
+.txtNew ul {
+  padding-left: 1.3em;
+  padding-right: 0;
+  margin-left: 0.5em;
+  margin-right: 0;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.txtNew ul {
+  list-style-type: disc;
+}
+
+.txtNew ol {
+  list-style-type: decimal;
+}
+
+.txtNew ul ul,
+.txtNew ol ul {
+  list-style-type: circle;
+}
+
+.txtNew ul ul ul,
+.txtNew ol ul ul {
+  list-style-type: square;
+}
+
+.txtNew ul ol ul,
+.txtNew ol ol ul {
+  list-style-type: square;
+}
+
+.txtNew ul[dir="rtl"],
+.txtNew ol[dir="rtl"] {
+  padding-left: 0;
+  padding-right: 1.3em;
+  margin-left: 0;
+  margin-right: 0.5em;
+}
+
+.txtNew ul[dir="rtl"] ul,
+.txtNew ul[dir="rtl"] ol,
+.txtNew ol[dir="rtl"] ul,
+.txtNew ol[dir="rtl"] ol {
+  padding-left: 0;
+  padding-right: 1.3em;
+  margin-left: 0;
+  margin-right: 0.5em;
+}
+
+.txtNew p {
+  margin: 0;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.txtNew h1 {
+  margin: 0;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.txtNew h2 {
+  margin: 0;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.txtNew h3 {
+  margin: 0;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.txtNew h4 {
+  margin: 0;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.txtNew h5 {
+  margin: 0;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.txtNew h6 {
+  margin: 0;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.txtNew a {
+  color: inherit;
+}
+
+.style-ivko0jau button.style-ivko0jaulink {
+  width: 100%;
+}
+
+.style-ivko0jau[data-state~="shouldUseFlex"] .style-ivko0jaulink,
+.style-ivko0jau[data-state~="shouldUseFlex"] .style-ivko0jaulabelwrapper {
+  text-align: initial;
+  display: flex;
+  align-items: center;
+}
+
+.style-ivko0jau[data-state~="shouldUseFlex"][data-state~="center"] .style-ivko0jaulink,
+.style-ivko0jau[data-state~="shouldUseFlex"][data-state~="center"] .style-ivko0jaulabelwrapper {
+  justify-content: center;
+}
+
+.style-ivko0jau[data-state~="shouldUseFlex"][data-state~="left"] .style-ivko0jaulink,
+.style-ivko0jau[data-state~="shouldUseFlex"][data-state~="left"] .style-ivko0jaulabelwrapper {
+  justify-content: flex-start;
+}
+
+.style-ivko0jau[data-state~="shouldUseFlex"][data-state~="right"] .style-ivko0jaulink,
+.style-ivko0jau[data-state~="shouldUseFlex"][data-state~="right"] .style-ivko0jaulabelwrapper {
+  justify-content: flex-end;
+}
+
+.style-ivko0jau[data-disabled="false"] {
+  cursor: pointer;
+}
+
+.style-ivko0jau[data-disabled="false"]:active[data-state~="mobile"] .style-ivko0jaulabel,
+.style-ivko0jau[data-disabled="false"]:hover[data-state~="desktop"] .style-ivko0jaulabel,
+.style-ivko0jau[data-disabled="false"][data-preview~="hover"] .style-ivko0jaulabel {
+  color: #95815B;
+  transition: color 0.4s ease 0s;
+}
+
+.style-ivko0jaulink {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.style-ivko0jaulabel {
+  font: normal normal normal 22px/1.4em didot-w01-italic, serif;
+  transition: color 0.4s ease 0s;
+  color: #FFFFFF;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.style-ivko0jau[data-disabled="true"] .style-ivko0jaulabel,
+.style-ivko0jau[data-preview~="disabled"] .style-ivko0jaulabel {
+  color: #FFFFFF;
+}
+
+.style-k8nvdzgbbg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.style-k8nvdzgb[data-state~="mobileView"] .style-k8nvdzgbbg {
+  left: 10px;
+  right: 10px;
+}
+
+.style-k8nvdzgbinlineContent {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}

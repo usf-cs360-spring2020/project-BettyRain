@@ -1,0 +1,63 @@
+
+                                  #comp-ividcu4cinlineContent {
+                                      height: auto;
+                                      width: 100%;
+                                      position: relative;
+                                  }
+
+                                  #comp-ividcu4cinlineContent-gridWrapper {
+                                      pointer-events: none;
+                                  }
+
+                                  #comp-ividcu4cinlineContent-gridContainer {
+                                      position: static;
+                                      display: grid;
+                                      height: auto;
+                                      width: 100%;
+                                      min-height: 455px;
+                                      grid-template-rows: min-content min-content 1fr;
+                                      grid-template-columns: 100%;
+                                  }
+
+                                  #comp-ivjv7a3o {
+                                      position: relative;
+                                      margin: 93px 0px 36px calc((100% - 332px) * 1);
+                                      left: 203px;
+                                      grid-area: 1 / 1 / 2 / 2;
+                                      justify-self: start;
+                                      align-self: start;
+                                  }
+
+                                  #comp-ividcu4p {
+                                      position: relative;
+                                      margin: 0px 0px 19px calc((100% - 332px) * 1);
+                                      left: 148px;
+                                      grid-area: 2 / 1 / 3 / 2;
+                                      justify-self: start;
+                                      align-self: start;
+                                  }
+
+                                  #comp-ividcu4u {
+                                      position: relative;
+                                      margin: 0px 0px 10px calc((100% - 332px) * 1);
+                                      left: 148px;
+                                      grid-area: 3 / 1 / 4 / 2;
+                                      justify-self: start;
+                                      align-self: start;
+                                  }
+
+                                  #comp-ividcu4ccenteredContent {
+                                      position: relative;
+                                  }
+
+                                  #comp-ividcu4cinlineContent-gridContainer > * {
+                                      pointer-events: auto;
+                                  }
+
+                                  #comp-ividcu4cinlineContent-gridContainer > [id$="-rotated-wrapper"] {
+                                      pointer-events: none;
+                                  }
+
+                                  #comp-ividcu4cinlineContent-gridContainer > [id$="-rotated-wrapper"] > * {
+                                      pointer-events: auto;
+                                  }

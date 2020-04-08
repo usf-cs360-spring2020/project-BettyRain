@@ -1,0 +1,118 @@
+#do3fhinlineContent {
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+
+#do3fhinlineContent-gridWrapper {
+  pointer-events: none;
+}
+
+#do3fhinlineContent-gridContainer {
+  position: static;
+  display: grid;
+  height: auto;
+  width: 100%;
+  min-height: 1538px;
+  grid-template-rows: min-content 1fr;
+  grid-template-columns: 100%;
+  padding-bottom: 0px;
+  box-sizing: border-box;
+}
+
+#comp-ividcu8f {
+  position: relative;
+  margin: 565px 0px 1px calc((100% - 980px) * 0.5);
+  left: 0px;
+  grid-area: 1 / 1 / 2 / 2;
+  justify-self: start;
+  align-self: start;
+}
+
+#comp-ividcu3u {
+  position: relative;
+  margin: 0px 0px 0 calc((100% - 980px) * 0.5);
+  left: 0px;
+  grid-area: 2 / 1 / 3 / 2;
+  justify-self: start;
+  align-self: start;
+}
+
+#do3fhcenteredContent {
+  position: relative;
+}
+
+#do3fhinlineContent-gridContainer>* {
+  pointer-events: auto;
+}
+
+#do3fhinlineContent-gridContainer>[id$="-rotated-wrapper"] {
+  pointer-events: none;
+}
+
+#do3fhinlineContent-gridContainer>[id$="-rotated-wrapper"]>* {
+  pointer-events: auto;
+}
+
+#comp-ividcu8kinlineContent {
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+
+#comp-ividcu8kinlineContent-gridWrapper {
+  pointer-events: none;
+}
+
+#comp-ividcu8kinlineContent-gridContainer {
+  position: static;
+  display: grid;
+  height: auto;
+  width: 100%;
+  min-height: 517px;
+  grid-template-rows: min-content min-content 1fr;
+  grid-template-columns: 100%;
+}
+
+#comp-ividcu8o {
+  position: relative;
+  margin: 91px 0px 41px calc((100% - 980px) * 0.5);
+  left: 0px;
+  grid-area: 1 / 1 / 2 / 2;
+  justify-self: start;
+  align-self: start;
+}
+
+#comp-ividcu8q {
+  position: relative;
+  margin: 0px 0px 65px calc((100% - 980px) * 0.5);
+  left: 0px;
+  grid-area: 2 / 1 / 3 / 2;
+  justify-self: start;
+  align-self: start;
+}
+
+#comp-ividcu8s {
+  position: relative;
+  margin: 0px 0px 10px calc((100% - 980px) * 0.5);
+  left: 0px;
+  grid-area: 3 / 1 / 4 / 2;
+  justify-self: start;
+  align-self: start;
+}
+
+#comp-ividcu8kcenteredContent {
+  position: relative;
+}
+
+#comp-ividcu8kinlineContent-gridContainer>* {
+  pointer-events: auto;
+}
+
+#comp-ividcu8kinlineContent-gridContainer>[id$="-rotated-wrapper"] {
+  pointer-events: none;
+}
+
+#comp-ividcu8kinlineContent-gridContainer>[id$="-rotated-wrapper"]>* {
+  pointer-events: auto;
+}

@@ -1,0 +1,91 @@
+.ddm1itemsContainer {
+  width: calc(100% - 0px);
+  height: calc(100% - 0px);
+  white-space: nowrap;
+  display: inline-block;
+  overflow: visible;
+  position: absolute;
+}
+
+.ddm1moreContainer {
+  overflow: visible;
+  display: inherit;
+  white-space: nowrap;
+  width: auto;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+.ddm1dropWrapper {
+  z-index: 99999;
+  display: block;
+  opacity: 1;
+  visibility: hidden;
+  position: absolute;
+  margin-top: 7px;
+}
+
+.ddm1>nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.ddm1dropWrapper[data-dropMode="dropUp"] {
+  margin-top: 0;
+  margin-bottom: 7px;
+}
+
+.ddm1repeaterButton {
+  height: 100%;
+  position: relative;
+  box-sizing: border-box;
+  display: inline-block;
+  cursor: pointer;
+  font: normal normal normal 13px/1.4em avenir-lt-w01_35-light1475496, sans-serif;
+}
+
+.ddm1repeaterButton[data-state~="header"] a,
+.ddm1repeaterButton[data-state~="header"] div {
+  cursor: default !important;
+}
+
+.ddm1repeaterButtonlinkElement {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+.ddm1repeaterButton_gapper {
+  padding: 0 5px;
+}
+
+.ddm1repeaterButtonlabel {
+  display: inline-block;
+  padding: 0 10px;
+  color: #DBD9D7;
+  transition: color 0.4s ease 0s;
+}
+
+.ddm1repeaterButton[data-state~="drop"] {
+  width: 100%;
+  display: block;
+}
+
+.ddm1repeaterButton[data-state~="drop"] .ddm1repeaterButtonlabel {
+  padding: 0 .5em;
+}
+
+.ddm1repeaterButton[data-state~="over"] .ddm1repeaterButtonlabel,
+.ddm1repeaterButton[data-preview~="hover"] .ddm1repeaterButtonlabel {
+  color: #B39F79;
+  transition: color 0.4s ease 0s;
+}
+
+.ddm1repeaterButton[data-state~="selected"] .ddm1repeaterButtonlabel,
+.ddm1repeaterButton[data-preview~="active"] .ddm1repeaterButtonlabel {
+  color: #B39F79;
+  transition: color 0.4s ease 0s;
+}

@@ -1,0 +1,29 @@
+#comp-ivgjuufw {
+  justify-self: end;
+  margin-right: 50px;
+  align-self: start;
+  margin-top: 31px;
+  position: absolute;
+  grid-area: 1 / 1 / 2 / 2;
+  pointer-events: auto;
+}
+
+#comp-ivm23fqv {
+  justify-self: start;
+  margin-left: 50px;
+  align-self: start;
+  margin-top: 21px;
+  position: absolute;
+  grid-area: 1 / 1 / 2 / 2;
+  pointer-events: auto;
+}
+
+#comp-ivhrfpvn {
+  justify-self: start;
+  margin-left: 110px;
+  align-self: start;
+  margin-top: 26px;
+  position: absolute;
+  grid-area: 1 / 1 / 2 / 2;
+  pointer-events: auto;
+}

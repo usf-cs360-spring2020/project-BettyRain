@@ -1,0 +1,57 @@
+.b3 button.b3link {
+  width: 100%;
+}
+
+.b3[data-state~="shouldUseFlex"] .b3link,
+.b3[data-state~="shouldUseFlex"] .b3labelwrapper {
+  text-align: initial;
+  display: flex;
+  align-items: center;
+}
+
+.b3[data-state~="shouldUseFlex"][data-state~="center"] .b3link,
+.b3[data-state~="shouldUseFlex"][data-state~="center"] .b3labelwrapper {
+  justify-content: center;
+}
+
+.b3[data-state~="shouldUseFlex"][data-state~="left"] .b3link,
+.b3[data-state~="shouldUseFlex"][data-state~="left"] .b3labelwrapper {
+  justify-content: flex-start;
+}
+
+.b3[data-state~="shouldUseFlex"][data-state~="right"] .b3link,
+.b3[data-state~="shouldUseFlex"][data-state~="right"] .b3labelwrapper {
+  justify-content: flex-end;
+}
+
+.b3[data-disabled="false"] {
+  cursor: pointer;
+}
+
+.b3[data-disabled="false"]:active[data-state~="mobile"] .b3label,
+.b3[data-disabled="false"]:hover[data-state~="desktop"] .b3label,
+.b3[data-disabled="false"][data-preview~="hover"] .b3label {
+  color: #FFFFFF;
+  transition: color 0.4s ease 0s;
+}
+
+.b3link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.b3label {
+  font: normal normal normal 13px/1.4em avenir-lt-w01_35-light1475496, sans-serif;
+  transition: color 0.4s ease 0s;
+  color: #B39F79;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.b3[data-disabled="true"] .b3label,
+.b3[data-preview~="disabled"] .b3label {
+  color: #FFFFFF;
+}
