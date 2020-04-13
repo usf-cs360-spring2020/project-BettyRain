@@ -27,6 +27,8 @@
   <link href="css/notusedyet/style2.css" rel="stylesheet">
   <link href="css/notusedyet/useless.css" rel="stylesheet">
 
+  <link href="css/d3/table.css" rel="stylesheet">
+
 
 <body class="" data-js-loaded="true" style="">
 
@@ -77,53 +79,171 @@
                     <div class="style-k8nvdzgbinlineContent" id="do3fhinlineContent">
                       <div id="do3fhinlineContent-gridWrapper" data-mesh-internal="true">
 
-
                         <div style="width:100%;position:relative;top:0;bottom:0" class="strc1inlineContent" id="comp-ividcu8kinlineContent">
                           <div id="comp-ividcu8kinlineContent-gridWrapper" data-mesh-internal="true">
                             <div id="comp-ividcu8kinlineContent-gridContainer" data-mesh-internal="true">
                               <div data-packed="true" style="width: 712px; pointer-events: none;" class="txtNew" id="comp-ividcu8o">
-                                <h2 class="font_6" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">Data Table</span></h2>
+                                <h2 class="font_6" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">Data</span></h2>
                               </div>
                               <div data-packed="true" style="width: 606px; pointer-events: none;" class="txtNew" id="comp-ividcu8q">
-                                <h6 class="font_6" style="line-height:1.5em;">
-                                  This should be a separate page that describes the original dataset. It should include the dataset attribution (including link to the source and date accessed), the license for the dataset, the size of the
-                                  dataset (including number of rows, columns, file size, or estimate where appropriate), and the content of the dataset listing all relevant columns and their descriptions.
+
+                                <h6 class="font_11" style="line-height:1.5em;">
+                                  For my final project I decided to use two different datasets. Both of them inclide the information about movies.
+                                  I decided to use dataset "<u><a href="https://www.kaggle.com/san-francisco/sf-film-locations-in-san-francisco">SF Film Locations in San Francisco</a></u>" to build the map of locations and to use "<u><a href="https://data.world/data-society/imdb-5000-movie-dataset">IMDB 5000 Movie Dataset</a></u>" to analyse ratings and gross dependencies.
+                                  I also built one prototype using "<u><a href="https://www.kaggle.com/nagenderp/movie-ratings">Movie Ratings</a></u>" dataset with data from "Rotten Tomatoes" website.
+                                </h6></br>
+                              </br>
+                                <h6 class="font_12" style="line-height:1.5em;">
+                                  Film Locations in San Francisco Dataset.
+                                </h6></br>
+                                <h6 class="font_11" style="line-height:1.5em;">
+                                  This dataset can be found <u><a href="https://www.kaggle.com/san-francisco/sf-film-locations-in-san-francisco">here</a></u>. </br>
+                                  The data and used columns are displayed below:
                                 </h6>
+                                </br>
+
+                                <!-- Table with data -->
+                                <table class="font_11">
+                                  <tbody>
+                                    <tr>
+                                      <th>Data</th>
+                                      <th>Description</th>
+                                    </tr>
+                                    <tr>
+                                      <td><u><a href="https://opendatacommons.org/licenses/odbl/1.0/">License</a></u></td>
+                                      <td>The Open Database License (ODbL) is a license agreement intended to
+                                        allow users to freely share, modify, and use this Database while
+                                        maintaining this same freedom for others.</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Size</td>
+                                      <td>11 columns, 1821 rows, 337 KB</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Acknowledgements</td>
+                                      <td>This dataset is maintained using Socrata's API and Kaggle's API.</td>
+                                    </tr>
+
+                                    <!-- Data Columns -->
+                                    <tr>
+                                      <th>Name</th>
+                                      <th>Description</th>
+                                    </tr>
+                                    <tr>
+                                      <td>Title</td>
+                                      <td>Title of the movie.</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Release Year</td>
+                                      <td>The year when movie was released.</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Locations</td>
+                                      <td>Location description where movie was filmed.</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Director</td>
+                                      <td>Director of the movie.</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Latitude & Longitude</td>
+                                      <td>The data was counted by hand. The locations descriptions were modified to street addresses by each row manually.
+                                        And street addresses were used as an input to the <u><a href="https://www.gpsvisualizer.com/geocoder/">application</a></u> to count Longitude and Latitude.</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+
                               </div>
                             </div>
                           </div>
                         </div>
 
 
-                          <!-- THE BLACK PARAM -->
-                          <section style="left:0;width:100%;min-width:980px;height:auto;top:;bottom:;right:;position:;margin-left:0" data-responsive="true" data-is-screen-width="true" data-col-margin="0" data-row-margin="0" class="strc1"
-                            id="comp-ividcu8f">
+                        <!-- black footer -->
+                        <footer style="bottom:auto;left:0;margin-left:0;width:100%;min-width:980px;top:;right:;position:" class="style-k8nvc4vq_footer style-k8nvc4vq" tabindex="-1" data-site-width="980" data-fixedposition="false"
+                          data-isrunninginmobile="false" data-is-absolute-layout="false" data-state=" " id="SITE_FOOTER">
+                          <div style="left:0;width:100%" id="SITE_FOOTERscreenWidthBackground" class="style-k8nvc4vqscreenWidthBackground">
+                            <div class="style-k8nvc4vq_bg"></div>
+                          </div>
+                          <div style="width:100%" id="SITE_FOOTERcenteredContent" class="style-k8nvc4vqcenteredContent">
+                            <div style="margin-left:calc((100% - 980px) / 2);width:980px" id="SITE_FOOTERbg" class="style-k8nvc4vqbg">
+                              <div class="style-k8nvc4vq_bg-center"></div>
+                            </div>
+                            <div id="SITE_FOOTERinlineContent" class="style-k8nvc4vqinlineContent">
+                              <div id="SITE_FOOTERinlineContent-gridWrapper" data-mesh-internal="true">
+                                <div id="SITE_FOOTERinlineContent-gridContainer" data-mesh-internal="true">
 
-                            <div style="position:relative;width:calc(100% - 0px);min-width:980px" id="comp-ividcu8finlineContent" class="strc1inlineContent">
-                              <div style="position:relative;width:100%;left:0;flex:980;margin-left:0;min-width:980px;top:0;margin-top:0;margin-bottom:0;height:;display:flex;bottom:;right:" data-content-width="980" data-is-mesh="true" class="strc1"
-                                id="comp-ividcu8k">
-                                <div style="position: absolute; top: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: auto; left: 0px; right: 0px; bottom: 0px;" data-page-id="do3fh" data-enable-video="true" data-bg-effect-name=""
-                                  data-media-type="" data-use-clip-path="" data-needs-clipping="" data-wix-video-layout="true" class="strc1balata" id="comp-ividcu8kbalata">
-                                  <div style="position:absolute;width:100%;height:100%;top:0;background-color:rgba(0, 0, 0, 1)" class="bgColor" id="comp-ividcu8kbalatabgcolor">
+                                  <div data-packed="true" style="width: 712px; pointer-events: none;" class="txtNew" id="comp-ividcu8o">
                                   </div>
-                                </div>
-                                <div style="width:100%;position:relative;top:0;bottom:0" class="strc1inlineContent" id="comp-ividcu8kinlineContent">
-                                  <div id="comp-ividcu8kinlineContent-gridWrapper" data-mesh-internal="true">
-                                    <div id="comp-ividcu8kinlineContent-gridContainer" data-mesh-internal="true">
-                                      <div data-packed="true" style="width: 712px; pointer-events: none;" class="txtNew" id="comp-ividcu8o">
-                                        <h2 class="font_2" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">Dataset</span></h2>
-                                      </div>
-                                      <div data-packed="true" style="width: 606px; pointer-events: none;" class="txtNew" id="comp-ividcu8q">
-                                        <h6 class="font_6" style="line-height:1.5em;">
-                                          This should be a separate page that describes the original dataset. It should include the dataset attribution (including link to the source and date accessed), the license for the dataset, the size of the
-                                          dataset (including number of rows, columns, file size, or estimate where appropriate), and the content of the dataset listing all relevant columns and their descriptions.
-                                        </h6>
-                                      </div>
-                                    </div>
+                                  <div data-packed="true" style="width: 606px; pointer-events: none;" class="txtNew" id="comp-ividcu8q">
+                                    <h6 class="font_12" style="line-height:1.5em;">
+                                      IMDB 5000 Movie Dataset
+                                    </h6></br>
+                                    <h6 class="font_11" style="line-height:1.5em;">
+                                      This dataset can be found <u><a href="https://data.world/data-society/imdb-5000-movie-dataset">here</a></u>. </br>
+                                      The data and used columns are displayed below:
+                                    </h6>
+                                    </br>
+
+                                    <!-- Table with data -->
+                                    <table class="font_11">
+                                      <tbody>
+                                        <tr>
+                                          <th>Data</th>
+                                          <th>Description</th>
+                                        </tr>
+                                        <tr>
+                                          <td><u><a href="https://data.world/license-help">License</a></u></td>
+                                          <td>The work has been dedicated to the public domain by waiving all rights to the work worldwide under copyright law, including all related and neighboring rights, to the extent allowed by law.</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Size</td>
+                                          <td>28 columns, 5044 rows, 1.43 MB</td>
+                                        </tr>
+
+                                        <!-- Data Columns -->
+                                        <tr>
+                                          <th>Name</th>
+                                          <th>Description</th>
+                                        </tr>
+                                        <tr>
+                                          <td>Movie Title</td>
+                                          <td>Title of the movie.</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Genre</td>
+                                          <td>Genre of the movie. Was edited to leave the main one.</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Director Name</td>
+                                          <td>Director of the movie.</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Gross</td>
+                                          <td>Gross of the movie.</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Budget</td>
+                                          <td>Budget of the movie.</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Imdb Score</td>
+                                          <td>Imdb score of the movie.</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+
+
+
                                   </div>
+
                                 </div>
                               </div>
-                          </section>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    </footer>
           </main>
 
           <!-- black footer -->
@@ -204,20 +324,20 @@
                       </div>
                     </a></li>
                   <li data-direction="ltr" data-listposition="right" data-data-id="dataItem-ivhzdnii" class="ddm1repeaterButton" data-state="menu  idle link notMobile" id="comp-ivgjuufw2" data-original-gap-between-text-and-btn="10"
-                    aria-hidden="false" style="width: 113px; height: 30px; position: relative; box-sizing: border-box; overflow: visible;"><a data-listposition="right" aria-haspopup="false" href="prototype.html" target="_self" data-keep-roots="true"
+                    aria-hidden="false" style="width: 130px; height: 30px; position: relative; box-sizing: border-box; overflow: visible;"><a data-listposition="right" aria-haspopup="false" href="locations.html" target="_self" data-keep-roots="true"
                       data-anchor-comp-id="" data-anchor="dataItem-ividcu8d" id="comp-ivgjuufw2linkElement" class="ddm1repeaterButtonlinkElement">
                       <div class="ddm1repeaterButton_gapper">
                         <div style="text-align:right" id="comp-ivgjuufw2bg" class="ddm1repeaterButtonbg">
-                          <p style="text-align: right; line-height: 30px;" id="comp-ivgjuufw2label" class="ddm1repeaterButtonlabel">P R O T O T Y P E</p>
+                          <p style="text-align: right; line-height: 30px;" id="comp-ivgjuufw2label" class="ddm1repeaterButtonlabel">L O C A T I O N &nbsp; M A P</p>
                         </div>
                       </div>
                     </a></li>
                   <li data-direction="ltr" data-listposition="right" data-data-id="dataItem-ivhzdnii" class="ddm1repeaterButton" data-state="menu  idle link notMobile" id="comp-ivgjuufw2" data-original-gap-between-text-and-btn="10"
-                    aria-hidden="false" style="width: 113px; height: 30px; position: relative; box-sizing: border-box; overflow: visible;"><a data-listposition="right" aria-haspopup="false" href="visual.html" target="_self" data-keep-roots="true"
+                    aria-hidden="false" style="width: 130px; height: 30px; position: relative; box-sizing: border-box; overflow: visible;"><a data-listposition="right" aria-haspopup="false" href="ratings.html" target="_self" data-keep-roots="true"
                       data-anchor-comp-id="" data-anchor="dataItem-ividcu8d" id="comp-ivgjuufw2linkElement" class="ddm1repeaterButtonlinkElement">
                       <div class="ddm1repeaterButton_gapper">
                         <div style="text-align:right" id="comp-ivgjuufw2bg" class="ddm1repeaterButtonbg">
-                          <p style="text-align: right; line-height: 30px;" id="comp-ivgjuufw2label" class="ddm1repeaterButtonlabel">V I S U A L</p>
+                          <p style="text-align: right; line-height: 30px;" id="comp-ivgjuufw2label" class="ddm1repeaterButtonlabel">R A T I N G S</p>
                         </div>
                       </div>
                     </a></li>
@@ -250,7 +370,7 @@
                 </div>
               </a></div>
             <div id="comp-ivhrfpvn" data-align="left" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="224" data-height="40" style="z-index: 50; height: 40px; min-height: 18px; width: 224px;" class="b3"
-              data-state="desktop shouldUseFlex left"><a href="https://betlakes.wixsite.com/mysite-1" target="_self" id="comp-ivhrfpvnlink" class="b3link"><span style="margin-left:0" id="comp-ivhrfpvnlabel" class="b3label">B E T T Y</span></a></div>
+              data-state="desktop shouldUseFlex left"><a href="index.html" target="_self" id="comp-ivhrfpvnlink" class="b3link"><span style="margin-left:0" id="comp-ivhrfpvnlabel" class="b3label">B E T T Y</span></a></div>
           </div>
         </div>
       </div>

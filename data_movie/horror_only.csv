@@ -1,0 +1,233 @@
+color,director_name,num_critic_for_reviews,duration,director_facebook_likes,actor_3_facebook_likes,actor_2_name,actor_1_facebook_likes,gross,genres,actor_1_name,movie_title,num_voted_users,cast_total_facebook_likes,actor_3_name,facenumber_in_poster,plot_keywords,num_user_for_reviews,language,country,content_rating,budget,title_year,actor_2_facebook_likes,imdb_score,aspect_ratio,movie_facebook_likes
+Color,Renny Harlin,167,125,212,394,Alan Ford,613,41814863,Horror,James D'Arcy,Exorcist: The Beginning ,28635,1970,Izabella Scorupco,0,archeologist,308,English,USA,R,50000000,2004,422,5.1,2,893
+Color,Peter Hyams,95,110,0,308,Penelope Ann Miller,510,33927476,Horror,John Kapelos,The Relic ,19176,1976,Chi Muoi Lo,0,fire,165,English,UK,R,40000000,1997,344,5.7,2.35,956
+Color,Paul W.S. Anderson,172,130,545,552,Joely Richardson,722,26616590,Horror,Sean Pertwee,Event Horizon ,120416,2525,Kathleen Quinlan,0,solar system,857,English,UK,R,60000000,1997,585,6.7,2.35,10000
+Color,Walter Hill,100,91,394,68,Wilson Cruz,889,14218868,Horror,Robert Forster,Supernova ,14596,1262,Vanessa Marshall,0,deep space,282,English,USA,PG-13,65000000,2000,290,4.8,2.35,589
+Color,Hideo Nakata,196,128,62,874,Gary Cole,6000,75888270,Horror,Naomi Watts,The Ring Two ,71153,10163,Sissy Spacek,0,cartoon on tv,560,English,USA,PG-13,,2005,989,5.4,1.85,0
+Color,Chuck Bowman,32,89,42,235,Lochlyn Munro,598,,Horror,P.J. Soles,The Tooth Fairy ,1263,2353,Steve Bacic,0,bare breasts,32,English,USA,,1500000,2006,555,4.6,1.78,352
+Color,Albert Hughes,208,122,117,140,Jason Flemyng,40000,31598308,Horror,Johnny Depp,From Hell ,124765,41636,Ian Richardson,1,freemason,541,English,USA,R,35000000,2001,1000,6.8,2.35,0
+Color,James Wan,300,134,0,336,Frances O'Connor,1000,102310175,Horror,Javier Botet,The Conjuring 2 ,64989,2676,Robin Atkin Downes,0,based on supposedly true story,279,English,USA,R,40000000,2016,575,7.8,2.35,40000
+Color,Wes Craven,212,116,0,71,Roger Jackson,287,89138076,Horror,Kelly Rutherford,Scream 3 ,98535,600,Nancy O'Dell,4,death,734,English,USA,R,40000000,2000,157,5.5,2.35,0
+Color,David R. Ellis,221,82,160,748,Andrew Fiscella,164000,66466372,Horror,Krista Allen,The Final Destination ,75345,303717,Shantel VanSanten,0,attempted suicide,290,English,USA,R,40000000,2009,137000,5.2,2.35,0
+ Black and White,Iain Softley,193,104,34,280,Deneen Tyler,545,47806295,Horror,Gena Rowlands,The Skeleton Key ,87447,1274,Joy Bryant,0,attic,371,English,USA,PG-13,43000000,2005,351,6.5,2.35,0
+Color,Mathieu Kassovitz,207,98,326,416,Charles S. Dutton,21000,59588068,Horror,Robert Downey Jr.,Gothika ,89557,22318,Bernard Hill,1,memory,376,English,USA,R,40000000,2003,534,5.8,1.85,0
+Color,Wes Craven,420,111,0,687,Aimee Teegarden,2000,38176892,Horror,Alison Brie,Scream 4 ,104119,4486,Shenae Grimes-Beech,0,author,518,English,USA,R,40000000,2011,741,6.2,2.35,26000
+Color,Steven Quale,277,92,77,495,Jacqueline MacInnes Wood,703,42575718,Horror,Emma Bell,Final Destination 5 ,83788,3074,Courtney B. Vance,0,blood splatter,227,English,USA,R,40000000,2011,682,5.9,2.35,20000
+Color,John Frankenheimer,70,99,287,44,Temuera Morrison,10000,27663982,Horror,Marlon Brando,The Island of Dr. Moreau ,26051,10469,Marco Hofschneider,2,animal experimentation,164,English,USA,PG-13,40000000,1996,368,4.4,2.35,0
+Color,Stephen Hopkins,190,99,81,135,Andrea Frankle,327,25117498,Horror,Stephen Rea,The Reaping ,37412,960,William Ragsdale,0,biblical plague,178,English,USA,R,40000000,2007,253,5.7,2.35,0
+Color,John Carpenter,297,109,0,145,Richard Masur,957,13782838,Horror,Wilford Brimley,The Thing ,258078,1757,David Clennon,0,alien creature,911,English,USA,R,15000000,1982,163,8.2,2.35,23000
+Color,Wes Craven,256,101,0,574,Lin Shaye,40000,26505000,Horror,Johnny Depp,A Nightmare on Elm Street ,149285,42918,Amanda Wyss,1,freddy krueger,668,English,USA,X,1800000,1984,852,7.5,1.85,10000
+Color,Tarsem Singh,225,109,763,311,Jake Weber,812,61280963,Horror,Dylan Baker,The Cell ,79877,2474,James Gammon,1,coma,677,English,USA,R,33000000,2000,551,6.3,2.35,0
+Color,Albert Hughes,208,122,117,140,Jason Flemyng,40000,31598308,Horror,Johnny Depp,From Hell ,124765,41636,Ian Richardson,1,freemason,541,English,USA,R,35000000,2001,1000,6.8,2.35,0
+Color,Jaume Collet-Serra,228,108,174,324,Paris Hilton,730,32048809,Horror,Robert Ri'chard,House of Wax ,94456,2178,Brian Van Holt,0,brother sister relationship,576,English,Australia,R,30000000,2005,716,5.3,1.85,0
+Color,Alexandre Aja,208,112,192,844,Cameron Boyce,1000,30691439,Horror,Jason Flemyng,Mirrors ,86205,3185,Julian Glover,0,estranged wife,232,English,USA,R,35000000,2008,915,6.2,2.35,5000
+Color,Rupert Wainwright,131,103,9,573,Enrico Colantoni,826,50041732,Horror,Nia Long,Stigmata ,54390,3004,Portia de Rossi,0,catholic,398,English,USA,R,29000000,1999,724,6.2,2.35,0
+Color,Sam Raimi,397,99,0,828,Alison Lohman,2000,42057340,Horror,Bojana Novakovic,Drag Me to Hell ,158354,5642,Reggie Lee,0,evil,691,English,USA,PG-13,30000000,2009,1000,6.6,2.35,11000
+Color,David Slade,304,113,171,63,Mark Rendall,430,39568996,Horror,Danny Huston,30 Days of Night ,138435,814,Megan Franich,0,alaska,527,English,USA,R,32000000,2007,72,6.6,2.35,0
+Color,Scott Derrickson,242,118,301,897,Dorian Missick,2000,30523568,Horror,Olivia Munn,Deliver Us from Evil ,54447,5697,Edgar Ramírez,0,confession,201,English,USA,R,30000000,2014,1000,6.2,2.35,18000
+Color,Christian Alvart,167,109,22,355,Callum Rennie,14000,13248477,Horror,Bradley Cooper,Case 39 ,60555,15790,Vanesa Tomasino,1,death,174,English,USA,R,27000000,2009,716,6.2,2.35,0
+Color,David R. Ellis,175,90,160,392,Michael Landes,748,46455802,Horror,Sarah Carter,Final Destination 2 ,120786,3172,Keegan Connor Tracy,0,car accident,472,English,USA,R,26000000,2003,439,6.2,1.85,0
+Color,James Wong,216,86,70,318,Gina Holden,440,54098051,Horror,Chelan Simmons,Final Destination 3 ,102861,2420,Crystal Lowe,0,amusement park,571,English,Germany,R,25000000,2006,346,5.8,2.35,0
+Color,Victor Salva,167,104,108,177,Jonathan Breck,296,35143332,Horror,Nicki Aycox,Jeepers Creepers II ,45102,1340,Billy Aaron Brown,0,cheerleader,316,English,USA,R,17000000,2003,270,5.6,2.35,0
+Color,Carter Smith,233,93,27,49,Jonathan Tucker,960,17427926,Horror,Laura Ramsey,The Ruins ,60062,1749,Sergio Calderón,0,bow and arrow,351,English,USA,R,8000000,2008,664,5.9,2.35,0
+Color,Wes Craven,160,107,0,255,Emily Meade,798,14637490,Horror,Frank Grillo,My Soul to Take ,16411,2537,Zena Grey,2,evil,136,English,USA,R,25000000,2010,374,4.8,2.35,0
+Color,David R. Ellis,231,90,160,852,Joel David Moore,963,18860403,Horror,Chris Zylka,Shark Night 3D ,20823,4952,Katharine McPhee,0,lake,130,English,USA,PG-13,25000000,2011,936,4,1.85,0
+Color,Ole Bornedal,264,92,30,309,Madison Davenport,941,49122319,Horror,Kyra Sedgwick,The Possession ,47169,2348,Natasha Calis,0,basketball coach,162,English,USA,PG-13,14000000,2012,459,5.9,2.35,17000
+Color,Wes Craven,195,120,0,221,Jada Pinkett Smith,865,101334374,Horror,Omar Epps,Scream 2 ,124941,2321,Kevin Williamson,5,college,488,English,USA,R,24000000,1997,851,6.1,2.35,0
+Color,Danny Cannon,125,100,41,970,Mekhi Phifer,45000,39989008,Horror,Muse Watson,I Still Know What You Did Last Summer ,55398,49847,Bill Cobbs,2,bahamas,418,English,USA,R,24000000,1998,1000,4.6,2.35,891
+Color,James Wong,211,98,70,591,Brendan Fehr,1000,53302314,Horror,Daniel Roebuck,Final Destination ,181058,3345,Kerr Smith,1,dead teenager,674,English,USA,R,23000000,2000,847,6.7,1.85,0
+Color,David Twohy,214,112,123,787,Radha Mitchell,14000,39235088,Horror,Vin Diesel,Pitch Black ,193962,16196,Cole Hauser,0,captain,805,English,USA,R,23000000,2000,991,7.1,2.35,5000
+ Black and White,Katt Shea,85,104,52,484,Rachel Blanchard,711,17757087,Horror,Jason London,The Rage: Carrie 2 ,13065,3162,Eddie Kaye Thomas,1,high school,253,English,USA,R,21000000,1999,490,4.6,1.85,897
+Color,David Cronenberg,196,115,0,716,Sarah Polley,1000,2840417,Horror,Jennifer Jason Leigh,eXistenZ ,77493,2990,Callum Rennie,0,assassin,527,English,Canada,R,31000000,1999,900,6.8,1.85,6000
+Color,James Wan,511,112,0,697,Lili Taylor,6000,137387272,Horror,Mackenzie Foy,The Conjuring ,300110,9049,Hayley McFarland,0,based on true story,807,English,USA,R,20000000,2013,960,7.5,2.35,131000
+Color,Jaume Collet-Serra,265,123,174,602,CCH Pounder,87000,41573740,Horror,Jimmy Bennett,Orphan ,141663,88953,Aryana Engineer,1,alcoholism,383,English,USA,R,,2009,1000,7,1.85,20000
+Color,Takashi Shimizu,131,137,70,464,Sarah Roemer,4000,39143839,Horror,Sarah Michelle Gellar,The Grudge 2 ,38658,5746,Matthew Knight,0,curse,284,English,USA,PG-13,20000000,2006,884,5,1.85,930
+Color,John Luessenhop,282,92,34,322,Keram Malicki-Sánchez,383,34334256,Horror,Gunnar Hansen,Texas Chainsaw 3D ,35131,1945,Shaun Sipos,0,chainsaw,255,English,USA,R,11000000,2013,333,4.8,2.35,16000
+Color,Steve Beck,156,91,17,78,Ron Eldard,534,30079316,Horror,Isaiah Washington,Ghost Ship ,75920,1083,Francesca Rettondini,0,decapitation,474,English,USA,R,35000000,2002,385,5.5,1.85,0
+Color,Eric Valette,141,87,2,270,Jason Beghe,741,26876529,Horror,Johnny Lewis,One Missed Call ,26624,1834,Margaret Cho,1,death,189,English,Japan,PG-13,27000000,2008,297,3.9,1.85,0
+Color,William Brent Bell,112,75,19,806,Frankie Muniz,1000,23078294,Horror,Adam Goldberg,Stay Alive ,25870,3590,Samaire Armstrong,0,countess,281,English,USA,PG-13,9000000,2006,934,5.1,2.35,0
+ Black and White,Alfred Hitchcock,290,108,13000,285,Vera Miles,606,32000000,Horror,Janet Leigh,Psycho ,422432,1885,John Gavin,2,money,1040,English,USA,R,806947,1960,332,8.5,1.85,18000
+Color,Uwe Boll,148,94,892,81,Darren Shahlavi,310,5132655,Horror,Catherine Lough Haggquist,Alone in the Dark ,37626,838,Karin Konoval,0,artifact,521,English,Canada,R,20000000,2005,294,2.3,2.35,1000
+Color,Wes Craven,242,103,0,157,W. Earl Brown,611,103001286,Horror,David Arquette,Scream ,222018,1212,Roger Jackson,0,mask,869,English,USA,R,15000000,1996,422,7.2,2.35,11000
+Color,Steve Beck,149,91,17,670,Embeth Davidtz,1000,41867960,Horror,Shannon Elizabeth,Thir13en Ghosts ,65512,3023,F. Murray Abraham,0,collector,478,English,USA,R,20000000,2001,795,5.5,1.33,0
+Color,William Malone,147,93,37,545,Peter Gallagher,885,40846082,Horror,Jeffrey Combs,House on Haunted Hill ,45317,2872,Bridgette Wilson-Sampras,0,billionaire,536,English,USA,R,19000000,1999,828,5.6,1.37,0
+Color,Breck Eisner,308,101,42,219,Glenn Morshower,991,39103378,Horror,Radha Mitchell,The Crazies ,93272,2609,John Aylward,0,deputy,251,English,USA,R,20000000,2010,894,6.5,2.35,0
+ Black and White,George A. Romero,252,97,0,233,Shawn Roberts,654,20433940,Horror,Tony Nappo,Land of the Dead ,78883,1876,Pedro Miguel Arce,8,apocalypse,662,English,Canada,R,15000000,2005,529,6.2,2.35,0
+Color,Nelson McCormick,146,89,29,458,Scott Porter,2000,43818159,Horror,Ming-Na Wen,Prom Night ,27664,4867,Collins Pennie,0,friend,260,English,USA,PG-13,20000000,2008,690,3.9,2.35,1000
+Color,Zack Ward,15,92,662,161,Anna Harr,662,,Horror,Zack Ward,Restoration ,436,1498,James Cullen Bressack,0,,6,English,USA,,,2016,290,4,,378
+Color,George A. Romero,184,87,0,83,John Amplas,1000,,Horror,Greg Nicotero,Day of the Dead ,49669,1592,Joseph Pilato,1,bunker,419,English,USA,Unrated,3500000,1985,177,7.2,1.85,3000
+Color,Jim Gillespie,140,99,13,681,Sarah Michelle Gellar,45000,72219395,Horror,Muse Watson,I Know What You Did Last Summer ,105585,50284,Anne Heche,1,beach,419,English,USA,R,17000000,1997,4000,5.6,2.35,0
+Color,John Carpenter,318,101,0,598,Donald Pleasence,2000,47000000,Horror,Jamie Lee Curtis,Halloween ,157857,4400,P.J. Soles,0,halloween,1191,English,USA,R,300000,1978,742,7.9,2.35,12000
+Color,Kevin Greutert,178,90,52,298,Gina Holden,723,45670855,Horror,Costas Mandylor,Saw 3D: The Final Chapter ,67978,1978,Betsy Russell,0,blood splatter,279,English,Canada,R,20000000,2010,346,5.6,1.85,12000
+Color,Alexandre Aja,265,108,192,580,Greg Nicotero,1000,41777564,Horror,Dan Byrd,The Hills Have Eyes ,129719,4500,Vinessa Shaw,0,desert,855,English,USA,R,15000000,2006,1000,6.4,2.35,0
+Color,Robert Harmon,81,89,11,973,Ethan Embry,1000,12693621,Horror,Alexander Gould,They ,10885,4060,Marc Blucas,0,darkness,271,English,USA,PG-13,17000000,2002,982,4.8,2.35,814
+Color,Fede Alvarez,543,96,201,58,Elizabeth Blackmore,394,54239856,Horror,Lou Taylor Pucci,Evil Dead ,125016,673,Ellen Sandweiss,0,book of the dead,789,English,USA,R,17000000,2013,150,6.5,2.35,70000
+Color,Todd Lincoln,145,83,57,62,Rick Gomez,465,4930798,Horror,Julianna Guill,The Apparition ,16268,730,Tim Williams,1,e mail,108,English,USA,PG-13,17000000,2012,152,4.1,2.35,0
+Color,Jonathan Liebesman,196,83,473,597,Jordana Brewster,20000,39511038,Horror,Matt Bomer,The Texas Chainsaw Massacre: The Beginning ,56269,26402,Lew Temple,0,cannibal,366,English,USA,R,16000000,2006,4000,5.9,1.85,0
+Color,John Carpenter,318,101,0,598,Donald Pleasence,2000,47000000,Horror,Jamie Lee Curtis,Halloween ,157857,4400,P.J. Soles,0,halloween,1191,English,USA,R,300000,1978,742,7.9,2.35,12000
+Color,Simon West,152,87,165,383,Tessa Thompson,1000,47860214,Horror,Madeline Carroll,When a Stranger Calls ,34711,2452,Brian Geraghty,0,babysitting,468,English,USA,PG-13,15000000,2006,431,5,2.35,0
+Color,Robert Rodriguez,154,104,0,1000,Salma Hayek,4000,40064955,Horror,Jordana Brewster,The Faculty ,92074,12170,Clea DuVall,1,alien,502,English,USA,R,15000000,1998,4000,6.4,1.85,0
+Color,Rob Zombie,220,119,0,593,Tyler Mane,908,33386128,Horror,Scout Taylor-Compton,Halloween II ,36372,3226,Margot Kidder,0,halloween,491,English,USA,R,15000000,2009,764,4.9,1.85,3000
+Color,Martin Weisz,161,89,7,399,Daniella Alonso,919,20801344,Horror,Jeff Kober,The Hills Have Eyes II ,49721,2559,Jacob Vargas,0,desert,211,English,USA,R,15000000,2007,557,5.1,2.35,0
+Color,John Ottman,108,97,83,579,Joey Lawrence,912,21468807,Horror,Loretta Devine,Urban Legends: Final Cut ,13048,2682,Jacinda Barrett,2,film set,227,English,USA,R,14000000,2000,786,4.1,2.35,243
+Color,David Nutter,96,84,119,918,Ethan Embry,989,17411331,Horror,Bruce Greenwood,Disturbing Behavior ,17328,4660,Katharine Isabelle,3,blue ribbon,237,English,Australia,R,15000000,1998,982,5.5,1.85,673
+Color,Patrick Lussier,264,101,71,725,Jaime King,10000,51527787,Horror,Jensen Ackles,My Bloody Valentine ,45603,14159,Edi Gathegi,0,coma,268,English,USA,R,15000000,2009,960,5.5,1.85,0
+Color,Ole Bornedal,264,92,30,309,Madison Davenport,941,49122319,Horror,Kyra Sedgwick,The Possession ,47169,2348,Natasha Calis,0,basketball coach,162,English,USA,PG-13,14000000,2012,459,5.9,2.35,17000
+Color,Jamie Blanks,101,99,9,648,Loretta Devine,975,38048637,Horror,Alicia Witt,Urban Legend ,47814,3500,Julian Richings,4,campus,426,English,USA,R,14000000,1998,912,5.5,2.35,0
+Color,John Boorman,82,118,128,467,Richard Burton,931,,Horror,Linda Blair,Exorcist II: The Heretic ,16294,2704,Ned Beatty,7,demon,252,English,USA,R,14000000,1977,726,3.7,1.85,889
+Color,Courtney Solomon,125,91,31,50,James D'Arcy,874,16298046,Horror,Sissy Spacek,An American Haunting ,22207,1608,Vernon Dobtcheff,0,flashback,747,English,UK,PG-13,14000000,2005,613,5,2.35,0
+Color,Frank Darabont,330,126,0,745,Alexa Davalos,2000,25592632,Horror,Toby Jones,The Mist ,220475,5371,Jeffrey DeMunn,0,desperation,1066,English,USA,R,18000000,2007,850,7.2,1.85,20000
+Color,Mark Neveldine,93,91,83,794,Alison Lohman,3000,1712111,Horror,Djimon Hounsou,The Vatican Tapes ,7199,7875,Dougray Scott,0,evil,53,English,USA,PG-13,8495000,2015,1000,4.5,1.85,0
+Color,Stewart Hendler,167,101,10,472,Margo Harshman,1000,11956207,Horror,Julian Morris,Sorority Row ,24012,3142,Rumer Willis,2,prank gone wrong,126,English,USA,R,16000000,2009,668,5.1,2.35,0
+Color,William Friedkin,304,132,607,259,Linda Blair,1000,204565000,Horror,Ellen Burstyn,The Exorcist ,284252,2466,Lee J. Cobb,0,demonic possession,1058,English,USA,R,8000000,1973,931,8,1.37,18000
+Color,John Erick Dowdle,198,89,66,1000,Jay Hernandez,137000,31691811,Horror,Andrew Fiscella,Quarantine ,57446,140268,Dania Ramirez,0,apartment building,369,English,USA,R,12000000,2008,1000,6,1.85,0
+Color,David Moreau,172,92,0,451,Alessandro Nivola,17000,31397498,Horror,Chloë Grace Moretz,The Eye ,44130,18765,Obba Babatundé,1,cellular memory,156,English,USA,PG-13,12000000,2008,527,5.4,2.35,0
+Color,John Frankenheimer,70,102,287,79,Richard Dysart,452,,Horror,Talia Shire,Prophecy ,3000,729,Robert Foxworth,1,cabin,75,English,USA,PG,12000000,1979,122,5.4,2.35,902
+Color,David Koepp,164,99,192,282,Kathryn Erbe,347,21133087,Horror,Illeana Douglas,Stir of Echoes ,62468,1254,Lusia Strus,0,disappearance,374,English,USA,R,12000000,1999,301,7,1.85,0
+Color,Kevin Greutert,156,92,52,647,Shawnee Smith,723,27669413,Horror,Costas Mandylor,Saw VI ,76207,3101,George Newbern,0,deception,194,English,Canada,R,11000000,2009,651,6,1.85,0
+Color,Tobe Hooper,52,100,365,225,Bud Cort,425,4884663,Horror,Louise Fletcher,Invaders from Mars ,5187,1661,William Bassett,0,alien,64,English,USA,PG,12000000,1986,394,5.5,2.35,902
+Color,David Hackl,160,95,43,357,Costas Mandylor,3000,56729973,Horror,Julie Benz,Saw V ,88529,5286,Scott Patterson,0,blood splatter,262,English,USA,R,10800000,2008,723,5.8,1.85,0
+Color,Ruairi Robinson,120,98,7,507,Olivia Williams,805,23838,Horror,Romola Garai,The Last Days on Mars ,28570,2271,Tom Cullen,0,alien infection,160,English,UK,R,7000000,2013,766,5.5,2.35,0
+Color,Jaume Balagueró,108,103,57,132,Giancarlo Giannini,541,22160085,Horror,Lena Olin,Darkness ,16747,1228,Francesc Pagès,0,9 year old,349,English,USA,PG-13,10600000,2002,451,5.4,2.35,1000
+Color,Darren Lynn Bousman,210,121,163,482,Shawnee Smith,723,80150343,Horror,Costas Mandylor,Saw III ,142115,3189,Leigh Whannell,0,brutality,614,English,USA,R,10000000,2006,651,6.2,1.85,0
+Color,Darren Lynn Bousman,190,96,163,448,Shawnee Smith,723,63270259,Horror,Costas Mandylor,Saw IV ,111087,3492,Angus Macfadyen,0,detective,319,English,USA,R,10000000,2007,651,5.9,1.85,0
+Color,Takashi Shimizu,203,98,70,634,Clea DuVall,4000,110175871,Horror,Sarah Michelle Gellar,The Grudge ,115050,7461,Ted Raimi,0,american,911,English,USA,PG-13,10000000,2004,1000,5.9,1.85,4000
+Color,Victor Salva,190,90,108,270,Patricia Belcher,1000,37470017,Horror,Eileen Brennan,Jeepers Creepers ,86890,1982,Jonathan Breck,0,demon,985,English,Germany,R,10000000,2001,322,6.1,1.85,0
+Color,William Brent Bell,159,97,19,130,Rupert Evans,4000,35794166,Horror,Lauren Cohan,The Boy ,35654,4687,Stephanie Lemelin,0,animate doll,155,English,USA,PG-13,10000000,2016,334,6,2.35,20000
+Color,John Erick Dowdle,273,80,66,816,Bokeem Woodbine,2000,33583175,Horror,Bojana Novakovic,Devil ,104089,5628,Geoffrey Arend,0,devil,319,English,USA,PG-13,10000000,2010,904,6.3,2.35,16000
+Color,Brett Leonard,48,140,32,120,Austin O'Brien,535,32101000,Horror,Jeff Fahey,The Lawnmower Man ,27800,1109,Troy Evans,0,intelligence,96,English,UK,R,10000000,1992,211,5.4,1.85,0
+Color,David Cronenberg,112,103,0,275,Herbert Lom,1000,,Horror,Tom Skerritt,The Dead Zone ,44804,2013,Anthony Zerbe,0,car accident,182,English,USA,R,10000000,1983,278,7.2,1.85,0
+Color,Ciarán Foy,189,97,11,220,James Ransone,1000,27736779,Horror,Laila Haley,Sinister 2 ,25210,2403,Jaden Klein,0,deputy,126,English,USA,R,10000000,2015,412,5.2,2.35,13000
+Color,Jamie Blanks,120,96,9,448,Jessica Capshaw,690,20384136,Horror,Marley Shelton,Valentine ,20467,2402,Johnny Whitworth,1,dance,371,English,USA,R,10000000,2001,533,4.7,2.35,0
+Color,Rob Schmidt,191,84,36,648,Lindy Booth,2000,15417771,Horror,Kevin Zegers,Wrong Turn ,87494,3416,Julian Richings,1,forest,540,English,USA,R,12600000,2003,683,6.1,1.85,0
+Color,Jason Zada,185,93,4,4,Stephanie Vogt,533,26583369,Horror,Eoin Macken,The Forest ,20837,578,Gen Seto,1,forest,127,English,USA,PG-13,10000000,2016,35,4.8,1.85,10000
+Color,Andrew Traucki,102,94,10,72,Gyton Grantley,122,,Horror,Damian Walshe-Howling,The Reef ,11950,375,Adrienne Pickering,0,boat,89,English,Australia,R,,2010,109,5.8,2.35,0
+Color,Douglas Aarniokoski,129,84,36,899,Katrina Bowden,1000,,Horror,Boris Kodjoe,Nurse 3D ,7286,4686,Kathleen Turner,0,carnage,75,English,USA,R,10000000,2013,948,4.6,2.35,0
+Color,Gary Sherman,66,98,17,770,Heather O'Rourke,1000,14114488,Horror,Tom Skerritt,Poltergeist III ,13190,3827,Zelda Rubinstein,0,aunt niece relationship,114,English,USA,PG-13,10500000,1988,887,4.5,1.85,616
+Color,Ridley Scott,392,116,0,513,Yaphet Kotto,1000,78900000,Horror,Tom Skerritt,Alien ,563827,2524,Bolaji Badejo,0,alien,1110,English,UK,R,11000000,1979,581,8.5,2.35,23000
+Color,Tobe Hooper,277,88,365,177,Edwin Neal,383,30859000,Horror,Gunnar Hansen,The Texas Chain Saw Massacre ,96410,1094,Marilyn Burns,0,cannibal,826,English,USA,R,83532,1974,371,7.5,1.85,0
+Color,Glen Morgan,186,94,17,179,Crystal Lowe,607,16235293,Horror,Oliver Hudson,Black Christmas ,19918,1611,Andrea Martin,0,attic,278,English,USA,R,9000000,2006,318,4.5,2.35,0
+Color,Dario Argento,76,120,930,433,Adrienne Barbeau,982,349618,Horror,John Amos,Two Evil Eyes ,4302,2942,Sally Kirkland,1,black cat,45,English,Italy,R,9000000,1990,602,6.1,1.85,375
+Color,Darren Lynn Bousman,147,150,163,636,Paris Hilton,2000,140244,Horror,Alexa PenaVega,Repo! The Genetic Opera ,20419,4168,Paul Sorvino,1,future,259,English,USA,R,8500000,2008,716,6.7,1.85,8000
+Color,Masayuki Ochiai,135,90,5,297,David Denman,449,25926543,Horror,James Kyson,Shutter ,26609,1534,Daisy Betts,1,car accident,148,English,USA,PG-13,8000000,2008,332,5.2,1.85,0
+Color,Eli Roth,252,94,0,658,Lauren German,1000,17544812,Horror,Jay Hernandez,Hostel: Part II ,69989,4707,Stanislav Ianevski,0,american,384,English,USA,R,10000000,2007,683,5.4,2.35,0
+Color,Nicolas Winding Refn,253,118,0,500,Bella Heathcote,18000,1330827,Horror,Keanu Reeves,The Neon Demon ,9866,19879,Charles Baker,2,beauty,73,English,France,R,7000000,2016,860,7,2.35,0
+Color,Jonathan Liebesman,140,96,474,82,Emma Caulfield,1000,32131483,Horror,Sullivan Stapleton,Darkness Falls ,25870,2212,Angus Sampson,0,boy,369,English,USA,PG-13,11000000,2003,970,4.9,2.35,2000
+Color,Matt Bettinelli-Olpin,137,89,14,270,Allison Miller,971,15818967,Horror,Zach Gilford,Devil's Due ,13913,2517,Vanessa Ray,0,eiffel tower at night,120,English,USA,R,7000000,2014,479,4,1.85,0
+ Black and White,Rob Zombie,202,105,0,303,Matthew McGrory,1000,12583510,Horror,Sid Haig,House of 1000 Corpses ,60709,2444,Erin Daniels,0,actor playing multiple roles,922,English,USA,R,7000000,2003,340,6,1.85,0
+Color,Sharron Miller,8,79,0,23,Elizabeth MacRae,246,,Horror,Bernard Fox,Alien Zone ,440,345,Charles Aidman,0,affair,21,English,USA,PG,350000,1978,29,4.1,,44
+Color,John R. Leonetti,271,99,40,300,Annabelle Wallis,1000,84263837,Horror,Alfre Woodard,Annabelle ,81699,2323,Gabriel Bateman,0,horror movie prequel,291,English,USA,R,6500000,2014,421,5.4,2.35,45000
+Color,Louis Morneau,97,91,38,91,Bob Gunton,730,10149779,Horror,Leon,Bats ,8294,1405,Ned Bellamy,0,animal attack,160,English,USA,PG-13,6500000,1999,461,3.6,2.35,342
+Color,Dominique Othenin-Girard,137,96,2,120,Tamara Glynn,742,11642254,Horror,Donald Pleasence,Halloween 5 ,22929,1308,Troy Evans,1,cat,287,English,USA,X,3000000,1989,256,5.2,1.85,926
+Color,David Cronenberg,179,89,0,15,Leslie Carlson,391,,Horror,Debbie Harry,Videodrome ,60522,477,Reiner Schwarz,0,cyberpunk,228,English,Canada,R,5952000,1983,20,7.3,1.85,0
+Color,Jaume Balagueró,222,85,57,6,Pablo Rosso,37,27024,Horror,Jonathan D. Mellor,[Rec] 2 ,55597,73,Andrea Ros,0,apartment,148,Spanish,Spain,R,5600000,2009,9,6.6,1.85,4000
+Color,Darren Lynn Bousman,250,95,163,651,Tony Nappo,1000,87025093,Horror,Emmanuelle Vaugier,Saw II ,188679,4134,Shawnee Smith,0,death,864,English,USA,R,4000000,2005,654,6.6,1.85,0
+Color,David F. Sandberg,159,81,26,300,Amiah Miller,2000,56536016,Horror,Billy Burke,Lights Out ,13523,3344,Gabriel Bateman,0,based on short film,95,English,USA,PG-13,4900000,2016,509,6.9,2.35,0
+Color,Henry Joost,251,94,24,434,Sprague Grayden,581,104007828,Horror,Johanna Braddy,Paranormal Activity 3 ,76828,2371,Christopher Nicholas Smith,0,animate object,314,English,USA,R,5000000,2011,438,5.8,1.85,24000
+Color,Henry Joost,248,96,24,113,Brendon Eggertsen,235,53884821,Horror,Matt Shively,Paranormal Activity 4 ,51204,799,Alisha Boe,0,boy in a bathtub,247,English,USA,R,5000000,2012,119,4.6,1.85,26000
+Color,David Gelb,152,83,26,801,Mark Duplass,10000,25799043,Horror,Olivia Wilde,The Lazarus Effect ,28513,11771,Donald Glover,0,electrocuted,126,English,USA,PG-13,3300000,2015,830,5.2,2.35,0
+Color,Mike Flanagan,336,104,59,202,Rory Cochrane,972,27689474,Horror,James Lafferty,Oculus ,85688,2071,Garrett Ryan,0,home office,339,English,USA,R,5000000,2013,407,6.5,2.35,23000
+Color,John Erick Dowdle,196,93,66,161,Edwin Hodge,1000,21197315,Horror,Ben Feldman,"As Above, So Below ",49948,1410,Perdita Weeks,0,archeologist,211,English,USA,R,5000000,2014,200,6.1,1.85,14000
+Color,Joe Chappelle,123,93,13,141,Kim Darby,742,15126948,Horror,Donald Pleasence,Halloween: The Curse of Michael Myers ,20815,1227,Mitchell Ryan,0,halloween,335,English,USA,R,5000000,1995,152,4.9,1.85,0
+Color,Dwight H. Little,144,88,27,101,Kathleen Kinmont,742,17768000,Horror,Donald Pleasence,Halloween 4: The Return of Michael Myers ,29629,1136,Ellie Cornell,0,halloween,374,English,USA,R,5000000,1988,120,5.9,1.85,0
+Color,Fred Walton,96,89,17,85,Deborah Foreman,690,12947763,Horror,Thomas F. Wilson,April Fool's Day ,10624,1160,Clayton Rohner,0,april fool's day,125,English,USA,R,5000000,1986,190,6.2,2.35,0
+Color,Gonzalo López-Gallego,228,86,17,205,Ryan Robbins,520,17683670,Horror,Warren Christie,Apollo 18 ,47227,1520,Andrew Airlie,0,cosmonaut,323,English,USA,PG-13,5000000,2011,270,5.2,1.33,0
+Color,J.S. Cardone,56,90,23,560,Kerr Smith,847,6755271,Horror,Brendan Fehr,The Forsaken ,7319,3004,Izabella Miko,4,flashing breasts,131,English,USA,R,5000000,2001,591,5.3,1.85,327
+Color,M. Night Shyamalan,371,94,0,99,Patch Darragh,432,65069140,Horror,Ocean James,The Visit ,65299,1010,Olivia DeJonge,,farm,455,English,USA,PG-13,5000000,2015,309,6.2,1.85,27000
+Color,Oren Peli,56,91,110,14,Sandra Staggs,46,,Horror,Glenn Campbell,Area 51 ,7888,117,Jelena Nik,0,alien,55,English,USA,R,5000000,2015,21,4.2,,0
+Color,Nick Murphy,195,107,58,537,Imelda Staunton,874,,Horror,Isaac Hempstead Wright,The Awakening ,46347,2363,Joseph Mawle,1,boarding school,112,English,UK,R,3000000,2011,579,6.5,2.35,10000
+Color,Eli Roth,303,93,0,581,Takashi Miike,1000,47277326,Horror,Jay Hernandez,Hostel ,138814,2990,Rick Hoffman,0,bratislava,1516,English,USA,R,4800000,2005,1000,5.9,2.35,0
+Color,George A. Romero,274,90,0,231,Shawn Roberts,648,101055,Horror,Julian Richings,Survival of the Dead ,17478,1951,Kathleen Munroe,0,delaware,159,English,USA,R,4000000,2009,529,5,2.35,0
+Color,John Carpenter,172,93,0,133,Peter Jason,355,13008928,Horror,Meg Foster,They Live ,73501,837,George 'Buck' Flower,0,alien,333,English,USA,R,4000000,1988,151,7.3,2.35,27000
+Color,Wes Craven,160,107,0,255,Emily Meade,798,14637490,Horror,Frank Grillo,My Soul to Take ,16411,2537,Zena Grey,2,evil,136,English,USA,R,25000000,2010,374,4.8,2.35,0
+Color,Phil Joanou,39,93,21,359,Shannon Woodward,763,,Horror,Lily Rabe,The Veil ,4146,2651,Kira McLean,2,documentary crew,29,English,USA,R,4000000,2016,637,4.7,2.35,0
+Color,Sean Byrne,182,84,18,35,Jessica McNamee,399,,Horror,Robin McLeavy,The Loved Ones ,27781,644,Victoria Thaine,1,escape,104,English,Australia,R,,2009,129,6.7,2.35,0
+Color,Chris Stokes,14,81,548,104,Rachel Sterling,166,,Horror,Kristen Quintrall,No Vacancy ,1561,609,Black Thomas,0,motel,21,English,USA,R,4000000,2012,134,4.2,,531
+Color,Robert Eggers,425,92,22,159,Kate Dickie,648,25138292,Horror,Julian Richings,The Witch ,66483,1122,Ralph Ineson,0,black magic,452,English,USA,R,3500000,2015,191,6.8,1.66,43000
+Color,George A. Romero,184,87,0,83,John Amplas,1000,,Horror,Greg Nicotero,Day of the Dead ,49672,1592,Joseph Pilato,1,bunker,419,English,USA,Unrated,3500000,1985,177,7.2,1.85,3000
+Color,Gideon Raff,33,94,47,108,Gloria Votsis,430,,Horror,Gideon Emery,Train ,4790,836,Derek Magyar,1,blood splatter,52,English,USA,R,,2008,209,4.8,1.85,804
+Color,Anthony C. Ferrante,139,97,48,689,John Heard,984,,Horror,Ian Ziering,Sharknado ,34532,3075,Cassandra Scerbo,0,cult film,236,English,USA,TV-14,1000000,2013,697,3.3,1.78,93000
+Color,Charles Adelman,4,96,0,460,Kevin Pollak,708,,Horror,Teri Polo,2:13 ,961,2307,Jere Burns,0,death,12,English,USA,,3500000,2009,574,4.8,2.35,211
+Color,Brandon Cronenberg,188,108,43,463,Douglas Smith,691,,Horror,Sarah Gadon,Antiviral ,9356,1962,Caleb Landry Jones,0,celebrity,47,English,Canada,Not Rated,3200000,2012,480,5.7,1.85,0
+Color,Tod Williams,264,98,21,189,Molly Ephraim,438,84749884,Horror,Sprague Grayden,Paranormal Activity 2 ,82133,1081,Micah Sloat,0,california,359,English,USA,R,3000000,2010,332,5.7,1.85,14000
+Color,James DeMonaco,361,85,65,535,Adelaide Kane,942,64423650,Horror,Rhys Wakefield,The Purge ,139329,3708,Chris Mulkey,0,class differences,578,English,USA,R,3000000,2013,810,5.7,2.35,31000
+Color,Scott Derrickson,411,110,301,412,Victoria Leigh,1000,48056940,Horror,Danielle Kotch,Sinister ,155153,2239,James Ransone,0,book,524,English,USA,R,3000000,2012,419,6.8,2.35,58000
+Color,Tom McLoughlin,158,86,41,155,Ron Palillo,956,19472057,Horror,Tony Goldwyn,Jason Lives: Friday the 13th Part VI ,25332,1862,Vincent Guastaferro,0,actual animal killed,307,English,USA,R,3000000,1986,316,5.9,1.85,0
+Color,,10,173,,476,Colm Feore,723,,Horror,Craig T. Nelson,Creature             ,2011,3149,Megalyn Echikunwoke,3,author cameo,33,English,USA,,,,539,5,1.78,518
+Color,Deon Taylor,63,88,26,236,Betsy Russell,487,143000,Horror,Matt Cohen,Chain Letter ,4122,1495,Noah Segan,0,blood splatter,48,English,USA,R,5000000,2009,298,4.1,2.35,0
+Color,Will Canon,58,83,8,617,Scott Mechlowicz,798,,Horror,Frank Grillo,Demonic ,7358,4756,Aaron Yoo,1,death,39,English,USA,R,3000000,2015,634,5.3,,0
+Color,Alexandre Aja,251,89,192,142,Maïwenn,447,3645438,Horror,Cécile De France,High Tension ,55040,923,Oana Pellea,1,car chase,539,French,France,Unrated,2200000,2003,236,6.8,2.35,0
+Color,John Carl Buechler,110,88,152,181,Terry Kiser,935,19170001,Horror,Kane Hodder,Friday the 13th Part VII: The New Blood ,21359,1855,William Butler,0,death,270,English,USA,R,2800000,1988,448,5.3,1.85,0
+Color,George A. Romero,280,95,0,192,Shawn Roberts,569,952620,Horror,Megan Park,Diary of the Dead ,40800,1797,Joe Dinicol,0,barn,332,English,USA,R,2000000,2007,529,5.7,1.85,0
+Color,Joseph Zito,166,97,17,74,Tom Everett,158,32600000,Horror,Judie Aronson,Friday the 13th: The Final Chapter ,29488,467,Kimberly Beck,0,friday the thirteenth,326,English,USA,R,1800000,1984,84,5.9,1.85,0
+Color,Nacho Vigalondo,173,66,76,36,Nacho Vigalondo,123,38108,Horror,Karra Elejalde,Timecrimes ,40878,239,Bárbara Goenaga,0,binoculars,124,Spanish,Spain,R,2600000,2007,76,7.2,1.85,0
+Color,Tony Giglio,66,100,6,209,Nick Searcy,331,,Horror,Brianna Brown,Timber Falls ,5012,1082,Beth Broderick,1,hiking,47,English,USA,R,2600000,2007,272,5.3,1.85,254
+Color,Rob Zombie,220,119,0,593,Tyler Mane,908,33386128,Horror,Scout Taylor-Compton,Halloween II ,36372,3226,Margot Kidder,0,halloween,491,English,USA,R,15000000,2009,764,4.9,1.85,3000
+Color,Tommy Lee Wallace,162,98,24,67,Dan O'Herlihy,381,14400000,Horror,Tom Atkins,Halloween III: Season of the Witch ,28589,684,Nancy Kyes,0,doctor,532,English,USA,R,2500000,1982,128,4.6,2.35,0
+Color,Stefan Ruzowitzky,62,103,24,10,Rüdiger Vogler,127,5725,Horror,Benno Fürmann,Anatomy ,10220,163,Sebastian Blomberg,0,dissection,110,German,Germany,R,8400000,2000,10,6.1,2.35,560
+Color,Danny Perez,10,94,0,442,Emmanuel Kabongo,1000,,Horror,Natasha Lyonne,Antibirth ,63,2406,Mark Webber,1,,2,English,USA,,3500000,2016,677,6.3,,89
+Color,Steve Miner,235,91,49,20,Dana Kimmell,72,36200000,Horror,Richard Brooker,Friday the 13th Part III ,31952,174,Catherine Parks,0,defecation,372,English,USA,R,4000000,1982,31,5.7,2.35,0
+Color,Danny Steinmann,160,92,13,17,Melanie Kinnaman,42,21300000,Horror,Tiffany Helm,Friday the 13th: A New Beginning ,22521,170,Dominick Brascia,0,jason voorhees,342,English,USA,R,2200000,1985,27,4.7,1.85,1000
+Color,Jaume Balagueró,252,78,57,7,Pablo Rosso,120,,Horror,Manuela Velasco,[Rec] ,131462,145,Carlos Lasarte,0,apartment building,374,Spanish,Spain,R,1500000,2007,9,7.5,1.85,15000
+Color,Neil Mcenery-West,33,77,0,260,Michael Chapman,846,,Horror,Walter Hendrix III,Containment ,1355,2044,Louise Brealey,0,hazmat suit,21,English,UK,,,2015,366,4.8,,275
+Color,David Robert Mitchell,533,100,421,159,Ruby Harris,314,14673301,Horror,Maika Monroe,It Follows ,112899,1062,Jake Weary,0,ambiguous ending,631,English,USA,R,2000000,2014,189,6.9,2.35,45000
+Color,Kevin Tenney,65,98,85,186,Tawny Kitaen,265,7369373,Horror,Kathleen Wilhoite,Witchboard ,4288,901,Rose Marie,1,evil spirit,74,English,UK,R,2000000,1986,194,5.7,1.85,0
+Color,Brian Yuzna,46,97,97,163,Kent McCord,787,,Horror,Melinda Clarke,Return of the Living Dead III ,10182,1362,Sarah Douglas,1,female nudity,130,English,USA,R,2000000,1993,196,5.9,1.85,810
+Color,James Watkins,161,91,43,418,Jack O'Connell,13000,5824,Horror,Michael Fassbender,Eden Lake ,57811,14561,Lorraine Stanley,1,camping,357,English,UK,R,,2008,698,6.8,2.35,0
+Color,Colin Minihan,116,92,6,103,Sean Rogerson,253,,Horror,Mackenzie Gray,Grave Encounters ,40380,762,Ashleigh Gryzko,0,ghost,235,English,Canada,Not Rated,100000,2011,113,6.1,1.78,0
+Color,Dave Payne,21,88,0,332,Lew Temple,633,,Horror,Mircea Monroe,No Man's Land: The Rise of Reeker ,2701,2620,Robert Pine,0,death,31,English,USA,R,2000000,2008,597,4.9,1.78,153
+Color,Harald Reinl,38,80,2,51,Lex Barker,16000,,Horror,Christopher Lee,The Torture Chamber of Dr. Sadism ,952,16110,Karin Dor,0,count,36,German,West Germany,M,,1967,57,6,1.66,200
+Color,Wes Craven,256,101,0,574,Lin Shaye,40000,26505000,Horror,Johnny Depp,A Nightmare on Elm Street ,149293,42918,Amanda Wyss,1,freddy krueger,668,English,USA,X,1800000,1984,852,7.5,1.85,10000
+Color,Tony Krantz,53,113,15,491,Tom Cavanagh,647,,Horror,George Newbern,Sublime ,6267,2439,Cas Anvar,0,birthday,103,English,USA,R,1800000,2007,642,5.3,2.35,368
+Color,David Hunt,1,112,0,11,Chris Cleveland,86,,Horror,Matthew Alan,Living Dark: The Story of Ted the Caver ,28,139,Circus-Szalewski,0,brother,1,English,USA,PG-13,1750000,2013,42,6.3,1.85,73
+Color,Steven R. Monroe,225,105,68,374,Chad Lindberg,635,92401,Horror,Sarah Butler,I Spit on Your Grave ,56402,2423,Daniel Franzese,0,horror movie remake,209,English,USA,R,2000000,2010,445,6.3,2.35,17000
+Color,Lluís Quílez,40,92,0,2,Pixie Davies,327,,Horror,Stephen Rea,Out of the Dark ,2621,380,Alejandro Furth,3,haunted house,18,English,USA,R,,2014,51,4.7,2.35,844
+Color,Travis Zariwny,68,99,4,114,Gage Golightly,427,,Horror,Dustin Ingram,Cabin Fever ,3313,992,Samuel Davis,0,female rear nudity,40,English,USA,Not Rated,,2016,253,3.7,,2000
+Color,Brad Anderson,127,100,122,83,Brendan Sexton III,210,373967,Horror,Paul Guilfoyle,Session 9 ,43839,469,Larry Fessenden,0,abandoned asylum,481,English,USA,R,1500000,2001,148,6.5,2.35,0
+Color,Jon Knautz,63,99,10,295,Adam DiMarco,756,,Horror,Camren Bicondova,Girl House ,4948,2072,Chasty Ballesteros,0,college student,33,English,Canada,,3150000,2014,382,5.5,2.35,969
+Color,David Worth,4,91,58,69,Jonathan Mangum,847,,Horror,Jessica Szohr,House at the End of the Drive ,330,1159,Angela Jones,0,ghost story,6,English,USA,R,1400000,2014,147,6.9,,223
+Color,Tyler Oliver,24,103,0,511,Chloe Bridges,35000,,Horror,Bella Thorne,Forget Me Not ,4866,38121,Christopher Atkins,1,,38,English,USA,R,1300000,2009,516,5.2,2.35,969
+Color,Steve Miner,242,87,49,59,Adrienne King,309,19100000,Horror,Betsy Palmer,Friday the 13th Part 2 ,39690,707,Amy Steel,0,ice pick,394,English,USA,R,1250000,1981,121,6.1,1.85,0
+Color,Douglas Cheek,77,96,4,132,John Heard,796,,Horror,Daniel Stern,C.H.U.D. ,7528,1866,Sam McMurray,0,bum,88,English,USA,R,1250000,1984,697,5.5,1.85,0
+Color,James Wan,287,103,0,651,Monica Potter,2000,55153403,Horror,Michael Emerson,Saw ,299127,5161,Shawnee Smith,0,chained,1509,English,USA,R,1200000,2004,878,7.7,1.85,0
+Color,Jay Alaimo,9,84,2,475,Sabrina Carmichael,10000,,Horror,William McNamara,The Wicked Within ,742,11257,Patrick Muldoon,0,after dark horrorfest,7,English,USA,R,1200000,2015,500,4.6,,479
+Color,Dylan Bank,7,100,0,312,Deirdre Lorenz,498,,Horror,Seregon O'Dassey,Bleeding Hearts ,71,1810,Dustin Diamond,1,bare breasts,2,English,USA,,1200000,2015,350,4.2,,242
+Color,Joe Marino,9,76,0,0,Anella Vastola,12,,Horror,Piero Maggiò,The Vatican Exorcisms ,332,12,Joe Marino,0,,10,English,Italy,R,1100000,2013,0,2.6,2.35,200
+Color,Levan Gabriadze,270,83,6,142,Renee Olstead,707,31537320,Horror,Shelley Hennig,Unfriended ,44329,1565,Heather Sossaman,0,blender,309,English,USA,R,1000000,2014,305,5.7,1.85,13000
+Color,Joe Dante,161,91,287,725,Robert Picardo,1000,17986000,Horror,Patrick Macnee,The Howling ,22773,4438,Dee Wallace,0,1980s,195,English,USA,R,1000000,1981,823,6.6,1.85,0
+Color,Bradley Parker,270,86,18,300,Ingrid Bolsø Berdal,1000,18112929,Horror,Jesse McCartney,Chernobyl Diaries ,52642,2665,Jonathan Sadowski,0,abandoned building,271,English,USA,R,1000000,2012,466,5,1.85,24000
+Color,William Brent Bell,225,83,19,128,Claudiu Trandafir,403,53245055,Horror,Fernanda Andrade,The Devil Inside ,30570,988,Brian Johnson,0,critically bashed,290,English,USA,R,1000000,2012,169,4.2,1.85,12000
+Color,Ti West,238,95,243,725,Greta Gerwig,969,100659,Horror,Lena Dunham,The House of the Devil ,30160,3833,Dee Wallace,0,cult film,193,English,USA,R,900000,2009,962,6.4,1.85,0
+Color,David DeCoteau,7,83,142,317,Shanley Caswell,458,,Horror,Maureen McCormick,Snow White: A Deadly Summer ,634,1549,Tim Abell,1,reference to snow white,14,English,USA,PG-13,1000000,2012,383,2.2,1.78,150
+Color,Katie Aselton,95,83,224,37,Anslem Richardson,224,,Horror,Katie Aselton,Black Rock ,6531,344,Jay Paulson,1,bare breasts,47,English,USA,R,,2012,59,4.7,1.85,0
+Color,Robert Heath,40,96,0,177,Alexander Vlahos,335,,Horror,David Oakes,Truth or Die ,6513,1226,Jennie Jacques,2,cabin in the woods,41,English,UK,Not Rated,1000000,2012,334,5.6,2.35,968
+Color,Robert Hall,39,95,53,253,Kevin Gage,677,,Horror,Angelina Armani,Fear Clinic ,6256,1825,Fiona Dourif,0,bare breasts,19,English,USA,R,1000000,2015,366,5.2,2.35,936
+Color,Blair Erickson,78,87,0,302,Katia Winter,696,,Horror,Monique Candelaria,Banshee Chapter ,6265,1618,Michael McMillian,1,experiment,56,English,Germany,R,950000,2013,371,5.5,,2000
+Color,Brian Dorton,10,97,171,76,Brian Dorton,1000,,Horror,Javier Botet,The Horror Network Vol. 1 ,139,1343,Jan Cornet,0,anthology,3,English,USA,,3000000,2015,171,7.3,,52
+Color,Clark Baker,1,14,0,37,Alan Pietruszewski,134,,Horror,Taylor Pigeon,Vessel ,292,315,Whit Spurgeon,1,alien,3,English,USA,,,2012,93,6.2,,14
+Color,Ti West,292,101,243,74,Jake Ryan,969,77501,Horror,Lena Dunham,The Innkeepers ,27260,1252,Pat Healy,0,bathtub,247,English,USA,R,750000,2011,128,5.5,2.35,0
+Color,Jonathan Levine,233,90,129,280,Michael Welch,935,,Horror,Luke Grimes,All the Boys Love Mandy Lane ,25951,2170,Whitney Able,1,drugs,129,English,USA,R,750000,2006,611,5.6,2.35,2000
+Color,Christopher Hutson,8,95,3,118,Jennifer Lee Wiggins,717,,Horror,Dichen Lachman,Bled ,851,1117,Michele Morrow,0,artist,30,English,USA,R,750000,2009,134,3.1,1.85,128
+Color,Jaume Collet-Serra,228,108,174,324,Paris Hilton,730,32048809,Horror,Robert Ri'chard,House of Wax ,94463,2160,Brian Van Holt,0,brother sister relationship,576,English,Australia,R,30000000,2005,716,5.3,1.85,0
+ Black and White,Daniel Myrick,360,81,19,39,Joshua Leonard,170,140530114,Horror,Heather Donahue,The Blair Witch Project ,186786,399,Michael C. Williams,0,found footage,3400,English,USA,R,60000,1999,170,6.4,1.33,0
+Color,John 'Bud' Cardos,95,97,8,22,Hoke Howell,423,17000000,Horror,Woody Strode,Kingdom of the Spiders ,3274,516,Tiffany Bolling,0,death,84,English,USA,PG,500000,1977,23,5.9,1.85,0
+Color,Darren Lynn Bousman,10,97,163,303,Barry Bostwick,636,,Horror,Paul Sorvino,Alleluia! The Devil's Carnival ,259,2438,Terrance Zdunich,5,carnival,20,English,USA,,500000,2016,456,7.4,1.78,707
+Color,Oren Peli,409,84,110,21,Ashley Palmer,189,107917283,Horror,Micah Sloat,Paranormal Activity ,184824,330,Amber Armstrong,0,dark force,1189,English,USA,R,15000,2007,109,6.3,1.85,12000
+ Black and White,Lucio Fulci,203,82,385,22,David Warbeck,48,126387,Horror,Catriona MacColl,The Beyond ,14985,123,Al Cliver,0,doctor,253,Italian,Italy,X,400000,1981,22,6.9,2.35,2000
+Color,Paul Fox,80,80,3,39,Jeff Seymour,108,,Horror,Dov Tiefenbach,The Dark Hours ,4788,272,Gordon Currie,0,brain tumor,52,English,Canada,R,500000,2005,64,6.1,1.85,166
+Color,Franck Khalfoun,279,89,33,118,Nora Arnezeder,470,12843,Horror,America Olivo,Maniac ,27297,1233,Liane Balaban,0,exhibition,131,English,France,Not Rated,6000000,2012,378,6.1,2.35,0
+Color,John Carpenter,318,101,0,598,Donald Pleasence,2000,47000000,Horror,Jamie Lee Curtis,Halloween ,157863,4400,P.J. Soles,0,halloween,1191,English,USA,R,300000,1978,742,7.9,2.35,12000
+,Pece Dingo,1,94,0,87,Wilhelm von Homburg,156,,Horror,Michael Des Barres,Midnight Cabaret ,47,544,Thom Mathews,0,cigarette smoking,4,English,USA,R,,1990,102,4.5,,4
+Color,Herb Freed,78,96,5,180,Carmen Argenziano,431,,Horror,Linnea Quigley,Graduation Day ,1905,1228,Vanna White,0,coach,58,English,USA,R,250000,1981,338,4.5,1.85,249
+Color,Al Franklin,,96,0,270,Steffinnie Phrommany,471,,Horror,Marshal Hilton,Teeth and Blood ,24,1399,Clint Jung,0,blood,2,English,USA,,300000,2015,320,4.3,16,85
+Color,Andrew Hyatt,12,95,7,89,Brit Morgan,236,,Horror,Noah Segan,The Frozen ,1488,537,Sedona James,1,two word title,28,English,USA,PG-13,250000,2012,206,4.4,,519
+Color,Eric Valette,42,94,2,156,Ryan Kennedy,259,,Horror,Melanie Papalia,Super Hybrid ,1328,711,John Reardon,0,based on comic book,22,English,USA,PG-13,13000000,2010,165,3.9,2.35,0
+Color,Pat Holden,44,86,6,115,Martin Compston,498,,Horror,Alan Brent,When the Lights Went Out ,3813,895,Kate Ashfield,0,father daughter relationship,27,English,UK,,,2012,204,5.4,2.35,0
+Color,Tobe Hooper,277,88,365,177,Edwin Neal,383,30859000,Horror,Gunnar Hansen,The Texas Chain Saw Massacre ,96411,1094,Marilyn Burns,0,cannibal,826,English,USA,R,83532,1974,371,7.5,1.85,0
+Color,Travis Cluff,159,81,3,7,Cassidy Gifford,220,22757819,Horror,Pfeifer Brown,The Gallows ,13521,276,Reese Mishler,0,breaking and entering,150,English,USA,R,100000,2015,40,4.2,1.85,0
+ Black and White,Joseph Green,95,70,2,6,Jason Evers,24,,Horror,Virginia Leith,The Brain That Wouldn't Die ,4752,52,Bruce Kerr,1,brain,152,English,USA,Approved,62000,1962,16,4.1,1.66,1000
+Color,Travis Legge,2,83,138,76,Patricia Raven,307,,Horror,Elissa Dowling,Raymond Did It ,192,619,Lindsay Felton,0,blood,6,English,USA,Unrated,40000,2011,114,3.2,2.35,239
+Color,Collin Joseph Neal,7,75,14,130,Thomas Brophy,252,,Horror,Julianne Gabert,"Run, Hide, Die ",106,638,Ronee Collins,0,,5,English,USA,,50000,2012,132,3.7,2.35,225
+Color,Damir Catic,,89,2,0,Ron Gelner,5,,Horror,Nichole Ceballos,Her Cry: La Llorona Investigation ,23,5,Parker Riggs,0,la llorona,2,English,USA,Not Rated,60000,2013,0,5.4,,48
+Color,Marcus Nispel,43,91,158,265,Brittany Curran,630,,Horror,Ashley Tramonte,Exeter ,3836,2679,Lindsay MacDonald,0,asylum,33,English,USA,R,,2015,512,4.6,1.85,0
+ Black and White,Ivan Kavanagh,12,83,18,0,Michael Parle,10,,Horror,Patrick O'Donnell,Tin Can Man ,57,15,Emma Eliza Regan,0,,1,English,Ireland,,10000,2007,5,6.7,1.33,105
