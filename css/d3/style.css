@@ -6,12 +6,18 @@ body {
   font-size: 9pt;
 }
 
-#tooltip {
-  font-weight: 600;
-  text-shadow: 0px 0px 2px white;
-
-  fill: black;
-  stroke: none;
+.tooltip {
+  position: absolute;
+  width: auto;
+  height: auto;
+  padding: 8px;
+  background: #ddd;
+  pointer-events: none;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  font-family: sans-serif;
+  font-size: 10pt;
+  color: black;
 }
 
 path.land {

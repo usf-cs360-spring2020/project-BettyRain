@@ -108,7 +108,7 @@ function drawMap() {
       });
 
     // add highlight
-    basemap.on("mouseover.highlight", function(d) {
+    /*basemap.on("mouseover.highlight", function(d) {
         d3.select(d.properties.outline).raise();
         //    console.log(d.properties);
         d3.select(d.properties.outline).classed("active", true);
@@ -129,15 +129,13 @@ function drawMap() {
       })
       .on("mouseout.tooltip", function(d) {
         tip.style("visibility", "hidden");
-      });
+      });*/
   }
 
   function drawStreets(json) {
     //console.log("streets", json);
 
-    const streets = json.features.filter(function(d) {
-      return d;
-    });
+    const streets = json.features;
 
     g.streets.selectAll("path.street")
       .data(streets)
@@ -150,6 +148,9 @@ function drawMap() {
   function drawArrests(json) {
     console.log("arrests", json);
 
+    let color = d3.scaleSequential(d3.interpolatePlasma)
+      .domain([1915, 2019]);
+
     // loop through and add projected (x, y) coordinates
     // (just makes our d3 code a bit more simple later)
     json.forEach(function(d) {
@@ -158,6 +159,7 @@ function drawMap() {
       const pixels = projection([longitude, latitude]);
       d.x = pixels[0];
       d.y = pixels[1];
+      d.year = d["Release Year"];
     });
 
     const symbols = g.arrests.selectAll("circle")
@@ -166,16 +168,93 @@ function drawMap() {
       .append("circle")
       .attr("cx", d => d.x)
       .attr("cy", d => d.y)
-      .attr("r", 5)
+      .attr("r", 4)
+      .attr("fill", d => color(d.year))
       .attr("class", "symbol");
 
-    symbols.on("mouseover.map1", function(d) {
-      console.log(d)
-    })
+    symbols.on("mouseover.hover", function(d) {
+      d3.select(this).raise();
+      d3.select(this).classed("active-small", true);
+
+      let div = d3.select("body").append("div");
+
+      div
+        .attr("id", "details")
+        .attr("class", "tooltip");
+
+      let dataNew = createTooltip(Object(d));
+
+      let rows = div
+        .append("tablenew")
+        .selectAll("tr")
+        .data(Object.keys(dataNew))
+        .enter()
+        .append("tr");
+
+      rows.append("th").text(key => key);
+      rows.append("td").text(key => dataNew[key]);
+      div.style("display", "inline");
+
+      symbols.filter(e => (d.year !== e.year)).transition().style("fill", "#bbbbbb");
+      symbols.filter(function(e) {
+            return d.year == e.year;
+        }).raise();
+
+    });
+
+    symbols.on("mousemove.hover", function(d) {
+      let div = d3.select("div#details");
+      let bbox = div.node().getBoundingClientRect();
+
+      div.style("left", d3.event.pageX + "px");
+      div.style("top", (d3.event.pageY - bbox.height) + "px");
+    });
+
+    symbols.on("mouseout.hover", function(d) {
+      d3.select(this).classed("active-small", false);
+      d3.selectAll("div#details").remove();
+      symbols.transition().style("fill", d => color(d.type));
+    });
 
   }
 
   function translate(x, y) {
     return "translate(" + String(x) + "," + String(y) + ")";
   }
+
+  //function for a second tooltip
+  function createTooltip(row, index) {
+
+    let out = {};
+    for (let col in row) {
+      switch (col) {
+        case 'Title':
+          out['Title:\xa0'] = row[col];
+          break;
+        case 'Release Year':
+          out['Release Year:\xa0'] = row[col];
+          break;
+        case 'Locations':
+          out['Address:\xa0'] = row[col];
+          break;
+        case 'Director':
+          out['Director:\xa0'] = row[col];
+          break;
+        case 'Actor 1':
+          out['Actor 1:\xa0'] = row[col];
+          break;
+        case 'Actor 2':
+          out['Actor 2:\xa0'] = row[col];
+          break;
+        case 'Actor 3':
+          out['Actor 3:\xa0'] = row[col];
+          break;
+
+        default:
+          break;
+      }
+    }
+    return out;
+  }
+
 }

@@ -41,7 +41,7 @@
 
 #comp-jtfr9hekinlineContent-gridContainer > [id$="-rotated-wrapper"] > * {
     pointer-events: auto;
-}</style><div id="comp-jtfr9hekinlineContent-gridWrapper" data-mesh-internal="true"><div id="comp-jtfr9hekinlineContent-gridContainer" data-mesh-internal="true"><div data-is-responsive="false" style="top:;bottom:;left:;right:;position:" class="style-jtfr9hg2" id="comp-jtfr9hfy"><form class="style-jtfr9hg2form" id="comp-jtfr9hfyform"><style id="comp-jtfr9hfy-mesh-styles">
+}
 
 #comp-jtfr9hfyform {
     height: auto;
@@ -165,7 +165,7 @@ align-self: start;
 
 #comp-jtfr9hek {
 position: relative;
-margin: 141px 0px 19px calc((100% - 980px) * 0.5);
+margin: 100px 0px 19px calc((100% - 980px) * 0.5);
 left: 472px;
 grid-area: 1 / 1 / 5 / 2;
 justify-self: start;
