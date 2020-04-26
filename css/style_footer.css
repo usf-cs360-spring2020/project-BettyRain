@@ -131,7 +131,6 @@ position: static;
 display: grid;
 height: auto;
 width: 100%;
-min-height: 475px;
 grid-template-rows: min-content min-content min-content min-content 1fr;
 grid-template-columns: 100%;
 }

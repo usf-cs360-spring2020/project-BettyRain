@@ -1,9 +1,14 @@
-body {
-  background-color: grey;
+.align-items-center {
+ /* background-color: grey; */
   text-align: center;
 
   font-family: sans-serif;
   font-size: 9pt;
+}
+
+svg#vis {
+  background-color: #C9DEEA;
+  border: 1px solid lightgrey;
 }
 
 .tooltip {
@@ -39,11 +44,6 @@ path.street {
   pointer-events: none;
 }
 
-.active {
-  stroke: red !important;
-  stroke-width: 1.5px !important;
-}
-
 circle.symbol {
   fill-opacity: 0.6;
 
@@ -55,9 +55,6 @@ a:link, a:visited {
   color: #444444;
 }
 
-a:hover, a:active {
-  color: red;
-}
 
 th {
   text-align: right;

@@ -4,6 +4,9 @@
   <meta charset="utf-8">
   <link href="css/d3/style.css" rel="stylesheet" type="text/css">
   <script src="js/map.js"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://unpkg.com/d3-simple-slider"></script>
+
   <title>SF Arrests</title>
 </head>
 
@@ -13,33 +16,47 @@
   and drawn last, they will still show up behind the symbols
 -->
 
-</br>
-</br>
-</br>
-</br>
+  </br>
+  </br>
+  </br>
+  </br>
 
   <figure>
-    <svg width="960" height="600" id="vis">
-      <g id="basemap"></g>
+    <svg width="960" height="500" id="vis">
+      <g id="plot">
+        <g id="basemap"></g>
 
-      <!-- turn off pointer events for certain groups -->
-      <g id="streets" pointer-events="none"></g>
-      <g id="outline" pointer-events="none"></g>
+        <!-- turn off pointer events for certain groups -->
+        <g id="streets" pointer-events="none"></g>
+        <g id="outline" pointer-events="none"></g>
 
-      <g id="arrests"></g>
-      <g id="tooltip" pointer-events="none"></g>
-      <g id="details" pointer-events="none"></g>
+        <g id="movies"></g>
+        <g id="tooltip" pointer-events="none"></g>
+        <g id="details" pointer-events="none"></g>
+
+
+      </g>
+      <g id="legend" pointer-events="none"></g>
     </svg>
 
+      <div class="row align-items-center">
+        <div class="col-sm-2">
+          <p id="value-simple"></p>
+        </div>
+        <div class="col-sm">
+          <div id="slider-simple"></div>
+        </div>
+      </div>
+
     <figcaption>
-      Source: <a href="https://data.sfgov.org/Public-Safety/Police-Department-Incident-Reports-2018-to-Present/wg3w-h783">Police Department Incident Reports: 2018 to Present</a> (<a
+      <!--  Source: <a href="https://data.sfgov.org/Public-Safety/Police-Department-Incident-Reports-2018-to-Present/wg3w-h783">Police Department Incident Reports: 2018 to Present</a> (<a
         href="https://data.sfgov.org/Geographic-Locations-and-Boundaries/Analysis-Neighborhoods/p5b7-5n3h">Neighborhoods</a>, <a href="https://data.sfgov.org/Geographic-Locations-and-Boundaries/Streets-Active-and-Retired/3psu-pn9h">Streets</a>)
+      -->
     </figcaption>
   </figure>
-
-  <script src="https://d3js.org/d3.v5.min.js"></script>
-
   <script>
     drawMap();
   </script>
+
+
 </body>
