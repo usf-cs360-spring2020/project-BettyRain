@@ -96,11 +96,16 @@
 
                               <div data-packed="true" style="width: 800px; margin-top: 160px" class="txtNew" id="comp-iw0qom55">
 
-                                <h2 class="font_12" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">Hierarchial Sunburst</span></h2>
-                                <h2 class="font_11" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">(with year-genre hierarchy, size represents imdb score and color scale is build on gross values)</span></h2>
-                              </br>
+                                <h2 class="font_12" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">Hierarchial Sunburst & Scattergram</span></h2>
+                                <h2 class="font_11" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">(with year-genre hierarchy, size represents imdb score and color scale is build on gross values for SF movies dataset) & (imsb score and gross movie ratio for all movies in movie_metadata dataset)</span></h2>
+                              <!-- </br>
                                 <img src="prototypes/beta/year-genre-imdb-gross.png" alt="Prototype_hierarchy" height="600" width="600">
                                 <img src="prototypes/beta/simplecharts.png" alt="Prototype_simple" height="600" width="960">
+                              </div> -->
+
+                              <div data-packed="true" style="width: 606px; margin-left: 10px;" class="txtNew" id="comp-ividcu8q">
+                                </br></br>
+                                <img width=1000px height=600px src="prototypes/beta/together.png" alt="Prototype_together">
                               </div>
 
 
@@ -138,11 +143,7 @@
                     </div>
                     <div data-packed="true" style="width: 1000px; pointer-events: none;" class="txtNew" id="comp-ividcu8q">
                       <h6 class="font_6" style="line-height:1.5em;">
-                        The exact question you are trying to answer with this prototype.
-                        Your prototype will be evaluated within the context of this question.
-                        For example, "is there a visible pattern of [metric] over [time range]" or "how does [some subcategory] compare to [another subcategory]" are good questions.
-                        However, "what [category] has the [largest/smallest] value of [some column]" can be answered with simple statistics and not a good question for visualization.
-                        For the best results, you should come up with a question first, then the prototype.
+                        Where do movies filmed in San Francisco rate within the overall imdb movie ratings and gross? Has it changed over the years?
                       </h6>
                     </div>
 
@@ -152,21 +153,31 @@
                       </div>
                       <div data-packed="true" style="width: 1000px; pointer-events: none;" class="txtNew" id="comp-ividcu8q">
                         <h6 class="font_6" style="line-height:1.5em;">
-                          The answer to the question you were able to learn from the prototype. It is possible your prototype does not do a great job of answering your question---
-                          that is a positive result of this exercise. You need to iterate multiple different visualization techniques and designs of a single visualization
-                          to reach the final version!
+                          The answer to the question is easier to get using interactivity. For now we cannot see any particular patterns, though overall we can see that a lot of movies got high imdb score and reasonable gross.
                         </h6>
                       </div>
                     </div>
 
                     <div id="SITE_FOOTERinlineContent-gridContainer" data-mesh-internal="true">
                       <div data-packed="true" style="width: 712px; pointer-events: none;" class="txtNew" id="comp-ividcu8o">
-                        <h2 class="font_6" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">Encoding</span></h2>
+                        <h2 class="font_6" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">Encoding & Wrangling</span></h2>
                       </div>
                       <div data-packed="true" style="width: 1000px; pointer-events: none;" class="txtNew" id="comp-ividcu8q">
                         <h6 class="font_6" style="line-height:1.5em;">
-                          Describe how your visualization is encoded. Use precise visualization terminology,
-                          including the name of the overall visualization technique and the visual channels you are using to encode the data.
+                          Sunburst elements include hierarchy of year by genre. The size of the cell is encoded by sum of imdb of movies in this hierarchy cell. The color sheme shows the gross, the darker color shows the higher gross. </br>
+                          Scattergram shows imdb scores on y axis and and gross on y axis. Each movie is encoded by circle and places on (x,y) where x is it's imdb score and y is it's gross. </br>
+                        </h6>
+                      </div>
+                    </div>
+
+                    <div id="SITE_FOOTERinlineContent-gridContainer" data-mesh-internal="true">
+                      <div data-packed="true" style="width: 712px; pointer-events: none;" class="txtNew" id="comp-ividcu8o">
+                        <h2 class="font_6" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">Additional Wrangling</span></h2>
+                      </div>
+                      <div data-packed="true" style="width: 1000px; pointer-events: none;" class="txtNew" id="comp-ividcu8q">
+                        <h6 class="font_6" style="line-height:1.5em;">
+                          There are less movies than on the <u><a href="locations.html">map</a></u>,because the movies from <u><a href="https://www.kaggle.com/san-francisco/sf-film-locations-in-san-francisco">SF movies</a></u> were merged with <u><a href="https://data.world/data-society/imdb-5000-movie-dataset">IMDB 5000 Movie Dataset</a></u> to get raitings data.
+                          The second dataset doesn't include movies relesed after 2016 and doesn't include any series, which resulted in reducing SF movie elements in ratings diagrams. After first merging all rows were merged again by same title-director-year, to remove duplicate data in ratings. It was used in location map: if movie was filmed in different locations in SF, it had more than one row.
                         </h6>
                       </div>
                     </div>
@@ -175,10 +186,18 @@
                       <div data-packed="true" style="width: 712px; pointer-events: none;" class="txtNew" id="comp-ividcu8o">
                         <h2 class="font_6" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">Interactivity</span></h2>
                       </div>
-                      <div data-packed="true" style="width: 1000px; pointer-events: none;" class="txtNew" id="comp-ividcu8q">
+                      <div data-packed="true" style="width: 1000px; height: 650px; pointer-events: none;" class="txtNew" id="comp-ividcu8q">
                         <h6 class="font_6" style="line-height:1.5em;">
                           Describe your planned interactivity.
                           Use precise visualization terminology to describe the type of interactivity, and what mouse or keyboard events will trigger that interactivity.
+                          Sunburst chart will have a zoom on click implementation. After clicking in a particular year region, we will see all movies filmed this year by titles.
+                          After hovering over the region, we will see all movies from this region highlighted on the scattergram (see img. below).
+                          After hovering over the movie title after zooming, we will see this particular movie highlighted on the scattergram (see img. below).
+                          <div data-packed="true" style="width: 606px; height: 450px; pointer-events: none;" class="txtNew" id="comp-ividcu8q">
+                          </br>
+                            <img width=600px src="prototypes/beta/simplecharts.png" alt="Interactivity_Charts">
+                            </br></br>
+                          </div>
                         </h6>
                       </div>
                     </div>
