@@ -48,7 +48,7 @@ circle.symbol {
   fill-opacity: 0.6;
 
   stroke: white;
-  stroke-width: 1px;
+  stroke-width: 0.5px;
 }
 
 a:link, a:visited {

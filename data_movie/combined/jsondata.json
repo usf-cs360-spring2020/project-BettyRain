@@ -1,0 +1,274 @@
+{
+  "name": "San Francisco",
+  "children": [{
+    "name": "2015",
+    "children": [{
+      "name": "Action",
+      "value": 20.1
+    }, {
+      "name": "Biography",
+      "value": 7.2
+    }, {
+      "name": "Drama",
+      "value": 14.1
+    }]
+  }, {
+    "name": "2014",
+    "children": [{
+      "name": "Biography",
+      "value": 7
+    }, {
+      "name": "Action",
+      "value": 14.1
+    }]
+  }, {
+    "name": "2013",
+    "children": [{
+      "name": "Drama",
+      "value": 7.3
+    }, {
+      "name": "Comedy",
+      "value": 6.3
+    }]
+  }, {
+    "name": "2012",
+    "children": [{
+      "name": "Adventure",
+      "value": 6.1
+    }, {
+      "name": "Drama",
+      "value": 7.1
+    }]
+  }, {
+    "name": "2010",
+    "children": [{
+      "name": "Drama",
+      "value": 6.5
+    }]
+  }, {
+    "name": "2008",
+    "children": [{
+      "name": "Biography",
+      "value": 7.6
+    }]
+  }, {
+    "name": "2007",
+    "children": [{
+      "name": "Crime",
+      "value": 7.7
+    }]
+  }, {
+    "name": "2005",
+    "children": [{
+      "name": "Drama",
+      "value": 7
+    }]
+  }, {
+    "name": "2004",
+    "children": [{
+      "name": "Comedy",
+      "value": 12.2
+    }]
+  }, {
+    "name": "2003",
+    "children": [{
+      "name": "Action",
+      "value": 5.7
+    }, {
+      "name": "Comedy",
+      "value": 6.7
+    }]
+  }, {
+    "name": "2002",
+    "children": [{
+      "name": "Crime",
+      "value": 6.3
+    }, {
+      "name": "Comedy",
+      "value": 10.7
+    }]
+  }, {
+    "name": "2001",
+    "children": [{
+      "name": "Comedy",
+      "value": 16
+    }, {
+      "name": "Drama",
+      "value": 6.7
+    }]
+  }, {
+    "name": "2000",
+    "children": [{
+      "name": "Comedy",
+      "value": 11.3
+    }, {
+      "name": "Drama",
+      "value": 6.5
+    }, {
+      "name": "Action",
+      "value": 6.1
+    }]
+  }, {
+    "name": "1999",
+    "children": [{
+      "name": "Comedy",
+      "value": 18.4
+    }, {
+      "name": "Horror",
+      "value": 6.2
+    }]
+  }, {
+    "name": "1998",
+    "children": [{
+      "name": "Comedy",
+      "value": 10.8
+    }, {
+      "name": "Biography",
+      "value": 6.7
+    }, {
+      "name": "Drama",
+      "value": 19.7
+    }]
+  }, {
+    "name": "1997",
+    "children": [{
+      "name": "Drama",
+      "value": 7.8
+    }, {
+      "name": "Action",
+      "value": 5.4
+    }, {
+      "name": "Comedy",
+      "value": 12.2
+    }]
+  }, {
+    "name": "1996",
+    "children": [{
+      "name": "Action",
+      "value": 13.2
+    }, {
+      "name": "Drama",
+      "value": 6.4
+    }]
+  }, {
+    "name": "1995",
+    "children": [{
+      "name": "Crime",
+      "value": 11.7
+    }, {
+      "name": "Action",
+      "value": 5.8
+    }]
+  }, {
+    "name": "1994",
+    "children": [{
+      "name": "Drama",
+      "value": 7.6
+    }, {
+      "name": "Comedy",
+      "value": 8.8
+    }]
+  }, {
+    "name": "1993",
+    "children": [{
+      "name": "Comedy",
+      "value": 6.9
+    }]
+  }, {
+    "name": "1992",
+    "children": [{
+      "name": "Comedy",
+      "value": 5.9
+    }]
+  }, {
+    "name": "1991",
+    "children": [{
+      "name": "Action",
+      "value": 7.2
+    }]
+  }, {
+    "name": "1989",
+    "children": [{
+      "name": "Action",
+      "value": 8.3
+    }]
+  }, {
+    "name": "1986",
+    "children": [{
+      "name": "Adventure",
+      "value": 7.3
+    }]
+  }, {
+    "name": "1985",
+    "children": [{
+      "name": "Action",
+      "value": 6.3
+    }]
+  }, {
+    "name": "1983",
+    "children": [{
+      "name": "Adventure",
+      "value": 7.9
+    }]
+  }, {
+    "name": "1982",
+    "children": [{
+      "name": "Action",
+      "value": 7.7
+    }]
+  }, {
+    "name": "1980",
+    "children": [{
+      "name": "Biography",
+      "value": 4.5
+    }]
+  }, {
+    "name": "1978",
+    "children": [{
+      "name": "Action",
+      "value": 7.3
+    }]
+  }, {
+    "name": "1977",
+    "children": [{
+      "name": "Comedy",
+      "value": 6.7
+    }]
+  }, {
+    "name": "1976",
+    "children": [{
+      "name": "Comedy",
+      "value": 6.8
+    }]
+  }, {
+    "name": "1974",
+    "children": [{
+      "name": "Crime",
+      "value": 9
+    }]
+  }, {
+    "name": "1973",
+    "children": [{
+      "name": "Comedy",
+      "value": 7.5
+    }]
+  }, {
+    "name": "1967",
+    "children": [{
+      "name": "Crime",
+      "value": 7.4
+    }]
+  }, {
+    "name": "1947",
+    "children": [{
+      "name": "Crime",
+      "value": 7.7
+    }]
+  }, {
+    "name": "1938",
+    "children": [{
+      "name": "Drama",
+      "value": 7
+    }]
+  }]
+}

@@ -70,6 +70,7 @@ function drawMap() {
 
     d3.json("data_movie/blocks.geojson").then(drawStreets);
     d3.csv("data_movie/film-locations-in-san-francisco_no_dups.csv").then(drawMovies);
+    drawLegend();
   });
 
   function drawBasemap(json) {
@@ -92,6 +93,32 @@ function drawMap() {
         d.properties.centroid = path.centroid(d);
       });
 
+    let zoomTrans = {
+      x: 0,
+      y: 0,
+      scale: 1
+    }
+
+    //mouse up
+    //use the scale to decide on symbols small/large
+    const zoom = d3.zoom()
+      .scaleExtent([1, 8])
+      .on("zoom", () => {
+        zoomTrans.scale = d3.event.transform.k;
+        console.log(zoomTrans.scale);
+        let circles = g.movies.selectAll("circle");
+        if (zoomTrans.scale < 2.3) {
+         circles.attr("r", 4/zoomTrans.scale);
+       } else if (zoomTrans.scale > 5) {
+         circles.attr("r", 1.5);
+       } else {
+         circles.attr("r", 2);
+       }
+        zoomed();
+      });
+
+    plot.call(zoom);
+
 
     // add highlight
     basemap.on("mouseover.highlight", function(d) {
@@ -101,6 +128,11 @@ function drawMap() {
       .on("mouseout.highlight", function(d) {
         d3.select(d.properties.outline).classed("activeland", false);
       });
+  }
+
+  function zoomed() {
+    d3.select("body").select("g#plot")
+      .attr('transform', d3.event.transform);
   }
 
   function drawStreets(json) {
@@ -120,7 +152,7 @@ function drawMap() {
 
   function drawMovies(json) {
 
-    let color = d3.scaleSequential(d3.interpolatePlasma)
+    let color = d3.scaleSequential(d3.interpolateViridis)//interpolatePlasma)
       .domain([1915, 2019]);
 
     // loop through and add projected (x, y) coordinates
@@ -271,5 +303,45 @@ function drawMap() {
       sliderRange.value()
       .join('-')
     );
+  }
+
+  function drawLegend() {
+    //create legend
+  svg.append("g").attr("id", "legend");
+  let legend = d3.select("svg#vis").select("g#legend");
+  let legendColor = d3.scaleSequential(d3.interpolateViridis)
+    .domain([1915, 2019]);
+
+  const defs = svg.append("defs");
+
+  const linearGradient = defs.append("linearGradient")
+    .attr("id", "linear-gradient");
+
+  linearGradient.selectAll("stop")
+    .data(legendColor.ticks().map((t, i, n) => ({
+      offset: `${100*i/n.length}%`,
+      color: legendColor(t)
+    })))
+    .enter().append("stop")
+    .attr("offset", d => d.offset)
+    .attr("stop-color", d => d.color);
+
+  svg
+    .append('g')
+    .attr("transform", translate(450, 10))
+    .append("rect")
+    .attr('transform', translate(380, 0))
+    .attr("width", 100)
+    .attr("height", 10)
+    .style("fill", "url(#linear-gradient)");
+
+  // legend
+  //   .append("text")
+  //   .attr("class", "legend-text")
+  //   .attr("x", width - 60)
+  //   .attr("y", 128)
+  //   .text("# of Incidents")
+  //   .attr("alignment-baseline", "middle")
+  //   .style('fill', 'white');
   }
 }

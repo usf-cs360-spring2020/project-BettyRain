@@ -91,7 +91,7 @@
                                 <h2 class="font_6" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">Movies in San Francisco</span></h2>
                                 </br>
                                 <h2 class="font_12" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">
-                                    <a href="alphalocations.html">Aplha Prototype → </a>
+                                    <a href="alphalocations.html">Alpha Prototype → </a>
                                 </h2>
                               </div>
 
@@ -110,7 +110,8 @@
                                   </svg>
                                   <figcaption>
                                     Source: <a href="https://www.kaggle.com/san-francisco/sf-film-locations-in-san-francisco">SF Film Locations in San Francisco</a> (<a
-                                    href="https://data.sfgov.org/Geographic-Locations-and-Boundaries/Analysis-Neighborhoods/p5b7-5n3h">Neighborhoods</a>, <a href="https://data.sfgov.org/Geographic-Locations-and-Boundaries/Streets-Active-and-Retired/3psu-pn9h">Streets</a>)
+                                    href="https://data.sfgov.org/Geographic-Locations-and-Boundaries/Analysis-Neighborhoods/p5b7-5n3h">Neighborhoods</a>, <a href="https://data.sfgov.org/Geographic-Locations-and-Boundaries/Streets-Active-and-Retired/3psu-pn9h">Streets</a>) </br>
+                                    Made by Elizaveta Ozerova
                                   </figcaption>
 
                                   <div class="align-items-center">
@@ -160,11 +161,8 @@
                     </div>
                     <div data-packed="true" style="width: 1000px; pointer-events: none;" class="txtNew" id="comp-ividcu8q">
                       <h6 class="font_6" style="line-height:1.5em;">
-                        The exact question you are trying to answer with this prototype.
-                        Your prototype will be evaluated within the context of this question.
-                        For example, "is there a visible pattern of [metric] over [time range]" or "how does [some subcategory] compare to [another subcategory]" are good questions.
-                        However, "what [category] has the [largest/smallest] value of [some column]" can be answered with simple statistics and not a good question for visualization.
-                        For the best results, you should come up with a question first, then the prototype.
+                        Which have been the most popular areas of San Francisco for major motion pictures have been filmed in a past 100 years?
+                        Is there a visible cluster of where most motion picures have been filmed?
                       </h6>
                     </div>
 
@@ -174,9 +172,7 @@
                       </div>
                       <div data-packed="true" style="width: 1000px; pointer-events: none;" class="txtNew" id="comp-ividcu8q">
                         <h6 class="font_6" style="line-height:1.5em;">
-                          The answer to the question you were able to learn from the prototype. It is possible your prototype does not do a great job of answering your question---
-                          that is a positive result of this exercise. You need to iterate multiple different visualization techniques and designs of a single visualization
-                          to reach the final version!
+                          We can see that the first record from our dataset was filmed in the Golden Gate Park, however the trend shows that during next 99 years San Francisco downtown was the most populat filming place. We can also notice that in the past 50 years Mission District became quite popular for filming too.
                         </h6>
                       </div>
                     </div>
@@ -187,8 +183,9 @@
                       </div>
                       <div data-packed="true" style="width: 1000px; pointer-events: none;" class="txtNew" id="comp-ividcu8q">
                         <h6 class="font_6" style="line-height:1.5em;">
-                          Describe how your visualization is encoded. Use precise visualization terminology,
-                          including the name of the overall visualization technique and the visual channels you are using to encode the data.
+                          The non-proportional symbol map shows San Francisco map, a basemap consists of SF neighborhoods, on top of basemap SF blocks are visualized.
+                          The circles on the map show the places where a particular movie scene took a place.
+                          The color scheme shows distinguish between years. The older years are encoded in purple and blue colors while the most recent are endoded in green and yellow.
                         </h6>
                       </div>
                     </div>
@@ -199,9 +196,16 @@
                       </div>
                       <div data-packed="true" style="width: 1000px; pointer-events: none;" class="txtNew" id="comp-ividcu8q">
                         <h6 class="font_6" style="line-height:1.5em;">
-                          Describe your planned interactivity.
-                          Use precise visualization terminology to describe the type of interactivity, and what mouse or keyboard events will trigger that interactivity.
+                          Hover over the circle to see detailed information. Tooltip includes title of the movie, release year, address where the scene was filmed and director's name. </br>
+                          Use the mouse up and mouse down functionality to zoom in and zoom out. Mouse down -> zoom in. Mouse up -> zoom out. Click twice on the neighborhood to zoom into it. Panning can be accomplished clicking and dragging the box on the overview. That's the way to see the different neighborhoods details on zommed in map without zooming out. </br>
+                          Use the slider bar under the map to choose which range of years should be shown on the map. If you want to see a particular year, drag both left and right sliders to the same spot.
+                        </br>
                         </h6>
+                        <div data-packed="true" style="width: 606px; height: 450px; pointer-events: none;" class="txtNew" id="comp-ividcu8q">
+                          </br></br>
+                          <img width=600px src="Interactivity/map.gif" alt="Interactivity_Map">
+                        </div>
+                      </br>
                       </div>
                     </div>
 
