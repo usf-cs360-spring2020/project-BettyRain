@@ -59,3 +59,34 @@ a:link, a:visited {
 th {
   text-align: right;
 }
+
+
+rect.bar {
+  font-family: 'Sans-Serif', sans-serif;
+  stroke: 1px;
+  fill: lightblue;
+}
+
+#x-axis text,
+#y-axis text {
+  font-family: 'Sans-Serif', sans-serif;
+  font-size: 9pt;
+  fill: #888888;
+}
+
+#x-axis line {
+  font-family: 'Sans-Serif', sans-serif;
+  /* tick marks */
+  fill: none;
+  stroke: none;
+}
+
+#x-axis path,
+#y-axis path,
+#y-axis line {
+  font-family: 'Sans-Serif', sans-serif;
+  fill: none;
+
+  stroke: #bbbbbb;
+  stroke-width: 1px;
+}

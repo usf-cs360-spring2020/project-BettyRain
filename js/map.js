@@ -69,7 +69,11 @@ function drawMap() {
     drawBasemap(json);
 
     d3.json("data_movie/blocks.geojson").then(drawStreets);
-    d3.csv("data_movie/film-locations-in-san-francisco_no_dups.csv").then(drawMovies);
+    d3.csv("data_movie/film-locations-in-san-francisco_no_dups.csv").then(function(d) {
+      drawMovies(d);
+      drawBarChart(d);
+    });
+
     drawLegend();
   });
 
@@ -108,12 +112,12 @@ function drawMap() {
         console.log(zoomTrans.scale);
         let circles = g.movies.selectAll("circle");
         if (zoomTrans.scale < 2.3) {
-         circles.attr("r", 4/zoomTrans.scale);
-       } else if (zoomTrans.scale > 5) {
-         circles.attr("r", 1.5);
-       } else {
-         circles.attr("r", 2);
-       }
+          circles.attr("r", 4 / zoomTrans.scale);
+        } else if (zoomTrans.scale > 5) {
+          circles.attr("r", 1.5);
+        } else {
+          circles.attr("r", 2);
+        }
         zoomed();
       });
 
@@ -152,7 +156,7 @@ function drawMap() {
 
   function drawMovies(json) {
 
-    let color = d3.scaleSequential(d3.interpolateViridis)//interpolatePlasma)
+    let color = d3.scaleSequential(d3.interpolateViridis) //interpolatePlasma)
       .domain([1915, 2019]);
 
     // loop through and add projected (x, y) coordinates
@@ -307,41 +311,134 @@ function drawMap() {
 
   function drawLegend() {
     //create legend
-  svg.append("g").attr("id", "legend");
-  let legend = d3.select("svg#vis").select("g#legend");
-  let legendColor = d3.scaleSequential(d3.interpolateViridis)
-    .domain([1915, 2019]);
+    svg.append("g").attr("id", "legend");
+    let legend = d3.select("svg#vis").select("g#legend");
+    let legendColor = d3.scaleSequential(d3.interpolateViridis)
+      .domain([1915, 2019]);
 
-  const defs = svg.append("defs");
+    const defs = svg.append("defs");
 
-  const linearGradient = defs.append("linearGradient")
-    .attr("id", "linear-gradient");
+    const linearGradient = defs.append("linearGradient")
+      .attr("id", "linear-gradient");
 
-  linearGradient.selectAll("stop")
-    .data(legendColor.ticks().map((t, i, n) => ({
-      offset: `${100*i/n.length}%`,
-      color: legendColor(t)
-    })))
-    .enter().append("stop")
-    .attr("offset", d => d.offset)
-    .attr("stop-color", d => d.color);
+    linearGradient.selectAll("stop")
+      .data(legendColor.ticks().map((t, i, n) => ({
+        offset: `${100*i/n.length}%`,
+        color: legendColor(t)
+      })))
+      .enter().append("stop")
+      .attr("offset", d => d.offset)
+      .attr("stop-color", d => d.color);
 
-  svg
-    .append('g')
-    .attr("transform", translate(450, 10))
-    .append("rect")
-    .attr('transform', translate(380, 0))
-    .attr("width", 100)
-    .attr("height", 10)
-    .style("fill", "url(#linear-gradient)");
+    svg
+      .append('g')
+      .attr("transform", translate(450, 10))
+      .append("rect")
+      .attr('transform', translate(380, 0))
+      .attr("width", 100)
+      .attr("height", 10)
+      .style("fill", "url(#linear-gradient)");
 
-  // legend
-  //   .append("text")
-  //   .attr("class", "legend-text")
-  //   .attr("x", width - 60)
-  //   .attr("y", 128)
-  //   .text("# of Incidents")
-  //   .attr("alignment-baseline", "middle")
-  //   .style('fill', 'white');
+    // legend
+    //   .append("text")
+    //   .attr("class", "legend-text")
+    //   .attr("x", width - 60)
+    //   .attr("y", 128)
+    //   .text("# of Incidents")
+    //   .attr("alignment-baseline", "middle")
+    //   .style('fill', 'white');
   }
+
+//http://codexe.net/d3/d3-brush-zoom-bar-chart.html
+
+  function drawBarChart(data) {
+    // configuration of svg/plot area
+    let config = {
+      'svg': {},
+      'margin': {},
+      'plot': {}
+    };
+
+    let width = 960;
+    let height = 500;
+
+    const svg = d3.select("body").select("svg#barchart")
+      .attr("style", "outline: thin solid lightgrey;");
+    // setup plot area
+
+    const plot = svg.append("g")
+    plot.attr('id', 'plot');
+    plot.style("background", "grey");
+    plot.attr('transform', translate(40, 40));
+
+    console.log(data);
+
+    data.forEach(function(d) {
+      d.year = d["Release Year"];
+    })
+
+    let merged = Object.values(data.reduce((r, o) => {
+      r[o.year] = r[o.year] || {
+        year: o.year,
+        count: 0
+      };
+      r[o.year].count += 1;
+      return r;
+    }, {}));
+
+    console.log("merged", merged);
+    let max = 0;
+    merged.forEach(function(d) {
+      if (d.count > max) {
+        max = d.count;
+      }
+    });
+
+
+    console.log(max);
+
+    let y = d3.scaleLinear()
+      .domain([0, max])
+      .range([height - 80, 0]);
+
+    let years = merged.map(d => d.year);
+    years.sort()
+    let x = d3.scaleBand()
+      .domain(years) // all region (not using the count here)
+      .rangeRound([0, width-60])
+      .paddingInner(0.60) // space between bars
+
+
+    let xAxis = d3.axisBottom(x);
+    let yAxis = d3.axisLeft(y);
+
+
+    let xGroup = plot.append("g").attr("id", "x-axis");
+    xGroup.call(xAxis).selectAll("text").attr('transform', 'rotate(80 -10 10)')
+    xGroup.attr("transform", translate(0, height - 80));
+
+    let yGroup = plot.append("g").attr("id", "y-axis");
+    yGroup.call(yAxis);
+
+    let bars = svg.selectAll(".bar")
+    .data(merged)
+    .enter().append("rect")
+    .attr("class", "bar")
+    .attr("x", function(d) {
+      return x(d.year) + 25;
+    })
+    .attr("width", x.bandwidth() + 5)
+    .attr("y", function(d) {
+      return y(d.count) + 30;
+    })
+    .attr("height", function(d) {
+      return height - 70 - y(d.count);
+    });
+
+
+
+
+  }
+
+
 }
