@@ -88,19 +88,52 @@
                             <div id="comp-ividcu8kinlineContent-gridContainer" data-mesh-internal="true">
 
                               <div data-packed="true" style="width: 712px; pointer-events: none;" class="txtNew" id="comp-ividcu8o">
-                                <h2 class="font_6" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">Alpha: Movies in San Francisco</span></h2>
+                                <h2 class="font_6" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">Beta: Movies in San Francisco</span></h2>
                                 </br>
                                 <h2 class="font_12" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">
-                                    <a href="betalocations.html">Click here for Beta Prototype </a>
+                                    <a href="alphalocations.html">Click here for Alpha Prototype </a>
                                 </h2>
                                 <h2 class="font_12" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">
                                     <a href="locations.html">Click here for Final Prototype </a>
                                 </h2>
                               </div>
 
-                              <div data-packed="true" style="width: 606px; pointer-events: none;" class="txtNew" id="comp-ividcu8q">
-                                <img src="prototypes/movie_locations_map.png" alt="Prototype_map">
+                              <div data-packed="true" style="width: 960px; pointer-events: none;" class="txtNew" id="comp-ividcu8q">
+                                <figure>
+                                  <svg width="960" height="500" id="vis">
+                                    <g id="plot">
+                                      <g id="basemap"></g>
+                                      <g id="streets" pointer-events="none"></g>
+                                      <g id="outline" pointer-events="none"></g>
+                                      <g id="movies"></g>
+                                      <g id="tooltip" pointer-events="none"></g>
+                                      <g id="details" pointer-events="none"></g>
+                                    </g>
+                                    <g id="legend" pointer-events="none"></g>
+                                  </svg>
+                                  <figcaption>
+                                    Source: <a href="https://www.kaggle.com/san-francisco/sf-film-locations-in-san-francisco">SF Film Locations in San Francisco</a> (<a
+                                    href="https://data.sfgov.org/Geographic-Locations-and-Boundaries/Analysis-Neighborhoods/p5b7-5n3h">Neighborhoods</a>, <a href="https://data.sfgov.org/Geographic-Locations-and-Boundaries/Streets-Active-and-Retired/3psu-pn9h">Streets</a>) </br>
+                                    Made by Elizaveta Ozerova
+                                  </figcaption>
+
+                                  <div class="align-items-center">
+                                    </br>
+                                    <div width="960" class="col-sm-2">
+                                      <p id="value-simple"></p>
+                                    </div>
+                                    <div class="col-sm">
+                                      <div id="slider-simple"></div>
+                                    </div>
+                                  </div>
+
+
+                                </figure>
+                                <script>
+                                  drawMap();
+                                </script>
                               </div>
+
                             </div>
                           </div>
                         </div>
@@ -127,14 +160,62 @@
                   <div id="SITE_FOOTERinlineContent-gridContainer" data-mesh-internal="true">
 
                     <div data-packed="true" style="width: 712px; pointer-events: none;" class="txtNew" id="comp-ividcu8o">
-                      <h2 class="font_6" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">Why Map</span></h2>
+                      <h2 class="font_6" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">Question</span></h2>
                     </div>
-                    <div data-packed="true" style="width: 606px; pointer-events: none;" class="txtNew" id="comp-ividcu8q">
+                    <div data-packed="true" style="width: 1000px; pointer-events: none;" class="txtNew" id="comp-ividcu8q">
                       <h6 class="font_6" style="line-height:1.5em;">
-                        I find it interesting to see the map of all locations where the movies were filmed.</br>
-                        The data wrangling includes a lot of manual work. Each table row was processed to get the full address from location entered by user. After getting the full address of the location, the data was entered to a special <u><a
-                            href="https://www.gpsvisualizer.com/geocoder/">application</a></u> to get latitude and longitude coordiantes for a map visualization.
+                        Which have been the most popular areas of San Francisco where major motion pictures have been filmed in the past 100 years?
+                        Is there a visible cluster of where most motion picures have been filmed?
                       </h6>
+                    </div>
+
+                    <div id="SITE_FOOTERinlineContent-gridContainer" data-mesh-internal="true">
+                      <div data-packed="true" style="width: 712px; pointer-events: none;" class="txtNew" id="comp-ividcu8o">
+                        <h2 class="font_6" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">Answer</span></h2>
+                      </div>
+                      <div data-packed="true" style="width: 1000px; pointer-events: none;" class="txtNew" id="comp-ividcu8q">
+                        <h6 class="font_6" style="line-height:1.5em;">
+                          We can see that the first record from our dataset was filmed in the Golden Gate Park, however the trend shows that
+                          during next 99 years downtown San Francisco  was the most popular filming place. We can also notice that in the
+                           past 50 years the Mission District became quite popular for filming too.
+                        </h6>
+                      </div>
+                    </div>
+
+                    <div id="SITE_FOOTERinlineContent-gridContainer" data-mesh-internal="true">
+                      <div data-packed="true" style="width: 712px; pointer-events: none;" class="txtNew" id="comp-ividcu8o">
+                        <h2 class="font_6" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">Encoding</span></h2>
+                      </div>
+                      <div data-packed="true" style="width: 1000px; pointer-events: none;" class="txtNew" id="comp-ividcu8q">
+                        <h6 class="font_6" style="line-height:1.5em;">
+                          The non-proportional symbol map shows San Francisco map, a basemap consists of SF neighborhoods, on top of basemap SF blocks are visualized.
+                          The circles on the map show the places where a particular movie scene took a place.
+                          The color scheme distinguishes between years. The older years are encoded in purple and blue colors while the most recent are encoded in green and yellow.
+                        </h6>
+                      </div>
+                    </div>
+
+                    <div id="SITE_FOOTERinlineContent-gridContainer" data-mesh-internal="true">
+                      <div data-packed="true" style="width: 712px; pointer-events: none;" class="txtNew" id="comp-ividcu8o">
+                        <h2 class="font_6" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">Interactivity</span></h2>
+                      </div>
+                      <div data-packed="true" style="width: 1000px; pointer-events: none;" class="txtNew" id="comp-ividcu8q">
+                        <h6 class="font_6" style="line-height:1.5em;">
+                          Hover over the circle to see detailed information. Tooltip includes title of the movie, release year, address where the
+                           scene was filmed and director's name. </br>
+                          Use the mouse up and mouse down functionality to zoom in and zoom out. Mouse down -> zoom in. Mouse up -> zoom out.
+                           Click twice on the neighborhood to zoom into it. Panning can be accomplished clicking and dragging the box on the overview.
+                           That's the way to see the different neighborhoods details on zoomed in map without zooming out. </br>
+                          Use the slider bar under the map to choose which range of years should be shown on the map. If you want to see a particular year,
+                           drag both left and right sliders to the same spot.
+                        </br>
+                        </h6>
+                        <div data-packed="true" style="width: 606px; height: 450px; pointer-events: none;" class="txtNew" id="comp-ividcu8q">
+                          </br></br>
+                          <img width=600px src="interactivity/map.gif" alt="Interactivity_Map">
+                        </div>
+                      </br>
+                      </div>
                     </div>
 
                   </div>

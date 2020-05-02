@@ -170,8 +170,6 @@ function drawMap() {
       d.year = parseInt(d["Release Year"]);
     });
 
-    createSlider(json);
-
     const symbols = g.movies.selectAll("circle")
       .data(json)
       .enter()
@@ -219,7 +217,6 @@ function drawMap() {
       d3.select(this).classed("active-small", false);
       d3.select(this).style("stroke", "");
       d3.selectAll("div#details").remove();
-      //symbols.transition().style("fill", d => color(d.type));
     });
   }
 
@@ -253,60 +250,20 @@ function drawMap() {
     return out;
   }
 
-  function updateMap(years) {
+  function updateMap(startYear, endYear) {
 
-    let startYear = years[0];
-    let endYear = years[1];
     const symbols = g.movies.selectAll("circle")
 
     symbols.filter(d => (d.year > endYear || d.year < startYear)).transition().style("display", "none");
     symbols.filter(d => (d.year <= endYear && d.year >= startYear)).raise().transition().style("display", "inline");
-  }
 
-  function createSlider(data) {
 
-    let years = new Set(data.map(row => row.year))
-    let minYear = 2020;
-    let maxYear = 0;
+    let new_text = `Year Range: ${startYear} - ${endYear}`;
+    d3.select("body").select("svg#barchart").selectAll('text.years-text')
+      .text(
+        new_text
+      );
 
-    years.forEach(function(d) {
-      if (d < minYear) {
-        minYear = d;
-      }
-      if (d > maxYear) {
-        maxYear = d;
-      }
-    });
-
-    //adding years slider
-    var sliderRange = d3
-      .sliderBottom()
-      .min(minYear)
-      .max(maxYear)
-      .step(1)
-      .width(500)
-      .tickValues(years)
-      .default([1915, 2020])
-      .fill('#2196f3')
-      .on('onchange', value => {
-        d3.select('p#value-simple').text(value.join('-'));
-        updateMap(value);
-      });
-
-    var gTime = d3
-      .select('div#slider-simple')
-      .append('svg')
-      .attr('width', 550)
-      .attr('height', 100)
-      .append('g')
-      .attr('transform', 'translate(30,30)');
-
-    gTime.call(sliderRange);
-
-    d3.select('p#value-simple').text(
-      sliderRange.value()
-      .join('-')
-    );
   }
 
   function drawLegend() {
@@ -342,14 +299,14 @@ function drawMap() {
     // legend
     //   .append("text")
     //   .attr("class", "legend-text")
-    //   .attr("x", width - 60)
-    //   .attr("y", 128)
+    //   .attr("x", 100)
+    //   .attr("y", 20)
     //   .text("# of Incidents")
     //   .attr("alignment-baseline", "middle")
     //   .style('fill', 'white');
   }
 
-//http://codexe.net/d3/d3-brush-zoom-bar-chart.html
+  //http://codexe.net/d3/d3-brush-zoom-bar-chart.html
 
   function drawBarChart(data) {
     // configuration of svg/plot area
@@ -364,12 +321,20 @@ function drawMap() {
 
     const svg = d3.select("body").select("svg#barchart")
       .attr("style", "outline: thin solid lightgrey;");
-    // setup plot area
+
+    svg
+      .append("text")
+      .attr("class", "years-text")
+      .attr("x", 430)
+      .attr("y", 13)
+      .text("Year Range: 1915 - 2019")
+      .attr("alignment-baseline", "middle")
+      .style('fill', 'black');
 
     const plot = svg.append("g")
     plot.attr('id', 'plot');
     plot.style("background", "grey");
-    plot.attr('transform', translate(40, 40));
+    plot.attr('transform', translate(40, 20));
 
     console.log(data);
 
@@ -394,51 +359,226 @@ function drawMap() {
       }
     });
 
-
-    console.log(max);
-
     let y = d3.scaleLinear()
       .domain([0, max])
-      .range([height - 80, 0]);
+      .range([height - 160, 0]);
 
     let years = merged.map(d => d.year);
     years.sort()
     let x = d3.scaleBand()
       .domain(years) // all region (not using the count here)
-      .rangeRound([0, width-60])
-      .paddingInner(0.60) // space between bars
+      .rangeRound([0, width - 60])
+      .paddingInner(0.30) // space between bars
 
 
     let xAxis = d3.axisBottom(x);
     let yAxis = d3.axisLeft(y);
 
-
     let xGroup = plot.append("g").attr("id", "x-axis");
-    xGroup.call(xAxis).selectAll("text").attr('transform', 'rotate(80 -10 10)')
-    xGroup.attr("transform", translate(0, height - 80));
+    xGroup.call(xAxis).selectAll("text").attr('transform', 'translate(10,0)rotate(80 -10 10)')
+    xGroup.attr("transform", translate(0, height - 70));
 
     let yGroup = plot.append("g").attr("id", "y-axis");
     yGroup.call(yAxis);
+    yGroup.attr("transform", translate(0, 90));
 
-    let bars = svg.selectAll(".bar")
-    .data(merged)
-    .enter().append("rect")
-    .attr("class", "bar")
-    .attr("x", function(d) {
-      return x(d.year) + 25;
-    })
-    .attr("width", x.bandwidth() + 5)
-    .attr("y", function(d) {
-      return y(d.count) + 30;
-    })
-    .attr("height", function(d) {
-      return height - 70 - y(d.count);
+    let bars1 = svg.selectAll(".bar")
+      .data(merged)
+      .enter().append("rect")
+      .attr("class", "bar")
+      .attr("x", function(d) {
+        return x(d.year) + 35;
+      })
+      .attr("width", x.bandwidth())
+      .attr("y", function(d) {
+        return y(d.count) + 100;
+      })
+      .attr("height", function(d) {
+        return height - 150 - y(d.count);
+      });
+
+    //create small bar chart for interaction
+    let height2 = 50;
+    let y2 = d3.scaleLinear()
+      .domain([0, max])
+      .range([height2, 0]);
+
+    let x2 = d3.scaleBand()
+      .domain(years)
+      .rangeRound([0, width - 60])
+      .paddingInner(0.30)
+
+    let xAxis2 = d3.axisBottom(x2);
+    let yAxis2 = d3.axisLeft(y2);
+
+    let xGroup2 = plot.append("g").attr("id", "x-axis");
+    xGroup2.call(xAxis2).selectAll("text").attr('transform', 'translate(10,0)rotate(80 -10 10)').style("opacity", "0");
+    xGroup2.attr("transform", translate(0, height2));
+
+    let yGroup2 = plot.append("g").attr("id", "y-axis2");
+    yGroup2.call(yAxis2).selectAll("text").style("opacity", "0");
+    yGroup2.attr("transform", translate(0, 0));
+
+    let bars2 = svg.selectAll(".bar#small")
+      .data(merged)
+      .enter().append("rect")
+      .attr("class", "bar")
+      .attr("x", function(d) {
+        return x2(d.year) + 35;
+      })
+      .attr("width", x2.bandwidth())
+      .attr("y", function(d) {
+        return y2(d.count) + 15;
+      })
+      .attr("height", function(d) {
+        return height2 + 5 - y2(d.count);
+      });
+
+    let brush = d3.brushX()
+      .extent([
+        [0, 0],
+        [width, height2]
+      ])
+      .on("brush", brushed)
+      .on("end", brush_end);
+
+    svg.append("g")
+      .attr("class", "brush")
+      .attr("transform", translate(45, 20))
+      .call(brush)
+      .call(brush.move, x2.range());
+
+    function brushed() {
+      if (!d3.event.sourceEvent) return;
+      if (!d3.event.selection) return;
+      if (d3.event.sourceEvent && d3.event.sourceEvent.type === "zoom") return;
+      var newInput = [];
+      var brushArea = d3.event.selection;
+      if (brushArea === null) brushArea = x.range();
+
+      x2.domain().forEach(function(d) {
+        var pos = x2(d) + x2.bandwidth() / 2;
+        if (pos >= brushArea[0] && pos <= brushArea[1]) {
+          newInput.push(d);
+        }
+      });
+
+      x.domain(newInput);
+      let startYear = 2020;
+      let endYear = 0;
+      newInput.forEach(function(d) {
+        if (d > endYear) {
+          endYear = d;
+        }
+        if (d < startYear) {
+          startYear = d;
+        }
+      })
+
+      updateMap(startYear, endYear);
+
+      bars1
+        .attr("x", function(d) {
+          if (x(d.year) == null) {
+            return 0;
+          }
+          return x(d.year) + 25;
+        })
+        .attr("width", x.bandwidth())
+        .attr("y", function(d) {
+          return y(d.count) + 100;
+        })
+        .attr("height", function(d, i) {
+          if (x(d.year) == null) {
+            return 0;
+          }
+          return height - 150 - y(d.count);
+        })
+        .attr("transform", translate(15, 0));
+
+      xGroup.call(xAxis).selectAll("text").attr("transform", 'translate(10,0)rotate(80 -10 10)');
+    }
+
+    function brush_end() {
+
+      if (!d3.event.sourceEvent) return;
+      if (!d3.event.selection) return;
+      if (d3.event.sourceEvent && d3.event.sourceEvent.type === "zoom") return;
+      var newInput = [];
+      var brushArea = d3.event.selection;
+      if (brushArea === null) brushArea = x.range();
+
+
+      x2.domain().forEach(function(d) {
+        var pos = x2(d) + x2.bandwidth() / 2;
+        if (pos >= brushArea[0] && pos <= brushArea[1]) {
+          newInput.push(d);
+        }
+      });
+      //relocate the position of brush area
+      var increment = 0;
+      var left = x2(d3.min(newInput));
+      var right = x2(d3.max(newInput)) + x2.bandwidth();
+
+      d3.select(this).transition().call(d3.event.target.move, [left, right]);
+    }
+
+    bars1.on("mouseover.hover", function(d) {
+      d3.select(this).raise();
+      d3.select(this).style("stroke", "darkgrey");
+      d3.select(this).classed("active-small", true);
+
+      let div = d3.select("body").append("div");
+
+      div
+        .attr("id", "details")
+        .attr("class", "tooltip");
+
+      let dataNew = createTooltipBarChart(Object(d));
+
+      let rows = div
+        .append("tablenew")
+        .selectAll("tr")
+        .data(Object.keys(dataNew))
+        .enter()
+        .append("tr");
+
+      rows.append("th").text(key => key);
+      rows.append("td").text(key => dataNew[key]);
+      div.style("display", "inline");
     });
 
+    bars1.on("mousemove.hover", function(d) {
+      let div = d3.select("div#details");
+      let bbox = div.node().getBoundingClientRect();
 
+      div.style("left", d3.event.pageX + "px");
+      div.style("top", (d3.event.pageY - bbox.height) + "px");
+    });
 
+    bars1.on("mouseout.hover", function(d) {
+      d3.select(this).classed("active-small", false);
+      d3.select(this).style("stroke", "");
+      d3.selectAll("div#details").remove();
+    });
+
+    //function to make tooltip look better
+    function createTooltipBarChart(row, index) {
+      let out = {};
+      for (let col in row) {
+        switch (col) {
+          case 'year':
+            out['Release Year:\xa0'] = row[col];
+            break;
+          case 'count':
+            out['# of Movies:\xa0'] = row[col];
+            break;
+          default:
+            break;
+        }
+      }
+      return out;
+    }
 
   }
-
-
 }

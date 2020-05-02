@@ -1,7 +1,6 @@
 .align-items-center {
- /* background-color: grey; */
+  /* background-color: grey; */
   text-align: center;
-
   font-family: sans-serif;
   font-size: 9pt;
 }
@@ -46,7 +45,6 @@ path.street {
 
 circle.symbol {
   fill-opacity: 0.6;
-
   stroke: white;
   stroke-width: 0.5px;
 }
@@ -55,11 +53,9 @@ a:link, a:visited {
   color: #444444;
 }
 
-
 th {
   text-align: right;
 }
-
 
 rect.bar {
   font-family: 'Sans-Serif', sans-serif;
@@ -67,13 +63,20 @@ rect.bar {
   fill: lightblue;
 }
 
+.brush {
+  fill-opacity: .125;
+  shape-rendering: optimizeSpeed;
+}
+
 #x-axis text,
-#y-axis text {
+#y-axis text,
+#y-axis2 text {
   font-family: 'Sans-Serif', sans-serif;
   font-size: 9pt;
   fill: #888888;
 }
 
+#y-axis2 line,
 #x-axis line {
   font-family: 'Sans-Serif', sans-serif;
   /* tick marks */
@@ -83,10 +86,10 @@ rect.bar {
 
 #x-axis path,
 #y-axis path,
+#y-axis2 path,
 #y-axis line {
   font-family: 'Sans-Serif', sans-serif;
   fill: none;
-
   stroke: #bbbbbb;
   stroke-width: 1px;
 }
