@@ -257,8 +257,13 @@ function drawMap() {
     symbols.filter(d => (d.year > endYear || d.year < startYear)).transition().style("display", "none");
     symbols.filter(d => (d.year <= endYear && d.year >= startYear)).raise().transition().style("display", "inline");
 
+    let new_text;
+    if (startYear !== endYear) {
+      new_text = `Year Range: ${startYear} - ${endYear}`;
+    } else {
+      new_text = `Year: ${startYear}`;
+    }
 
-    let new_text = `Year Range: ${startYear} - ${endYear}`;
     d3.select("body").select("svg#barchart").selectAll('text.years-text')
       .text(
         new_text
@@ -424,7 +429,7 @@ function drawMap() {
       .enter().append("rect")
       .attr("class", "bar")
       .attr("x", function(d) {
-        return x2(d.year) + 35;
+        return x2(d.year) + 45;
       })
       .attr("width", x2.bandwidth())
       .attr("y", function(d) {
