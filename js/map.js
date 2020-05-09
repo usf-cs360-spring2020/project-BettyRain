@@ -294,21 +294,39 @@ function drawMap() {
 
     svg
       .append('g')
-      .attr("transform", translate(450, 10))
+      .attr("transform", translate(450, 20))
       .append("rect")
       .attr('transform', translate(380, 0))
       .attr("width", 100)
       .attr("height", 10)
       .style("fill", "url(#linear-gradient)");
 
-    // legend
-    //   .append("text")
-    //   .attr("class", "legend-text")
-    //   .attr("x", 100)
-    //   .attr("y", 20)
-    //   .text("# of Incidents")
-    //   .attr("alignment-baseline", "middle")
-    //   .style('fill', 'white');
+    legend
+      .append("text")
+      .attr("class", "legend-text")
+      .attr("x", 820)
+      .attr("y", 40)
+      .text("1915")
+      .attr("alignment-baseline", "middle")
+      .style('fill', 'black');
+
+    legend
+      .append("text")
+      .attr("class", "legend-text")
+      .attr("x", 920)
+      .attr("y", 40)
+      .text("2019")
+      .attr("alignment-baseline", "middle")
+      .style('fill', 'black');
+
+    legend
+      .append("text")
+      .attr("class", "legend-text")
+      .attr("x", 848)
+      .attr("y", 10)
+      .text("Release Year")
+      .attr("alignment-baseline", "middle")
+      .style('fill', 'black');
   }
 
   //http://codexe.net/d3/d3-brush-zoom-bar-chart.html
@@ -333,6 +351,24 @@ function drawMap() {
       .attr("x", 430)
       .attr("y", 13)
       .text("Year Range: 1915 - 2019")
+      .attr("alignment-baseline", "middle")
+      .style('fill', 'black');
+
+    svg
+      .append("text")
+      .attr("class", "text")
+      .attr("x", width - 35)
+      .attr("y", height - 30)
+      .text("Year")
+      .attr("alignment-baseline", "middle")
+      .style('fill', 'black');
+
+    svg
+      .append("text")
+      .attr("class", "text")
+      .attr("x", 10)
+      .attr("y", 100)
+      .text("# of Movies Locations")
       .attr("alignment-baseline", "middle")
       .style('fill', 'black');
 
@@ -374,7 +410,6 @@ function drawMap() {
       .domain(years) // all region (not using the count here)
       .rangeRound([0, width - 60])
       .paddingInner(0.30) // space between bars
-
 
     let xAxis = d3.axisBottom(x);
     let yAxis = d3.axisLeft(y);

@@ -22,14 +22,10 @@
   <link href="css/style_pinmenu.css" rel="stylesheet">
   <link href="css/style_footer.css" rel="stylesheet">
 
+
   <link href="css/font.css" rel="stylesheet">
   <link href="css/notusedyet/style2.css" rel="stylesheet">
   <link href="css/notusedyet/useless.css" rel="stylesheet">
-
-  <script src="js/ratings.js"></script>
-  <link href="css/d3/raitings.css" rel="stylesheet" type="text/css">
-  <script src="https://d3js.org/d3.v5.min.js"></script>
-
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
 
@@ -90,13 +86,13 @@
                             <div id="comp-ividcu8kinlineContent-gridContainer" data-mesh-internal="true">
                               </br>
                               <div data-packed="true" style="width: 712px; pointer-events: none;" class="txtNew" id="comp-ividcu8o">
-                                <h2 class="font_6" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">Final: Movies Ratings</span></h2>
+                                <h2 class="font_6" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">Beta: Movies Ratings</span></h2>
                                 </br>
                                 <h2 class="font_12" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">
                                     <a href="alpharatings.html">Click here for Alpha Prototypes </a>
                                 </h2>
                                 <h2 class="font_12" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">
-                                    <a href="betaratings.html">Click here for Beta Prototype </a>
+                                    <a href="ratings.html">Click here for Final Visualization </a>
                                 </h2>
 
                               </div>
@@ -104,22 +100,21 @@
                               <div data-packed="true" style="width: 800px; margin-top: 160px" class="txtNew" id="comp-iw0qom55">
 
                                 <h2 class="font_12" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">Hierarchial Sunburst & Scattergram</span></h2>
-                                <h2 class="font_11" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">(with year-genre hierarchy, size represents imdb score and color scale is build on gross values for SF movies dataset) & (imsb score
-                                    and gross movie ratio for all movies in movie_metadata dataset)</span></h2>
+                                <h2 class="font_11" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">(with year-genre hierarchy, size represents imdb score and color scale is build on gross values for SF movies dataset) & (imsb score and gross movie ratio for all movies in movie_metadata dataset)</span></h2>
+                              <!-- </br>
+                                <img src="prototypes/beta/year-genre-imdb-gross.png" alt="Prototype_hierarchy" height="600" width="600">
+                                <img src="prototypes/beta/simplecharts.png" alt="Prototype_simple" height="600" width="960">
+                              </div> -->
 
-                                <div data-packed="true" style="width: 606px; margin-left: 10px;" class="txtNew" id="comp-ividcu8q">
-                                  </br></br>
-                                  <svg width="960" height="500" id="raitings"></svg>
-                                  <script type="text/javascript">
-                                    drawRatings();
-                                  </script>
-
-                                </div>
+                              <div data-packed="true" style="width: 606px; margin-left: 10px;" class="txtNew" id="comp-ividcu8q">
+                                </br></br>
+                                <img width=1000px height=600px src="prototypes/beta/together.png" alt="Prototype_together">
                               </div>
 
-                                <div id="comp-ividcu8s" data-align="left" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="217" data-height="40" style="height: 40px; min-height: 30px; width: 217px;" class="style-ivko0jau"
-                                  data-state="desktop shouldUseFlex left">
-                                </div>
+
+
+                              <div id="comp-ividcu8s" data-align="left" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="217" data-height="40" style="height: 40px; min-height: 30px; width: 217px;" class="style-ivko0jau"
+                                data-state="desktop shouldUseFlex left">
                               </div>
                             </div>
                           </div>
@@ -129,6 +124,7 @@
                   </div>
                 </div>
               </div>
+            </div>
           </main>
 
           <!-- black footer -->
@@ -146,34 +142,65 @@
                   <div id="SITE_FOOTERinlineContent-gridContainer" data-mesh-internal="true">
 
                     <div data-packed="true" style="width: 712px; pointer-events: none;" class="txtNew" id="comp-ividcu8o">
-                      <h2 class="font_6" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">Encoding</span></h2>
+                      <h2 class="font_6" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">Question</span></h2>
                     </div>
                     <div data-packed="true" style="width: 1000px; pointer-events: none;" class="txtNew" id="comp-ividcu8q">
                       <h6 class="font_6" style="line-height:1.5em;">
-                        Explain to general users how your data is encoded and how to interpret your visualization(s).
+                        Where do movies filmed in San Francisco rate within the overall imdb movie ratings and gross? Has it changed over the years?
                       </h6>
                     </div>
 
                     <div id="SITE_FOOTERinlineContent-gridContainer" data-mesh-internal="true">
                       <div data-packed="true" style="width: 712px; pointer-events: none;" class="txtNew" id="comp-ividcu8o">
-                        <h2 class="font_6" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">Interactivity</span></h2>
+                        <h2 class="font_6" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">Answer</span></h2>
                       </div>
                       <div data-packed="true" style="width: 1000px; pointer-events: none;" class="txtNew" id="comp-ividcu8q">
                         <h6 class="font_6" style="line-height:1.5em;">
-                          Interactivity: Explain to general users how to interact with your visualization(s).
+                          The answer to the question is easier to get using interactivity. For now we cannot see any particular patterns, though overall we can see that a lot of movies got high imdb score and reasonable gross.
                         </h6>
                       </div>
                     </div>
 
                     <div id="SITE_FOOTERinlineContent-gridContainer" data-mesh-internal="true">
                       <div data-packed="true" style="width: 712px; pointer-events: none;" class="txtNew" id="comp-ividcu8o">
-                        <h2 class="font_6" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">Findings</span></h2>
+                        <h2 class="font_6" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">Encoding & Wrangling</span></h2>
                       </div>
                       <div data-packed="true" style="width: 1000px; pointer-events: none;" class="txtNew" id="comp-ividcu8q">
                         <h6 class="font_6" style="line-height:1.5em;">
-                          Explain a major finding from your visualization to general users.
-                          This should help support your overall narrative or theme.
-                          You can pose this in a question/answer format like your prototype page.
+                          Sunburst elements include hierarchy of year by genre. The size of the cell is encoded by the total sum of imdb score of movies in this hierarchy cell, so the higher the cumulative imdb score in a year, the larger the cell.
+                          The color scheme shows the gross, the darker color shows the higher gross. </br>
+                          Scattergram shows imdb scores on y axis and and gross on y axis. Each movie is encoded by circle and places on (x,y)
+                           where x is it's imdb score and y is it's gross. </br>
+                        </h6>
+                      </div>
+                    </div>
+
+                    <div id="SITE_FOOTERinlineContent-gridContainer" data-mesh-internal="true">
+                      <div data-packed="true" style="width: 712px; pointer-events: none;" class="txtNew" id="comp-ividcu8o">
+                        <h2 class="font_6" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">Additional Wrangling</span></h2>
+                      </div>
+                      <div data-packed="true" style="width: 1000px; pointer-events: none;" class="txtNew" id="comp-ividcu8q">
+                        <h6 class="font_6" style="line-height:1.5em;">
+                          There are less movies than on the <u><a href="locations.html">map</a></u>,because the movies from <u><a href="https://www.kaggle.com/san-francisco/sf-film-locations-in-san-francisco">SF movies</a></u> were merged with <u><a href="https://data.world/data-society/imdb-5000-movie-dataset">IMDB 5000 Movie Dataset</a></u> to get ratings data.
+                          The second dataset doesn't include movies released after 2016 and doesn't include any televison series, which resulted in reducing SF movie elements in the ratings diagrams. After first merging all rows were merged again by same title-director-year, to remove duplicate data in ratings. It was used in location map: if a movie was filmed in different locations in SF, it had more than one row.
+                        </h6>
+                      </div>
+                    </div>
+
+                    <div id="SITE_FOOTERinlineContent-gridContainer" data-mesh-internal="true">
+                      <div data-packed="true" style="width: 712px; pointer-events: none;" class="txtNew" id="comp-ividcu8o">
+                        <h2 class="font_6" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">Interactivity</span></h2>
+                      </div>
+                      <div data-packed="true" style="width: 1000px; height: 650px; pointer-events: none;" class="txtNew" id="comp-ividcu8q">
+                        <h6 class="font_6" style="line-height:1.5em;">
+                          The sunburst chart will have a zoom on click implementation. After clicking in a particular year region, we will see all movies filmed this year by titles.
+                          After hovering over the region, we will see all movies from this region highlighted on the scattergram (see img. below).
+                          After hovering over the movie title after zooming, we will see this particular movie highlighted on the scattergram (see img. below).
+                          <div data-packed="true" style="width: 606px; height: 450px; pointer-events: none;" class="txtNew" id="comp-ividcu8q">
+                          </br>
+                            <img width=600px src="prototypes/beta/simplecharts.png" alt="Interactivity_Charts">
+                            </br></br>
+                          </div>
                         </h6>
                       </div>
                     </div>
