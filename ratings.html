@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Final Project</title>
+  <title>Movies World</title>
 
   <!-- Add all stylesheets -->
   <link href="css/viewerMainStyle.css" rel="stylesheet">
@@ -114,12 +114,18 @@
                                     drawRatings();
                                   </script>
 
+                                  <figcaption>
+                                    </br>
+                                    Source: <a href="https://www.kaggle.com/san-francisco/sf-film-locations-in-san-francisco">SF Film Locations in San Francisco</a>,
+                                    <a href="https://data.world/data-society/imdb-5000-movie-dataset">IMDB 5000 Movie Dataset </a> </br>
+                                    Made by Elizaveta Ozerova
+                                  </figcaption>
+
                                 </div>
                               </div>
 
-                                <div id="comp-ividcu8s" data-align="left" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="217" data-height="40" style="height: 40px; min-height: 30px; width: 217px;" class="style-ivko0jau"
-                                  data-state="desktop shouldUseFlex left">
-                                </div>
+                              <div id="comp-ividcu8s" data-align="left" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="217" data-height="40" style="height: 40px; min-height: 30px; width: 217px;" class="style-ivko0jau"
+                                data-state="desktop shouldUseFlex left">
                               </div>
                             </div>
                           </div>
@@ -129,6 +135,7 @@
                   </div>
                 </div>
               </div>
+            </div>
           </main>
 
           <!-- black footer -->
@@ -150,8 +157,25 @@
                     </div>
                     <div data-packed="true" style="width: 1000px; pointer-events: none;" class="txtNew" id="comp-ividcu8q">
                       <h6 class="font_6" style="line-height:1.5em;">
-                        Explain to general users how your data is encoded and how to interpret your visualization(s).
+                        Sunburst elements include hierarchy of year by genre. The size of the cell is encoded by the total sum of imdb score of movies in this hierarchy cell, so the higher the cumulative imdb score in a year, the larger the cell.
+                        </br>
+                        Scattergram shows imdb scores on y axis and and gross (after inflation) on x axis. Each movie is encoded by circle and placed on (x,y),
+                        where x is it's imdb score and y is it's gross. Gross was counted for every year with inflation comparing to 2019 year.</br>
                       </h6>
+                    </div>
+
+                    <div id="SITE_FOOTERinlineContent-gridContainer" data-mesh-internal="true">
+                      <div data-packed="true" style="width: 712px; pointer-events: none;" class="txtNew" id="comp-ividcu8o">
+                        <h2 class="font_6" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">Wrangling</span></h2>
+                      </div>
+                      <div data-packed="true" style="width: 1000px; pointer-events: none;" class="txtNew" id="comp-ividcu8q">
+                        <h6 class="font_6" style="line-height:1.5em;">
+                          There are less movies than on the <u><a href="locations.html">map</a></u>,because the movies from <u><a href="https://www.kaggle.com/san-francisco/sf-film-locations-in-san-francisco">SF movies</a></u> were merged with <u><a
+                              href="https://data.world/data-society/imdb-5000-movie-dataset">IMDB 5000 Movie Dataset</a></u> to get ratings data.
+                          The second dataset doesn't include movies released after 2016 and doesn't include any televison series, which resulted in reducing SF movie elements in the ratings diagrams. After first merging all rows were merged again by
+                          same title-director-year, to remove duplicate data in ratings. It was used in location map: if a movie was filmed in different locations in SF, it had more than one row.
+                        </h6>
+                      </div>
                     </div>
 
                     <div id="SITE_FOOTERinlineContent-gridContainer" data-mesh-internal="true">
@@ -160,7 +184,15 @@
                       </div>
                       <div data-packed="true" style="width: 1000px; pointer-events: none;" class="txtNew" id="comp-ividcu8q">
                         <h6 class="font_6" style="line-height:1.5em;">
-                          Interactivity: Explain to general users how to interact with your visualization(s).
+                          The sunburst chart have a simple tooltip and a zoom on click implementations. After clicking in a particular year region, you will see all movies filmed this year by titles. </br>
+                          After clicking on the year and moving to the first zoom level, you will see all movies from this region highlighted on the scattergram.
+                          After clicking on the movie title and moving to the second zoom level, you will see this particular movie highlighted on the scattergram. </br>
+                          After clicking on the button (that is located on the top left part of visualization), you will see all SF movies highlighted on the scattergram. </br>
+                          See example below: </br>
+                          <div data-packed="true" style="width: 606px; pointer-events: none;" class="txtNew" id="comp-ividcu8q">
+                            </br>
+                            <img width=600px src="interactivity/raitings_final.gif" alt="Interactivity_Charts">
+                          </div>
                         </h6>
                       </div>
                     </div>
@@ -171,13 +203,15 @@
                       </div>
                       <div data-packed="true" style="width: 1000px; pointer-events: none;" class="txtNew" id="comp-ividcu8q">
                         <h6 class="font_6" style="line-height:1.5em;">
-                          Explain a major finding from your visualization to general users.
-                          This should help support your overall narrative or theme.
-                          You can pose this in a question/answer format like your prototype page.
+                          From this visualization we can notice that there are a lot movies filmed in San Francisco that have high raitings. San Francisco magic!
+                          The highest SF movie IMDB score is 8.8 given to all-known "Forrest Gump" movie. The highest SF movie gross was for "Americal Graffiti" movie.
+                          On the other hand, we can find a lot of 'cult' movies that were filmed in San Francisco. Overall, the charts prove that San Francisco is as cinematic, as most mainstream cinematic cities.
+                        </h6>
+                        <h6 class="font_6" style="line-height:1.5em;">
+                        </br>
                         </h6>
                       </div>
                     </div>
-
                   </div>
                 </div>
               </div>

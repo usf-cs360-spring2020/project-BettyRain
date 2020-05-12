@@ -7,10 +7,9 @@ function drawRatings() {
 
   d3.json("data_movie/combined/jsondatanew.json").then(drawHierarchy);
   d3.csv("data_movie/combined/movie_metadata_edited.csv").then(drawCircleChart);
+  drawButton();
 
   function drawHierarchy(data) {
-
-    // THE LINK: https://observablehq.com/@d3/zoomable-sunburst
 
     arc = d3.arc()
       .startAngle(d => d.x0)
@@ -31,6 +30,10 @@ function drawRatings() {
       .attr("id", "plot")
       .attr("transform", translate(pad + 120, pad + 110));
 
+  let arr = root.descendants().slice(1);
+
+  arr.sort();
+console.log(arr);
     const path = g.append("g")
       .selectAll("path")
       .data(root.descendants().slice(1))
@@ -137,7 +140,6 @@ function drawRatings() {
   partition = data => {
     const root = d3.hierarchy(data)
       .sum(d => d.value)
-      .sort((a, b) => b.value - a.value);
     return d3.partition()
       .size([2 * Math.PI, root.height + 1])
       (root);
@@ -169,7 +171,7 @@ function drawRatings() {
 
     let x = d3.scaleBand()
       .domain([0, 100000000, 200000000, 300000000, 400000000, 500000000, 600000000, 700000000, 800000000, 900000000])
-      .range([0, small_width - 50])
+      .range([0, small_width])
       .padding([0.8])
 
     // add the X gridlines
@@ -186,7 +188,7 @@ function drawRatings() {
       .attr("class", "grid")
       .attr("transform", translate(small_width + 150, 20))
       .call(make_y_gridlines()
-        .tickSize(-small_width + 50)
+        .tickSize(-small_width)
         .tickFormat("")
       )
 
@@ -225,11 +227,32 @@ function drawRatings() {
       .data(data)
       .enter().append("circle")
       .attr("class", "circle")
-      .attr("cx", d => x2(d.gross) + 30)
+      .attr("cx", d => x2(d.gross_inflation) + 30)
       .attr("cy", d => y(d.imdb_score))
       .attr("r", 3.5)
       .attr("fill", "lightgrey")
       .attr("stroke", "black")
+
+    circles.filter((d => d.gross_inflation == 0)).style("visibility", "hidden")
+
+    d3.select("#button_notshow").raise();
+    d3.select("#button_show").raise();
+
+    svg.append("text")
+      .attr("class", "text_label")
+      .attr("x", 500)
+      .attr("y", 10)
+      .text("IMDB Score")
+      .attr("alignment-baseline", "middle")
+      .style('fill', 'black');
+
+    svg.append("text")
+      .attr("class", "text_label")
+      .attr("x", 850)
+      .attr("y", height - 50)
+      .text("Gross (after inflation)")
+      .attr("alignment-baseline", "middle")
+      .style('fill', 'black');
 
     circles.on("mouseover.hover", function(d) {
       d3.select(this).style("stroke", "black");
@@ -268,15 +291,14 @@ function drawRatings() {
       d3.select(this).style("stroke", "");
       d3.selectAll("div#details").remove();
     });
-
-
   }
 
-  function showOnCircles(input){
+
+  function showOnCircles(input) {
     let circles = d3.select("body").select("svg#raitings").selectAll(".circle")
 
     input.forEach(function(input) {
-      circles.filter(d => (d.movie_title.toLowerCase() === input.toLowerCase())).raise().transition().attr("r", 4.5).style("fill", "dodgerblue");
+      circles.filter(d => (d.movie_title.toLowerCase() == input.toLowerCase())).raise().transition().attr("r", 4.5).style("fill", "dodgerblue");
     })
   }
 
@@ -284,6 +306,7 @@ function drawRatings() {
   function createTooltip(row, index) {
 
     let out = {};
+    let f = d3.formatPrefix(".0", 1e3)
     for (let col in row) {
       switch (col) {
         case 'movie_title':
@@ -298,14 +321,87 @@ function drawRatings() {
         case 'imdb_score':
           out['Imbd Score:\xa0'] = row[col];
           break;
-        case 'gross':
-          out['Gross:\xa0'] = row[col];
+        case 'gross_inflation':
+          out['Gross:\xa0'] = f(row[col]);
           break;
         default:
           break;
       }
     }
     return out;
+  }
+
+  function displaySF(data) {
+    let sfmovies = new Set(data.map(row => row.Title))
+    let circles = d3.select("body").select("svg#raitings").selectAll(".circle")
+
+    sfmovies.forEach(function(input) {
+      circles.filter(d => (d.movie_title.toLowerCase() == input.toLowerCase())).raise().transition().attr("r", 4.5).style("fill", "dodgerblue");
+    })
+  }
+
+  function drawButton() {
+
+    const svg = d3.select("body").select("svg#raitings");
+
+    svg.append("text")
+      .attr("class", "text_show")
+      .attr("x", 850)
+      .attr("y", 15)
+      .text("Press to see SF movies")
+      .attr("alignment-baseline", "middle")
+      .style('fill', 'black');
+
+    svg.append("text")
+      .attr("class", "text_notshow")
+      .attr("x", 850)
+      .attr("y", 15)
+      .text("Press to hide SF movies")
+      .attr("alignment-baseline", "middle")
+      .style('fill', 'black')
+      .style("visibility", "hidden");
+
+    let button_show = svg.append("rect")
+      .attr("id", "button_show")
+      .raise()
+      .attr("x", 900)
+      .attr("y", 20)
+      .attr("width", 40)
+      .attr("height", 20)
+      .style("fill", "grey")
+      .style("stroke", "black")
+      .attr("rx", 3)
+      .attr("ry", 3)
+      .on("click", function() {
+        d3.csv("data_movie/combined/only-combined.csv").then(displaySF);
+        d3.select("#button_show").style("visibility", "hidden")
+        d3.selectAll("text.text_show").style("visibility", "hidden")
+
+        d3.select("#button_notshow").style("visibility", "visible")
+        d3.selectAll("text.text_notshow").style("visibility", "visible")
+      })
+
+    let button_notshow = svg.append("rect")
+      .attr("id", "button_notshow")
+      .raise()
+      .attr("x", 900)
+      .attr("y", 20)
+      .attr("width", 40)
+      .attr("height", 20)
+      .style("fill", "grey")
+      .style("stroke", "black")
+      .attr("rx", 3)
+      .attr("ry", 3)
+      .style("visibility", "hidden")
+      .on("click", function() {
+        let circles = d3.select("body").select("svg#raitings").selectAll(".circle");
+        circles.style("fill", "lightgrey").attr("r", 3.5);
+        d3.select("#button_show").style("visibility", "visible")
+        d3.selectAll("text.text_show").style("visibility", "visible")
+
+        d3.select("#button_notshow").style("visibility", "hidden")
+        d3.selectAll("text.text_notshow").style("visibility", "hidden")
+      })
   }
 
 

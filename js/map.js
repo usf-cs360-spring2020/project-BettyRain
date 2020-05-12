@@ -35,6 +35,7 @@ function drawMap() {
     movies: plot.select("g#movies"),
     details: plot.select("g#details"),
     tooltip: plot.select("g#tooltip"),
+    tooltipsmall: plot.select("g#tooltipsmall"),
     legend: plot.select("g#legend"),
   };
 
@@ -51,6 +52,13 @@ function drawMap() {
     .attr("height", 500)
     .attr("x", 0)
     .attr("y", 0);
+
+  // setup tooltip (shows neighborhood name)
+  const tip = g.tooltipsmall.append("text").attr("id", "tooltipsmall");
+  tip.attr("text-anchor", "end");
+  tip.attr("dx", -5);
+  tip.attr("dy", -5);
+  tip.style("visibility", "hidden");
 
   const body = details.append("xhtml:body")
     .style("text-align", "left")
@@ -109,7 +117,7 @@ function drawMap() {
       .scaleExtent([1, 8])
       .on("zoom", () => {
         zoomTrans.scale = d3.event.transform.k;
-        console.log(zoomTrans.scale);
+        //console.log(zoomTrans.scale);
         let circles = g.movies.selectAll("circle");
         if (zoomTrans.scale < 2.3) {
           circles.attr("r", 4 / zoomTrans.scale);
@@ -123,15 +131,29 @@ function drawMap() {
 
     plot.call(zoom);
 
-
     // add highlight
     basemap.on("mouseover.highlight", function(d) {
         d3.select(d.properties.outline).raise();
-        d3.select(d.properties.outline).classed("activeland", true);
+        d3.select(d.properties.outline).classed("active_js", true);
       })
       .on("mouseout.highlight", function(d) {
-        d3.select(d.properties.outline).classed("activeland", false);
+        d3.select(d.properties.outline).classed("active_js", false);
       });
+
+    // add tooltip
+    basemap.on("mouseover.tooltip", function(d) {
+        tip.text(d.properties.name);
+        tip.style("visibility", "visible");
+      })
+      .on("mousemove.tooltip", function(d) {
+        const coords = d3.mouse(g.basemap.node());
+        tip.attr("x", coords[0]);
+        tip.attr("y", coords[1]);
+      })
+      .on("mouseout.tooltip", function(d) {
+        tip.style("visibility", "hidden");
+      });
+
   }
 
   function zoomed() {
@@ -140,7 +162,7 @@ function drawMap() {
   }
 
   function drawStreets(json) {
-    console.log("streets", json);
+    //console.log("streets", json);
 
     const streets = json.features.filter(function(d) {
       return d;
@@ -377,7 +399,7 @@ function drawMap() {
     plot.style("background", "grey");
     plot.attr('transform', translate(40, 20));
 
-    console.log(data);
+    //console.log(data);
 
     data.forEach(function(d) {
       d.year = d["Release Year"];
@@ -392,7 +414,7 @@ function drawMap() {
       return r;
     }, {}));
 
-    console.log("merged", merged);
+    //console.log("merged", merged);
     let max = 0;
     merged.forEach(function(d) {
       if (d.count > max) {

@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Final Project</title>
+  <title>Movies World</title>
 
   <!-- Add all stylesheets -->
   <link href="css/viewerMainStyle.css" rel="stylesheet">
@@ -100,21 +100,23 @@
                               <div data-packed="true" style="width: 800px; margin-top: 160px" class="txtNew" id="comp-iw0qom55">
 
                                 <h2 class="font_12" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">Hierarchial Sunburst & Scattergram</span></h2>
-                                <h2 class="font_11" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">(with year-genre hierarchy, size represents imdb score and color scale is build on gross values for SF movies dataset) & (imsb score and gross movie ratio for all movies in movie_metadata dataset)</span></h2>
-                              <!-- </br>
+                                <h2 class="font_11" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">(with year-genre hierarchy, size represents imdb score and color scale is build on gross values for SF movies dataset) & (imsb score
+                                    and gross movie ratio for all movies in movie_metadata dataset)</span></h2>
+                                <!-- </br>
                                 <img src="prototypes/beta/year-genre-imdb-gross.png" alt="Prototype_hierarchy" height="600" width="600">
                                 <img src="prototypes/beta/simplecharts.png" alt="Prototype_simple" height="600" width="960">
                               </div> -->
 
-                              <div data-packed="true" style="width: 606px; margin-left: 10px;" class="txtNew" id="comp-ividcu8q">
-                                </br></br>
-                                <img width=1000px height=600px src="prototypes/beta/together.png" alt="Prototype_together">
-                              </div>
+                                <div data-packed="true" style="width: 606px; margin-left: 10px;" class="txtNew" id="comp-ividcu8q">
+                                  </br></br>
+                                  <img width=1000px height=600px src="prototypes/beta/together.png" alt="Prototype_together">
+                                </div>
 
 
 
-                              <div id="comp-ividcu8s" data-align="left" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="217" data-height="40" style="height: 40px; min-height: 30px; width: 217px;" class="style-ivko0jau"
-                                data-state="desktop shouldUseFlex left">
+                                <div id="comp-ividcu8s" data-align="left" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="217" data-height="40" style="height: 40px; min-height: 30px; width: 217px;" class="style-ivko0jau"
+                                  data-state="desktop shouldUseFlex left">
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -124,7 +126,6 @@
                   </div>
                 </div>
               </div>
-            </div>
           </main>
 
           <!-- black footer -->
@@ -139,8 +140,24 @@
               </div>
               <div id="SITE_FOOTERinlineContent" class="style-k8nvc4vqinlineContent">
                 <div id="SITE_FOOTERinlineContent-gridWrapper" data-mesh-internal="true">
-                  <div id="SITE_FOOTERinlineContent-gridContainer" data-mesh-internal="true">
 
+                  <div id="SITE_FOOTERinlineContent-gridContainer" data-mesh-internal="true">
+                    <div data-packed="true" style="width: 712px; pointer-events: none;" class="txtNew" id="comp-ividcu8o">
+                      <h2 class="font_6" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">Feedback</span></h2>
+                    </div>
+                    <div data-packed="true" style="width: 1000px; pointer-events: none;" class="txtNew" id="comp-ividcu8q">
+                      <h6 class="font_6" style="line-height:1.5em;">
+                        <u>Instructor Feedback:</u> </br>
+                        Count the gross inflation to reduce the lie factor. </bR>
+                        <u>Peer Feedback:</u> </br>
+                        In peer review I got a comment that the color scale is hardly understandable.</br>
+                        <u>Changes:</u> </br>
+                        Removed the coloring by gross, counted inflation and changed the scattergram using inflation. </br>
+                      </h6>
+                    </div>
+                  </div>
+
+                  <div id="SITE_FOOTERinlineContent-gridContainer" data-mesh-internal="true">
                     <div data-packed="true" style="width: 712px; pointer-events: none;" class="txtNew" id="comp-ividcu8o">
                       <h2 class="font_6" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">Question</span></h2>
                     </div>
@@ -149,156 +166,159 @@
                         Where do movies filmed in San Francisco rate within the overall imdb movie ratings and gross? Has it changed over the years?
                       </h6>
                     </div>
-
-                    <div id="SITE_FOOTERinlineContent-gridContainer" data-mesh-internal="true">
-                      <div data-packed="true" style="width: 712px; pointer-events: none;" class="txtNew" id="comp-ividcu8o">
-                        <h2 class="font_6" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">Answer</span></h2>
-                      </div>
-                      <div data-packed="true" style="width: 1000px; pointer-events: none;" class="txtNew" id="comp-ividcu8q">
-                        <h6 class="font_6" style="line-height:1.5em;">
-                          The answer to the question is easier to get using interactivity. For now we cannot see any particular patterns, though overall we can see that a lot of movies got high imdb score and reasonable gross.
-                        </h6>
-                      </div>
-                    </div>
-
-                    <div id="SITE_FOOTERinlineContent-gridContainer" data-mesh-internal="true">
-                      <div data-packed="true" style="width: 712px; pointer-events: none;" class="txtNew" id="comp-ividcu8o">
-                        <h2 class="font_6" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">Encoding & Wrangling</span></h2>
-                      </div>
-                      <div data-packed="true" style="width: 1000px; pointer-events: none;" class="txtNew" id="comp-ividcu8q">
-                        <h6 class="font_6" style="line-height:1.5em;">
-                          Sunburst elements include hierarchy of year by genre. The size of the cell is encoded by the total sum of imdb score of movies in this hierarchy cell, so the higher the cumulative imdb score in a year, the larger the cell.
-                          The color scheme shows the gross, the darker color shows the higher gross. </br>
-                          Scattergram shows imdb scores on y axis and and gross on y axis. Each movie is encoded by circle and places on (x,y)
-                           where x is it's imdb score and y is it's gross. </br>
-                        </h6>
-                      </div>
-                    </div>
-
-                    <div id="SITE_FOOTERinlineContent-gridContainer" data-mesh-internal="true">
-                      <div data-packed="true" style="width: 712px; pointer-events: none;" class="txtNew" id="comp-ividcu8o">
-                        <h2 class="font_6" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">Additional Wrangling</span></h2>
-                      </div>
-                      <div data-packed="true" style="width: 1000px; pointer-events: none;" class="txtNew" id="comp-ividcu8q">
-                        <h6 class="font_6" style="line-height:1.5em;">
-                          There are less movies than on the <u><a href="locations.html">map</a></u>,because the movies from <u><a href="https://www.kaggle.com/san-francisco/sf-film-locations-in-san-francisco">SF movies</a></u> were merged with <u><a href="https://data.world/data-society/imdb-5000-movie-dataset">IMDB 5000 Movie Dataset</a></u> to get ratings data.
-                          The second dataset doesn't include movies released after 2016 and doesn't include any televison series, which resulted in reducing SF movie elements in the ratings diagrams. After first merging all rows were merged again by same title-director-year, to remove duplicate data in ratings. It was used in location map: if a movie was filmed in different locations in SF, it had more than one row.
-                        </h6>
-                      </div>
-                    </div>
-
-                    <div id="SITE_FOOTERinlineContent-gridContainer" data-mesh-internal="true">
-                      <div data-packed="true" style="width: 712px; pointer-events: none;" class="txtNew" id="comp-ividcu8o">
-                        <h2 class="font_6" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">Interactivity</span></h2>
-                      </div>
-                      <div data-packed="true" style="width: 1000px; height: 650px; pointer-events: none;" class="txtNew" id="comp-ividcu8q">
-                        <h6 class="font_6" style="line-height:1.5em;">
-                          The sunburst chart will have a zoom on click implementation. After clicking in a particular year region, we will see all movies filmed this year by titles.
-                          After hovering over the region, we will see all movies from this region highlighted on the scattergram (see img. below).
-                          After hovering over the movie title after zooming, we will see this particular movie highlighted on the scattergram (see img. below).
-                          <div data-packed="true" style="width: 606px; height: 450px; pointer-events: none;" class="txtNew" id="comp-ividcu8q">
-                          </br>
-                            <img width=600px src="prototypes/beta/simplecharts.png" alt="Interactivity_Charts">
-                            </br></br>
-                          </div>
-                        </h6>
-                      </div>
-                    </div>
-
                   </div>
+
+                  <div id="SITE_FOOTERinlineContent-gridContainer" data-mesh-internal="true">
+                    <div data-packed="true" style="width: 712px; pointer-events: none;" class="txtNew" id="comp-ividcu8o">
+                      <h2 class="font_6" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">Answer</span></h2>
+                    </div>
+                    <div data-packed="true" style="width: 1000px; pointer-events: none;" class="txtNew" id="comp-ividcu8q">
+                      <h6 class="font_6" style="line-height:1.5em;">
+                        The answer to the question is easier to get using interactivity. For now we cannot see any particular patterns, though overall we can see that a lot of movies got high imdb score and reasonable gross.
+                      </h6>
+                    </div>
+                  </div>
+
+                  <div id="SITE_FOOTERinlineContent-gridContainer" data-mesh-internal="true">
+                    <div data-packed="true" style="width: 712px; pointer-events: none;" class="txtNew" id="comp-ividcu8o">
+                      <h2 class="font_6" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">Encoding & Wrangling</span></h2>
+                    </div>
+                    <div data-packed="true" style="width: 1000px; pointer-events: none;" class="txtNew" id="comp-ividcu8q">
+                      <h6 class="font_6" style="line-height:1.5em;">
+                        Sunburst elements include hierarchy of year by genre. The size of the cell is encoded by the total sum of imdb score of movies in this hierarchy cell, so the higher the cumulative imdb score in a year, the larger the cell.
+                        The color scheme shows the gross, the darker color shows the higher gross. </br>
+                        Scattergram shows imdb scores on y axis and and gross on y axis. Each movie is encoded by circle and places on (x,y)
+                        where x is it's imdb score and y is it's gross. </br>
+                      </h6>
+                    </div>
+                  </div>
+
+                  <div id="SITE_FOOTERinlineContent-gridContainer" data-mesh-internal="true">
+                    <div data-packed="true" style="width: 712px; pointer-events: none;" class="txtNew" id="comp-ividcu8o">
+                      <h2 class="font_6" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">Additional Wrangling</span></h2>
+                    </div>
+                    <div data-packed="true" style="width: 1000px; pointer-events: none;" class="txtNew" id="comp-ividcu8q">
+                      <h6 class="font_6" style="line-height:1.5em;">
+                        There are less movies than on the <u><a href="locations.html">map</a></u>,because the movies from <u><a href="https://www.kaggle.com/san-francisco/sf-film-locations-in-san-francisco">SF movies</a></u> were merged with <u><a
+                            href="https://data.world/data-society/imdb-5000-movie-dataset">IMDB 5000 Movie Dataset</a></u> to get ratings data.
+                        The second dataset doesn't include movies released after 2016 and doesn't include any televison series, which resulted in reducing SF movie elements in the ratings diagrams. After first merging all rows were merged again by
+                        same title-director-year, to remove duplicate data in ratings. It was used in location map: if a movie was filmed in different locations in SF, it had more than one row.
+                      </h6>
+                    </div>
+                  </div>
+
+                  <div id="SITE_FOOTERinlineContent-gridContainer" data-mesh-internal="true">
+                    <div data-packed="true" style="width: 712px; pointer-events: none;" class="txtNew" id="comp-ividcu8o">
+                      <h2 class="font_6" style="line-height:1.5em;"><span style="letter-spacing:0.05em;">Interactivity</span></h2>
+                    </div>
+                    <div data-packed="true" style="width: 1000px; height: 650px; pointer-events: none;" class="txtNew" id="comp-ividcu8q">
+                      <h6 class="font_6" style="line-height:1.5em;">
+                        The sunburst chart will have a zoom on click implementation. After clicking in a particular year region, we will see all movies filmed this year by titles.
+                        After hovering over the region, we will see all movies from this region highlighted on the scattergram (see img. below).
+                        After hovering over the movie title after zooming, we will see this particular movie highlighted on the scattergram (see img. below).
+                        <div data-packed="true" style="width: 606px; height: 450px; pointer-events: none;" class="txtNew" id="comp-ividcu8q">
+                          </br>
+                          <img width=600px src="prototypes/beta/simplecharts.png" alt="Interactivity_Charts">
+                          </br></br>
+                        </div>
+                      </h6>
+                    </div>
+                  </div>
+
                 </div>
               </div>
             </div>
         </div>
       </div>
-      </footer>
-
-
-      <!-- PIN MENU WITH YOU -->
-      <div id="pinnedAfterPAGES_CONTAINER" style="top:0;left:0;position:fixed;width:100%;height:calc(100% - 50px);margin-top:50px;z-index:50;display:grid;grid-template-columns:1fr;grid-template-rows:1fr;pointer-events:none">
-
-        <!-- NAVIGATION -->
-        <div id="comp-ivgjuufw" class="hidden-during-prewarmup ddm1" style="width: 882px; height: 30px; z-index: 50; overflow-x: visible;" data-stretch-buttons-to-menu-width="false" data-same-width-buttons="false" data-num-items="3"
-          data-menuborder-y="0" data-menubtn-border="0" data-ribbon-els="0" data-label-pad="0" data-ribbon-extra="0" data-drophposition="" data-dropalign="right" dir="ltr" data-state="right notMobile" data-dropmode="dropDown">
-          <nav aria-label="Site" id="comp-ivgjuufwnavContainer" class="ddm1navContainer">
-            <ul style="text-align:right" id="comp-ivgjuufwitemsContainer" class="ddm1itemsContainer">
-              <li data-direction="ltr" data-listposition="center" data-data-id="dataItem-ivklmiba" class="ddm1repeaterButton" data-state="menu  idle link notMobile" id="comp-ivgjuufw0" data-original-gap-between-text-and-btn="10" aria-hidden="false"
-                style="width: 70px; height: 30px; position: relative; box-sizing: border-box; overflow: visible;"><a data-listposition="center" aria-haspopup="false" href="index.html" target="_self" id="comp-ivgjuufw0linkElement"
-                  class="ddm1repeaterButtonlinkElement">
-                  <div class="ddm1repeaterButton_gapper">
-                    <div style="text-align:right" id="comp-ivgjuufw0bg" class="ddm1repeaterButtonbg">
-                      <p style="text-align: right; line-height: 30px;" id="comp-ivgjuufw0label" class="ddm1repeaterButtonlabel">H O M E</p>
-                    </div>
-                  </div>
-                </a></li>
-              <li data-direction="ltr" data-listposition="center" data-data-id="dataItem-ivhzboci" class="ddm1repeaterButton" data-state="menu  idle link notMobile" id="comp-ivgjuufw1" data-original-gap-between-text-and-btn="11" aria-hidden="false"
-                style="width: 80px; height: 30px; position: relative; box-sizing: border-box; overflow: visible;"><a data-listposition="center" aria-haspopup="false" href="about.html" target="_self" id="comp-ivgjuufw1linkElement"
-                  class="ddm1repeaterButtonlinkElement">
-                  <div class="ddm1repeaterButton_gapper">
-                    <div style="text-align:right" id="comp-ivgjuufw1bg" class="ddm1repeaterButtonbg">
-                      <p style="text-align: right; line-height: 30px;" id="comp-ivgjuufw1label" class="ddm1repeaterButtonlabel">A B O U T</p>
-                    </div>
-                  </div>
-                </a></li>
-              <li data-direction="ltr" data-listposition="center" data-data-id="dataItem-ivhzboci" class="ddm1repeaterButton" data-state="menu  idle link notMobile" id="comp-ivgjuufw1" data-original-gap-between-text-and-btn="11" aria-hidden="false"
-                style="width: 70px; height: 30px; position: relative; box-sizing: border-box; overflow: visible;"><a data-listposition="center" aria-haspopup="false" href="data.html" target="_self" id="comp-ivgjuufw1linkElement"
-                  class="ddm1repeaterButtonlinkElement">
-                  <div class="ddm1repeaterButton_gapper">
-                    <div style="text-align:right" id="comp-ivgjuufw1bg" class="ddm1repeaterButtonbg">
-                      <p style="text-align: right; line-height: 30px;" id="comp-ivgjuufw1label" class="ddm1repeaterButtonlabel">D A T A</p>
-                    </div>
-                  </div>
-                </a></li>
-              <li data-direction="ltr" data-listposition="right" data-data-id="dataItem-ivhzdnii" class="ddm1repeaterButton" data-state="menu  idle link notMobile" id="comp-ivgjuufw2" data-original-gap-between-text-and-btn="10" aria-hidden="false"
-                style="width: 130px; height: 30px; position: relative; box-sizing: border-box; overflow: visible;"><a data-listposition="right" aria-haspopup="false" href="locations.html" target="_self" data-keep-roots="true" data-anchor-comp-id=""
-                  data-anchor="dataItem-ividcu8d" id="comp-ivgjuufw2linkElement" class="ddm1repeaterButtonlinkElement">
-                  <div class="ddm1repeaterButton_gapper">
-                    <div style="text-align:right" id="comp-ivgjuufw2bg" class="ddm1repeaterButtonbg">
-                      <p style="text-align: right; line-height: 30px;" id="comp-ivgjuufw2label" class="ddm1repeaterButtonlabel">L O C A T I O N &nbsp; M A P</p>
-                    </div>
-                  </div>
-                </a></li>
-              <li data-direction="ltr" data-listposition="right" data-data-id="dataItem-ivhzdnii" class="ddm1repeaterButton" data-state="menu  idle link notMobile" id="comp-ivgjuufw2" data-original-gap-between-text-and-btn="10" aria-hidden="false"
-                style="width: 130px; height: 30px; position: relative; box-sizing: border-box; overflow: visible;"><a data-listposition="right" aria-haspopup="false" href="ratings.html" target="_self" data-keep-roots="true" data-anchor-comp-id=""
-                  data-anchor="dataItem-ividcu8d" id="comp-ivgjuufw2linkElement" class="ddm1repeaterButtonlinkElement">
-                  <div class="ddm1repeaterButton_gapper">
-                    <div style="text-align:right" id="comp-ivgjuufw2bg" class="ddm1repeaterButtonbg">
-                      <p style="text-align: right; line-height: 30px;" id="comp-ivgjuufw2label" class="ddm1repeaterButtonlabel">R A T I N G S</p>
-                    </div>
-                  </div>
-                </a></li>
-            </ul>
-            <div id="comp-ivgjuufwmoreButton" class="ddm1moreButton"></div>
-            <div style="visibility:hidden" data-drophposition="" data-dropalign="right" id="comp-ivgjuufwdropWrapper" class="ddm1dropWrapper">
-              <ul style="visibility:hidden" id="comp-ivgjuufwmoreContainer" class="ddm1moreContainer"></ul>
-            </div>
-          </nav>
-        </div>
-        <div style="top:;bottom:;left:;right:;width:46px;height:46px;z-index:50" class="ImageButton_1" data-state="supports_opacity transition_none   " id="comp-ivm23fqv"><a title="" style="width:46px;height:46px" id="comp-ivm23fqvlink"
-            class="ImageButton_1link">
-            <div class="ImageButton_1_correct-positioning">
-              <wix-image style="width:46px;height:46px;top:0;left:0" data-has-bg-scroll-effect=""
-                data-image-info="{&quot;imageData&quot;:{&quot;alt&quot;:&quot;&quot;,&quot;type&quot;:&quot;Image&quot;,&quot;id&quot;:&quot;dataItem-ivm23fuu1&quot;,&quot;metaData&quot;:{&quot;pageId&quot;:&quot;masterPage&quot;,&quot;isPreset&quot;:true,&quot;schemaVersion&quot;:&quot;2.0&quot;,&quot;isHidden&quot;:false},&quot;title&quot;:&quot;logo3.png&quot;,&quot;uri&quot;:&quot;ca2a5a_57b8d552f34f4d29905ffa2794d60661~mv2.png&quot;,&quot;description&quot;:&quot;&quot;,&quot;width&quot;:1000,&quot;height&quot;:1000,&quot;displayMode&quot;:&quot;full&quot;},&quot;containerId&quot;:&quot;comp-ivm23fqv&quot;,&quot;displayMode&quot;:&quot;full&quot;}"
-                data-has-ssr-src="" data-is-svg="false" data-is-svg-mask="false" id="comp-ivm23fqvdefaultImage" class="ImageButton_1defaultImage" data-src="img/logo.png"><img id="comp-ivm23fqvdefaultImageimage"
-                  style="object-position:50% 50%;width:46px;height:46px;object-fit:contain" alt="" data-type="image" itemprop="image" src="img/logo.png"></wix-image>
-            </div>
-            <div class="ImageButton_1_correct-positioning">
-              <wix-image style="width:46px;height:46px;top:0;left:0" data-has-bg-scroll-effect=""
-                data-image-info="{&quot;imageData&quot;:{&quot;alt&quot;:&quot;&quot;,&quot;type&quot;:&quot;Image&quot;,&quot;id&quot;:&quot;dataItem-ivm23fuv&quot;,&quot;metaData&quot;:{&quot;pageId&quot;:&quot;masterPage&quot;,&quot;isPreset&quot;:true,&quot;schemaVersion&quot;:&quot;2.0&quot;,&quot;isHidden&quot;:false},&quot;title&quot;:&quot;logo3_white.png&quot;,&quot;uri&quot;:&quot;ca2a5a_eec097e86031431b994af4fa02dc7258~mv2.png&quot;,&quot;description&quot;:&quot;&quot;,&quot;width&quot;:1000,&quot;height&quot;:1000,&quot;displayMode&quot;:&quot;full&quot;},&quot;containerId&quot;:&quot;comp-ivm23fqv&quot;,&quot;displayMode&quot;:&quot;full&quot;}"
-                data-has-ssr-src="" data-is-svg="false" data-is-svg-mask="false" id="comp-ivm23fqvhoverImage" class="ImageButton_1hoverImage" data-src="img/logo.png"><img id="comp-ivm23fqvhoverImageimage"
-                  style="object-position:50% 50%;width:46px;height:46px;object-fit:contain" alt="" data-type="image" itemprop="image" src="img/logo.png"></wix-image>
-            </div>
-            <div class="ImageButton_1_correct-positioning">
-              <wix-image style="width:46px;height:46px;top:0;left:0" data-has-bg-scroll-effect=""
-                data-image-info="{&quot;imageData&quot;:{&quot;alt&quot;:&quot;&quot;,&quot;type&quot;:&quot;Image&quot;,&quot;id&quot;:&quot;dataItem-ivm23fuv1&quot;,&quot;metaData&quot;:{&quot;pageId&quot;:&quot;masterPage&quot;,&quot;isPreset&quot;:true,&quot;schemaVersion&quot;:&quot;2.0&quot;,&quot;isHidden&quot;:false},&quot;title&quot;:&quot;logo3_white.png&quot;,&quot;uri&quot;:&quot;ca2a5a_eec097e86031431b994af4fa02dc7258~mv2.png&quot;,&quot;description&quot;:&quot;&quot;,&quot;width&quot;:1000,&quot;height&quot;:1000,&quot;displayMode&quot;:&quot;full&quot;},&quot;containerId&quot;:&quot;comp-ivm23fqv&quot;,&quot;displayMode&quot;:&quot;full&quot;}"
-                data-has-ssr-src="" data-is-svg="false" data-is-svg-mask="false" id="comp-ivm23fqvactiveImage" class="ImageButton_1activeImage" data-src="img/logo.png"><img id="comp-ivm23fqvactiveImageimage"
-                  style="object-position:50% 50%;width:46px;height:46px;object-fit:contain" alt="" data-type="image" itemprop="image" src="img/logo.png"></wix-image>
-            </div>
-          </a></div>
-        <div id="comp-ivhrfpvn" data-align="left" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="224" data-height="40" style="z-index: 50; height: 40px; min-height: 18px; width: 224px;" class="b3"
-          data-state="desktop shouldUseFlex left"><a href="index.html" target="_self" id="comp-ivhrfpvnlink" class="b3link"><span style="margin-left:0" id="comp-ivhrfpvnlabel" class="b3label">B E T T Y</span></a></div>
-      </div>
     </div>
+    </footer>
+
+
+    <!-- PIN MENU WITH YOU -->
+    <div id="pinnedAfterPAGES_CONTAINER" style="top:0;left:0;position:fixed;width:100%;height:calc(100% - 50px);margin-top:50px;z-index:50;display:grid;grid-template-columns:1fr;grid-template-rows:1fr;pointer-events:none">
+
+      <!-- NAVIGATION -->
+      <div id="comp-ivgjuufw" class="hidden-during-prewarmup ddm1" style="width: 882px; height: 30px; z-index: 50; overflow-x: visible;" data-stretch-buttons-to-menu-width="false" data-same-width-buttons="false" data-num-items="3"
+        data-menuborder-y="0" data-menubtn-border="0" data-ribbon-els="0" data-label-pad="0" data-ribbon-extra="0" data-drophposition="" data-dropalign="right" dir="ltr" data-state="right notMobile" data-dropmode="dropDown">
+        <nav aria-label="Site" id="comp-ivgjuufwnavContainer" class="ddm1navContainer">
+          <ul style="text-align:right" id="comp-ivgjuufwitemsContainer" class="ddm1itemsContainer">
+            <li data-direction="ltr" data-listposition="center" data-data-id="dataItem-ivklmiba" class="ddm1repeaterButton" data-state="menu  idle link notMobile" id="comp-ivgjuufw0" data-original-gap-between-text-and-btn="10" aria-hidden="false"
+              style="width: 70px; height: 30px; position: relative; box-sizing: border-box; overflow: visible;"><a data-listposition="center" aria-haspopup="false" href="index.html" target="_self" id="comp-ivgjuufw0linkElement"
+                class="ddm1repeaterButtonlinkElement">
+                <div class="ddm1repeaterButton_gapper">
+                  <div style="text-align:right" id="comp-ivgjuufw0bg" class="ddm1repeaterButtonbg">
+                    <p style="text-align: right; line-height: 30px;" id="comp-ivgjuufw0label" class="ddm1repeaterButtonlabel">H O M E</p>
+                  </div>
+                </div>
+              </a></li>
+            <li data-direction="ltr" data-listposition="center" data-data-id="dataItem-ivhzboci" class="ddm1repeaterButton" data-state="menu  idle link notMobile" id="comp-ivgjuufw1" data-original-gap-between-text-and-btn="11" aria-hidden="false"
+              style="width: 80px; height: 30px; position: relative; box-sizing: border-box; overflow: visible;"><a data-listposition="center" aria-haspopup="false" href="about.html" target="_self" id="comp-ivgjuufw1linkElement"
+                class="ddm1repeaterButtonlinkElement">
+                <div class="ddm1repeaterButton_gapper">
+                  <div style="text-align:right" id="comp-ivgjuufw1bg" class="ddm1repeaterButtonbg">
+                    <p style="text-align: right; line-height: 30px;" id="comp-ivgjuufw1label" class="ddm1repeaterButtonlabel">A B O U T</p>
+                  </div>
+                </div>
+              </a></li>
+            <li data-direction="ltr" data-listposition="center" data-data-id="dataItem-ivhzboci" class="ddm1repeaterButton" data-state="menu  idle link notMobile" id="comp-ivgjuufw1" data-original-gap-between-text-and-btn="11" aria-hidden="false"
+              style="width: 70px; height: 30px; position: relative; box-sizing: border-box; overflow: visible;"><a data-listposition="center" aria-haspopup="false" href="data.html" target="_self" id="comp-ivgjuufw1linkElement"
+                class="ddm1repeaterButtonlinkElement">
+                <div class="ddm1repeaterButton_gapper">
+                  <div style="text-align:right" id="comp-ivgjuufw1bg" class="ddm1repeaterButtonbg">
+                    <p style="text-align: right; line-height: 30px;" id="comp-ivgjuufw1label" class="ddm1repeaterButtonlabel">D A T A</p>
+                  </div>
+                </div>
+              </a></li>
+            <li data-direction="ltr" data-listposition="right" data-data-id="dataItem-ivhzdnii" class="ddm1repeaterButton" data-state="menu  idle link notMobile" id="comp-ivgjuufw2" data-original-gap-between-text-and-btn="10" aria-hidden="false"
+              style="width: 130px; height: 30px; position: relative; box-sizing: border-box; overflow: visible;"><a data-listposition="right" aria-haspopup="false" href="locations.html" target="_self" data-keep-roots="true" data-anchor-comp-id=""
+                data-anchor="dataItem-ividcu8d" id="comp-ivgjuufw2linkElement" class="ddm1repeaterButtonlinkElement">
+                <div class="ddm1repeaterButton_gapper">
+                  <div style="text-align:right" id="comp-ivgjuufw2bg" class="ddm1repeaterButtonbg">
+                    <p style="text-align: right; line-height: 30px;" id="comp-ivgjuufw2label" class="ddm1repeaterButtonlabel">L O C A T I O N &nbsp; M A P</p>
+                  </div>
+                </div>
+              </a></li>
+            <li data-direction="ltr" data-listposition="right" data-data-id="dataItem-ivhzdnii" class="ddm1repeaterButton" data-state="menu  idle link notMobile" id="comp-ivgjuufw2" data-original-gap-between-text-and-btn="10" aria-hidden="false"
+              style="width: 130px; height: 30px; position: relative; box-sizing: border-box; overflow: visible;"><a data-listposition="right" aria-haspopup="false" href="ratings.html" target="_self" data-keep-roots="true" data-anchor-comp-id=""
+                data-anchor="dataItem-ividcu8d" id="comp-ivgjuufw2linkElement" class="ddm1repeaterButtonlinkElement">
+                <div class="ddm1repeaterButton_gapper">
+                  <div style="text-align:right" id="comp-ivgjuufw2bg" class="ddm1repeaterButtonbg">
+                    <p style="text-align: right; line-height: 30px;" id="comp-ivgjuufw2label" class="ddm1repeaterButtonlabel">R A T I N G S</p>
+                  </div>
+                </div>
+              </a></li>
+          </ul>
+          <div id="comp-ivgjuufwmoreButton" class="ddm1moreButton"></div>
+          <div style="visibility:hidden" data-drophposition="" data-dropalign="right" id="comp-ivgjuufwdropWrapper" class="ddm1dropWrapper">
+            <ul style="visibility:hidden" id="comp-ivgjuufwmoreContainer" class="ddm1moreContainer"></ul>
+          </div>
+        </nav>
+      </div>
+      <div style="top:;bottom:;left:;right:;width:46px;height:46px;z-index:50" class="ImageButton_1" data-state="supports_opacity transition_none   " id="comp-ivm23fqv"><a title="" style="width:46px;height:46px" id="comp-ivm23fqvlink"
+          class="ImageButton_1link">
+          <div class="ImageButton_1_correct-positioning">
+            <wix-image style="width:46px;height:46px;top:0;left:0" data-has-bg-scroll-effect=""
+              data-image-info="{&quot;imageData&quot;:{&quot;alt&quot;:&quot;&quot;,&quot;type&quot;:&quot;Image&quot;,&quot;id&quot;:&quot;dataItem-ivm23fuu1&quot;,&quot;metaData&quot;:{&quot;pageId&quot;:&quot;masterPage&quot;,&quot;isPreset&quot;:true,&quot;schemaVersion&quot;:&quot;2.0&quot;,&quot;isHidden&quot;:false},&quot;title&quot;:&quot;logo3.png&quot;,&quot;uri&quot;:&quot;ca2a5a_57b8d552f34f4d29905ffa2794d60661~mv2.png&quot;,&quot;description&quot;:&quot;&quot;,&quot;width&quot;:1000,&quot;height&quot;:1000,&quot;displayMode&quot;:&quot;full&quot;},&quot;containerId&quot;:&quot;comp-ivm23fqv&quot;,&quot;displayMode&quot;:&quot;full&quot;}"
+              data-has-ssr-src="" data-is-svg="false" data-is-svg-mask="false" id="comp-ivm23fqvdefaultImage" class="ImageButton_1defaultImage" data-src="img/logo.png"><img id="comp-ivm23fqvdefaultImageimage"
+                style="object-position:50% 50%;width:46px;height:46px;object-fit:contain" alt="" data-type="image" itemprop="image" src="img/logo.png"></wix-image>
+          </div>
+          <div class="ImageButton_1_correct-positioning">
+            <wix-image style="width:46px;height:46px;top:0;left:0" data-has-bg-scroll-effect=""
+              data-image-info="{&quot;imageData&quot;:{&quot;alt&quot;:&quot;&quot;,&quot;type&quot;:&quot;Image&quot;,&quot;id&quot;:&quot;dataItem-ivm23fuv&quot;,&quot;metaData&quot;:{&quot;pageId&quot;:&quot;masterPage&quot;,&quot;isPreset&quot;:true,&quot;schemaVersion&quot;:&quot;2.0&quot;,&quot;isHidden&quot;:false},&quot;title&quot;:&quot;logo3_white.png&quot;,&quot;uri&quot;:&quot;ca2a5a_eec097e86031431b994af4fa02dc7258~mv2.png&quot;,&quot;description&quot;:&quot;&quot;,&quot;width&quot;:1000,&quot;height&quot;:1000,&quot;displayMode&quot;:&quot;full&quot;},&quot;containerId&quot;:&quot;comp-ivm23fqv&quot;,&quot;displayMode&quot;:&quot;full&quot;}"
+              data-has-ssr-src="" data-is-svg="false" data-is-svg-mask="false" id="comp-ivm23fqvhoverImage" class="ImageButton_1hoverImage" data-src="img/logo.png"><img id="comp-ivm23fqvhoverImageimage"
+                style="object-position:50% 50%;width:46px;height:46px;object-fit:contain" alt="" data-type="image" itemprop="image" src="img/logo.png"></wix-image>
+          </div>
+          <div class="ImageButton_1_correct-positioning">
+            <wix-image style="width:46px;height:46px;top:0;left:0" data-has-bg-scroll-effect=""
+              data-image-info="{&quot;imageData&quot;:{&quot;alt&quot;:&quot;&quot;,&quot;type&quot;:&quot;Image&quot;,&quot;id&quot;:&quot;dataItem-ivm23fuv1&quot;,&quot;metaData&quot;:{&quot;pageId&quot;:&quot;masterPage&quot;,&quot;isPreset&quot;:true,&quot;schemaVersion&quot;:&quot;2.0&quot;,&quot;isHidden&quot;:false},&quot;title&quot;:&quot;logo3_white.png&quot;,&quot;uri&quot;:&quot;ca2a5a_eec097e86031431b994af4fa02dc7258~mv2.png&quot;,&quot;description&quot;:&quot;&quot;,&quot;width&quot;:1000,&quot;height&quot;:1000,&quot;displayMode&quot;:&quot;full&quot;},&quot;containerId&quot;:&quot;comp-ivm23fqv&quot;,&quot;displayMode&quot;:&quot;full&quot;}"
+              data-has-ssr-src="" data-is-svg="false" data-is-svg-mask="false" id="comp-ivm23fqvactiveImage" class="ImageButton_1activeImage" data-src="img/logo.png"><img id="comp-ivm23fqvactiveImageimage"
+                style="object-position:50% 50%;width:46px;height:46px;object-fit:contain" alt="" data-type="image" itemprop="image" src="img/logo.png"></wix-image>
+          </div>
+        </a></div>
+      <div id="comp-ivhrfpvn" data-align="left" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="224" data-height="40" style="z-index: 50; height: 40px; min-height: 18px; width: 224px;" class="b3"
+        data-state="desktop shouldUseFlex left"><a href="index.html" target="_self" id="comp-ivhrfpvnlink" class="b3link"><span style="margin-left:0" id="comp-ivhrfpvnlabel" class="b3label">B E T T Y</span></a></div>
+    </div>
+  </div>
   </div>
   <div id="WIX_ADS" class="wix-ads-2 visible desktop">
     <style type="text/css" data-styleid="wixAds-style">

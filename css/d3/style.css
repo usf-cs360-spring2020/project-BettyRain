@@ -5,6 +5,19 @@
   font-size: 9pt;
 }
 
+.active_js {
+  stroke: dodgerblue !important;
+  stroke-width: 1.5px !important;
+}
+
+#tooltipsmall {
+  font-weight: 600;
+  text-shadow: 0px 0px 2px white;
+
+  fill: black;
+  stroke: none;
+}
+
 svg#vis {
   background-color: #C9DEEA;
   border: 1px solid lightgrey;
